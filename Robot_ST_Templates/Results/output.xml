@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.6 on win32)" generated="20210405 14:38:02.404" rpa="false">
+<suite id="s1" name="FR1 01-01 CaptureAudit MS" source="C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\TestCases\Audits\FR1_01-01_CaptureAudit_MS.robot">
+<test id="s1-t1" name="FR1_01-01_CaptureAudit_MainScenario">
+<kw name="Launch IsoMetrix Application" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210405 14:38:03.106" level="INFO">Opening browser 'chrome' to base url 'https://ch11.isometrix.net/IsoMetrix_Solutions_QASPTest/login.aspx'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" starttime="20210405 14:38:07.405" endtime="20210405 14:38:07.406"></status>
+</kw>
+<msg timestamp="20210405 14:38:07.406" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" starttime="20210405 14:38:03.105" endtime="20210405 14:38:07.407"></status>
+</kw>
+<status status="FAIL" starttime="20210405 14:38:03.104" endtime="20210405 14:38:07.408"></status>
+</kw>
+<tags>
+<tag>behavior-driven</tag>
+</tags>
+<status status="FAIL" starttime="20210405 14:38:03.102" endtime="20210405 14:38:07.408" critical="yes">Execution terminated by signal</status>
+</test>
+<test id="s1-t2" name="FR1_01-01_CaptureAudit_Logged Notification">
+<tags>
+<tag>behavior-driven</tag>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20210405 14:38:07.412" endtime="20210405 14:38:07.413" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<msg timestamp="20210405 14:38:09.746" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0389A610&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/00a07a686396d45e24e7c644d2fefb87</msg>
+<errors>
+<msg timestamp="20210405 14:38:07.406" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<msg timestamp="20210405 14:38:09.746" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0389A610&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/00a07a686396d45e24e7c644d2fefb87</msg>
+<msg timestamp="20210405 14:38:15.867" level="ERROR">Execution stopped by user.</msg>
+</errors>
+</robot>
