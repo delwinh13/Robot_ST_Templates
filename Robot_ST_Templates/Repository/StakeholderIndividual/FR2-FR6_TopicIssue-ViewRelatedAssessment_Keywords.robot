@@ -17,7 +17,7 @@ Capture Topic_Issue Assessment
     Wait Until Element Is Visible                   ${SITopicIssueAddBtn}               20 seconds
     Click Element                                   ${SITopicIssueAddBtn}
     Sleep       2
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Topic/Issue Assessment Panel - Add Button-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Topic/Issue Assessment Panel - Add Button.png
     #Topic / Issue dropdown
     Log to Console      Topic / Issue
     Wait Until Element Is Visible                   ${SITopicIssueDD}                   20 seconds
@@ -39,12 +39,12 @@ Capture Topic_Issue Assessment
     #Assessment
     Log to Console      Assessment - Auto Populated - Keep informed
     Page Should Contain Element                     ${SITopicAssessmentKeepInformed}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Topic Assessment - Keep informed-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Topic Assessment - Keep informed.png
     #Record Save Tick Button
     Log to Console      Record Save Tick Button
     Click Element                                   ${SITopicAssessmentRecordSaveTick}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Topic Assessment Record Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Topic Assessment Record Saved.png
     #Open Topic Assessment Record
     Log to Console      Open Topic Assessment Record
     Scroll Element Into View                        ${SITopicInLineEditText}
@@ -57,7 +57,7 @@ Capture Topic_Issue Assessment
     Click Element                                   ${SITopicAssessmentRecordPF}
     Sleep       1
     Page Should Contain Element                     ${SITopicAssessmentRecordPFEdit}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Topic Assessment Record Opened Edit Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Topic Assessment Record Opened Edit Phase.png
     #Close Record
     Log to Console      Close Record
     Click Element                                   ${SITopicAssessmentRecordClosed}
@@ -75,7 +75,7 @@ Capture Related Stakeholders_MS
     Click Element                                   ${SIRelationshipsTab}
     Page Should Contain Element                     ${SIRelationsCreateNewIndividualBtn}
     Wait Until Element Is Visible                   ${SIRelationshipAddBtn}                 20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Relationships Tab-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Relationships Tab.png
     #Add Button
     Log to Console      Add Button
     Click Element                                   ${SIRelationshipAddBtn}
@@ -95,7 +95,7 @@ Capture Related Stakeholders_MS
     Log to Console      Record Save Tick Button
     Click Element                                   ${SITopicAssessmentRecordSaveTick}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Stakeholders Record Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Stakeholders Record Saved.png
     #Open Related Stakeholders Record
     Log to Console      Open Related Stakeholders Record
     Scroll Element Into View                        ${SITopicInLineEditText}
@@ -110,7 +110,7 @@ Capture Related Stakeholders_MS
     Click Element                                   ${SIRelationsRecordPF}
     Sleep       1
     Page Should Contain Element                     ${SIRelationsPFEdit}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Stakeholders Record Opened Edit Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Stakeholders Record Opened Edit Phase.png
     #Close Record
     Log to Console      Close Record
     Click Element                                   ${SIRelationsRecordClosed}
@@ -128,7 +128,7 @@ Capture Related Stakeholders_OS
     #View Filter Button
     Log to Console      View Filter Button
     Click Element                                   ${SIViewFilterBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual View Filter Button-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual View Filter Button.png
     #Full Name Search
     Log to Console      Full Name Search
     Wait Until Element Is Visible                   ${SIFullNameSearch}                 30 seconds
@@ -137,7 +137,7 @@ Capture Related Stakeholders_OS
     Log to Console      Search Button
     Click Element                                   ${SISearchButton}
     Wait Until Element Is Visible                   ${SIRecords}                        40 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Records Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Records Visible.png
     #Open David Abel Record
     Log to Console      Open David Abel Record
     Wait Until Element Is Visible                   ${SIRecordDavidAbel}                30 seconds
@@ -146,7 +146,7 @@ Capture Related Stakeholders_OS
     Wait Until Element Is Visible                   ${SIProcessFlowBtn}                 30 seconds
     Click Element                                   ${SIProcessFlowBtn}
     Page Should Contain Element                     ${SIPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual David Abel Record Opened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual David Abel Record Opened.png
     #Relationships Tab
     Log to Console      Relationships Tab
     Click Element                                   ${SIRelationshipsTab}
@@ -156,7 +156,7 @@ Capture Related Stakeholders_OS
     Page Should Contain Element                     ${SIRelatedStakeTest}
     Scroll Element Into View                        ${SITopicInLineEditText}
     Sleep   1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual David Abel Related Stake Replicated-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual David Abel Related Stake Replicated.png
     #Update Type of Relationship
     Log to Console      Update Type of Relationship
     Page Should Contain Element                     ${SIRelatedStakeTestSpouse}
@@ -167,7 +167,7 @@ Capture Related Stakeholders_OS
     Log to Console      Save Button
     Click Element                                   ${SIRelatedSaveBtn}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual David Abel Relationship Update Record Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual David Abel Relationship Update Record Saved.png
     #Close David Abel Record
     Log to Console      Close David Abel Record
     Click Element                                   ${SIRecordCloseX}
@@ -176,7 +176,7 @@ Capture Related Stakeholders_OS
     Log to Console      View Filter Button
     Sleep       2
     Click Element                                   ${SIViewFilterBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual View Filter Button-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual View Filter Button.png
     #Full Name Search
     Log to Console      Full Name Search
     Wait Until Element Is Visible                   ${SIFullNameSearch}                         30 seconds
@@ -186,7 +186,7 @@ Capture Related Stakeholders_OS
     Log to Console      Search Button
     Click Element                                   ${SISearchButton}
     Wait Until Element Is Visible                   ${SIRecords}                                40 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Records Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Records Visible.png
     #Open Stake_AS1 Stakeholder Individual Record
     Log to Console      Open Stake_AS1 Stakeholder Individual Record
     Wait Until Element Is Visible                   ${SIRecordStake_AS1}                        30 seconds
@@ -195,7 +195,7 @@ Capture Related Stakeholders_OS
     Wait Until Element Is Visible                   ${SIProcessFlowBtn}                         30 seconds
     Click Element                                   ${SIProcessFlowBtn}
     Page Should Contain Element                     ${SIPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Stake_AS1 Record Opened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Stake_AS1 Record Opened.png
     #Relationships Tab
     Log to Console      Relationships Tab
     Click Element                                   ${SIRelationshipsTab}
@@ -206,7 +206,7 @@ Capture Related Stakeholders_OS
     Page Should Contain Element                     ${SIRelatedStakeDavid}
     Scroll Element Into View                        ${SITopicInLineEditText}
     Sleep   1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Stake_AS1 Related Stake Parent-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Stake_AS1 Related Stake Parent.png
 
 #*********************************************** FR3 01: Capture Related Stakeholders_AS *******************************************
 Capture Related Stakeholders_AS
@@ -232,7 +232,7 @@ Capture Related Stakeholders_AS
     Log to Console      ${URL}
     END
     Sleep       5
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual New Tab Opened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual New Tab Opened.png
     #Select Frame
     Log to Console      Select Frame
     Select Frame                                    ${iFrame}
@@ -243,7 +243,7 @@ Capture Related Stakeholders_AS
     #Add Phase
     Log to Console      Stakeholder Individual in Add Phase
     Wait Until Page Contains Element                ${SIPFAddPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Add Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Add Phase.png
     #First Name
     Log to Console      First Name
     Input Text                                      ${SIFirstName}              Stake_FR3AS First (1)
@@ -253,7 +253,7 @@ Capture Related Stakeholders_AS
     #Known As
     Log to Console      Known As
     Input Text                                      ${SIKnownAs}                Test FR3AS
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Full Name Autopopulated-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Full Name Autopopulated.png
     #Title
     Log to Console      Title
     Click Element                                   ${SITitleDD}
@@ -263,7 +263,7 @@ Capture Related Stakeholders_AS
     #Status
     Log to Console      Status
     Wait Until Page Contains Element                ${SIStatusActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Title_Status - Active-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Title_Status - Active.png
     #Relationship Owner
     Log to Console      Relationship Owner
     Click Element                                   ${SIRelationshipOwnerDD}
@@ -278,7 +278,7 @@ Capture Related Stakeholders_AS
     Log to Console      Category - Contractor
     Wait Until Element Is Visible                   ${SICategoryContractor}                60 seconds
     Click Element                                   ${SICategoryContractor}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual RelationOwner_Categories-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual RelationOwner_Categories.png
     #Business Unit
     Log to Console      Business Unit
     Scroll Element Into View                        ${SISaveandContinueBtn}
@@ -291,7 +291,7 @@ Capture Related Stakeholders_AS
     Log to Console      Impact Types
     Wait Until Element Is Visible                   ${SIImpactTypeBusRisk}                  60 seconds
     Click Element                                   ${SIImpactTypeSelectAll}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Impact Types-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Impact Types.png
     #Save and Continue
     Log to Console      Save and Continue
     Click Element                                   ${SISaveandContinueBtn}
@@ -299,7 +299,7 @@ Capture Related Stakeholders_AS
     Scroll Element Into View                        ${SIFirstName}
     Page Should Contain Element                     ${SISavedRecordNo}
     Wait Until Page Contains Element                ${SIPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Saved.png
     #Get Window Handles
     Log to Console      Get Window Handles
     @{list2}        Get Window Handles
@@ -311,7 +311,7 @@ Capture Related Stakeholders_AS
     Log to Console      ${URL}
     END
     Sleep       3
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Tab Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Tab Visible.png
     #Select Frame
     Log to Console      Select Frame
     Select Frame                                    ${iFrame}
@@ -334,7 +334,7 @@ Capture Related Stakeholders_AS
     Log to Console      Record Save Tick Button
     Click Element                                   ${SITopicAssessmentRecordSaveTick}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Stakeholders Record Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Stakeholders Record Saved.png
 
 #*********************************************** FR4 01: Capture Related Entities_MS *******************************************
 Capture Related Entities_MS
@@ -347,7 +347,7 @@ Capture Related Entities_MS
     Click Element                                   ${SIEntitiesTab}
     Page Should Contain Element                     ${SIEntitiesCreateNewEntityBtn}
     Wait Until Element Is Visible                   ${SIEntityAddBtn}                       20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entities Tab-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entities Tab.png
     #Add Button
     Sleep       2
     Log to Console      Add Button
@@ -368,7 +368,7 @@ Capture Related Entities_MS
     Log to Console      Record Save Tick Button
     Click Element                                   ${SITopicAssessmentRecordSaveTick}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Entities Record Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Entities Record Saved.png
     #Open Related Entities Record
     Log to Console      Open Related Entities Record
     Scroll Element Into View                        ${SITopicInLineEditText}
@@ -383,7 +383,7 @@ Capture Related Entities_MS
     Click Element                                   ${SIEntityRecordPF}
     Sleep       1
     Page Should Contain Element                     ${SIEntityRecordPFEdit}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Entities Record Opened Edit Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Entities Record Opened Edit Phase.png
     #Close Record
     Log to Console      Close Record
     Click Element                                   ${SIEntityRecordClosed}
@@ -408,11 +408,11 @@ Capture Related Entities_OS
     Click Element                                   ${SIEntitySEModuleBtn}
     Sleep       10
     Wait Until Element Is Visible                   ${SIViewFilterBtn}                  30 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Module Search Results-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Module Search Results.png
 #    #View Filter Button
 #    Log to Console      View Filter Button
 #    Click Element                                   ${SIViewFilterBtn}
-#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity View Filter Button-{index}.png
+#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity View Filter Button.png
     #Full Name Search
     Log to Console      Full Name Search
     Wait Until Element Is Visible                   ${SIEntityFullNameSearch}                 30 seconds
@@ -422,7 +422,7 @@ Capture Related Entities_OS
     Click Element                                   ${SISearchButton}
     Sleep       5
     Wait Until Element Is Visible                   ${SIEntitySearchRecords}                  40 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Record Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Record Visible.png
     #Open Coltness Iron Company Ltd Record
     Log to Console      Open Coltness Iron Company Ltd Record
     Wait Until Element Is Visible                   ${SIEntitySearchRecords}                  30 seconds
@@ -430,7 +430,7 @@ Capture Related Entities_OS
     Wait Until Element Is Visible                   ${SIEntitySavedRecordNo}                  30 seconds
     Click Element                                   ${SIEntityProcessFlowBtn}
     Page Should Contain Element                     ${SIOpenedEntityRecordPFEdit}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Record Opened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Record Opened.png
     #Members Tab
     Log to Console      Members Tab
     Click Element                                   ${SIEntityMembersTab}
@@ -441,7 +441,7 @@ Capture Related Entities_OS
     Page Should Contain Element                     ${SIEntityMembersStakeTest}
 #    Scroll Element Into View                        ${SITopicInLineEditText}
     Sleep   1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Related Stake Replicated-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Related Stake Replicated.png
     #Update Position
     Log to Console      Update Position
     Page Should Contain Element                     ${SIEntityMembersStakeTest}
@@ -452,7 +452,7 @@ Capture Related Entities_OS
     Log to Console      Save Button
     Click Element                                   ${SIRelatedSaveBtn}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Position Update Record Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Position Update Record Saved.png
     #Close Coltness Iron Company Ltd Record
     Log to Console      Close Coltness Iron Company Ltd Record
     Click Element                                   ${SIEntityRecordCloseX}
@@ -468,12 +468,12 @@ Capture Related Entities_OS
     Click Element                                   ${StakeholderIndividualBtn}
     Sleep       5
     Wait Until Element Is Visible                   ${SIViewFilterBtn}                  30 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Module Search Results-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Module Search Results.png
 #    #View Filter Button
 #    Log to Console      View Filter Button
     Sleep       2
 #    Click Element                                   ${SIViewFilterBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual View Filter Button-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual View Filter Button.png
     #Full Name Search
     Log to Console      Full Name Search
     Wait Until Element Is Visible                   ${SIFullNameSearch}                         30 seconds
@@ -483,7 +483,7 @@ Capture Related Entities_OS
     Log to Console      Search Button
     Click Element                                   ${SISearchButton}
     Wait Until Element Is Visible                   ${SIRecords}                                40 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Records Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Records Visible.png
     #Open Stake_AS1 Stakeholder Individual Record
     Log to Console      Open Stake_AS1 Stakeholder Individual Record
     Wait Until Element Is Visible                   ${SIRecordStake_AS1}                        30 seconds
@@ -492,7 +492,7 @@ Capture Related Entities_OS
     Wait Until Element Is Visible                   ${SIProcessFlowBtn}                         30 seconds
     Click Element                                   ${SIProcessFlowBtn}
     Page Should Contain Element                     ${SIPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Stake_AS1 Record Opened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Stake_AS1 Record Opened.png
     #Entities Tab
     Log to Console      Entities Tab
     Click Element                                   ${SIEntitiesTab}
@@ -503,7 +503,7 @@ Capture Related Entities_OS
     Page Should Contain Element                     ${SIEntityRelatedColtness}
     Scroll Element Into View                        ${SITopicInLineEditText}
     Sleep   1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Stake_AS1 Related Entity CEO-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Stake_AS1 Related Entity CEO.png
 
 #*********************************************** FR4 01: Capture Related Entities_AS *******************************************
 Capture Related Entities_AS
@@ -516,7 +516,7 @@ Capture Related Entities_AS
     Click Element                                   ${SIEntitiesTab}
     Page Should Contain Element                     ${SIEntitiesCreateNewEntityBtn}
     Wait Until Element Is Visible                   ${SIEntityAddBtn}                       20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entities Tab-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entities Tab.png
     Click Element                                   ${SIEntitiesCreateNewEntityBtn}
     Log to Console      Switch Window
     Sleep       5
@@ -530,7 +530,7 @@ Capture Related Entities_AS
     Log to Console      ${URL}
     END
     Sleep       5
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity New Tab Opened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity New Tab Opened.png
     #Select Frame
     Log to Console      Select Frame
     Select Frame                                    ${iFrame}
@@ -541,7 +541,7 @@ Capture Related Entities_AS
     #Add Phase
     Log to Console      Stakeholder Entity in Add Phase
     Wait Until Page Contains Element                ${SIEntityPFAddPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Add Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Add Phase.png
     #Entity Type
     Log to Console      Entity Type
     Wait Until Element Is Visible                   ${SIEntityTypeDD}                           30 seconds
@@ -554,7 +554,7 @@ Capture Related Entities_AS
     #Known As
     Log to Console      Entity Known As
     Input Text                                      ${SIEntityKnownAs}                  Test FR4AS
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Name-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Name.png
     #Industry
     Log to Console      Industry
     Click Element                                   ${SIEntityIndustryDD}
@@ -564,7 +564,7 @@ Capture Related Entities_AS
     #Entity description
     Log to Console      Entity description
     Input Text                                      ${SIEntityDescription}             FR4_01_CaptureRelatedEntities_AlternateScenario
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Industry_Description-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Industry_Description.png
     #Relationship Owner
     Log to Console      Relationship Owner
     Click Element                                   ${SIEntityRelationshipOwnerDD}
@@ -575,7 +575,7 @@ Capture Related Entities_AS
     Log to Console      Stakeholder categories
     Wait Until Element Is Visible                   ${SIEntityStakeCategoriesCommunity}                  60 seconds
     Click Element                                   ${SIEntityStakeCategoriesCommunity}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity RelationOwner_Category-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity RelationOwner_Category.png
     #Business Unit
     Log to Console      Business Unit
     Scroll Element Into View                        ${SIEntitySaveandContinueBtn}
@@ -588,7 +588,7 @@ Capture Related Entities_AS
     Log to Console      Impact Types
     Wait Until Element Is Visible                   ${SIImpactTypeBusRisk}                  60 seconds
     Click Element                                   ${SIEntityImpactTypeSelectAll}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Impact Types-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Impact Types.png
     #Save and Continue
     Log to Console      Save and Continue
     Click Element                                   ${SIEntitySaveandContinueBtn}
@@ -596,7 +596,7 @@ Capture Related Entities_AS
     Scroll Element Into View                        ${SIEntityTypeDD}
     Page Should Contain Element                     ${SIEntitySavedRecordNo}
     Wait Until Page Contains Element                ${SIEntityPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Entity Saved.png
     #Get Window Handles
     Log to Console      Get Window Handles
     @{list2}        Get Window Handles
@@ -608,7 +608,7 @@ Capture Related Entities_AS
     Log to Console      ${URL}
     END
     Sleep       3
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Tab Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Tab Visible.png
     #Select Frame
     Log to Console      Select Frame
     Select Frame                                    ${iFrame}
@@ -633,7 +633,7 @@ Capture Related Entities_AS
     Click Element                                   ${SITopicAssessmentRecordSaveTick}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
     Sleep       2
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Entities Record Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Related Entities Record Saved.png
 
 
 #*********************************************** FR5 01: Capture Update Vulnerability_MS *******************************************
@@ -645,7 +645,7 @@ Capture Vulnerability_MS
     #Vulnerability Tab
     Log to Console      Vulnerability Tab
     Click Element                                   ${SIVulnerabilityTab}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Tab-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Tab.png
     #Vulnerability confirmed
     Log to Console      Vulnerability Confirmed
     Wait Until Element Is Visible                   ${SIVulnerabilityConfirmedDD}               20 seconds
@@ -657,7 +657,7 @@ Capture Vulnerability_MS
     #Stakeholder does live within a vulnerable area
     Log to Console      Stakeholder does live within a vulnerable area
     Page Should Contain Element                     ${SIVulnerabilityInVulnerableAreaImage}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Confirmed - Yes-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Confirmed - Yes.png
     #Vulnerability categorization
     Log to Console      Vulnerability Categorization
     Wait Until Element Is Visible                   ${SIVulnerabilityCategorizationDD}              10 seconds
@@ -678,7 +678,7 @@ Capture Vulnerability_MS
     Click Element                                   ${SISaveBtn}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
     Sleep       1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability - Yes Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability - Yes Saved.png
 
 #*********************************************** FR5 01: Capture Update Vulnerability_AS1 *******************************************
 Capture Vulnerability_AS1
@@ -689,7 +689,7 @@ Capture Vulnerability_AS1
     #Vulnerability Tab
     Log to Console      Vulnerability Tab
     Click Element                                   ${SIVulnerabilityTab}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Tab-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Tab.png
     #Vulnerability confirmed
     Log to Console      Vulnerability Confirmed
     Wait Until Element Is Visible                   ${SIVulnerabilityConfirmedDD}               20 seconds
@@ -707,7 +707,7 @@ Capture Vulnerability_AS1
     Click Element                                   ${SISaveBtn}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
     Sleep       1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Confirmed - No-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Confirmed - No.png
 
 #*********************************************** FR5 01: Capture Update Vulnerability_AS2 *******************************************
 Capture Vulnerability_AS2
@@ -719,7 +719,7 @@ Capture Vulnerability_AS2
     Sleep       1
     Log to Console      Vulnerability Tab
     Click Element                                   ${SIVulnerabilityTab}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Tab-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Tab.png
     #Vulnerability confirmed
     Log to Console      Vulnerability Confirmed
     Wait Until Element Is Visible                   ${SIVulnerabilityConfirmedDD}               20 seconds
@@ -731,7 +731,7 @@ Capture Vulnerability_AS2
     #Stakeholder does live within a vulnerable area
     Log to Console      Stakeholder does live within a vulnerable area
     Page Should Contain Element                     ${SIVulnerabilityInVulnerableAreaImage}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Confirmed - Yes-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Confirmed - Yes.png
     #Vulnerability categorization
     Log to Console      Vulnerability Categorization
     Wait Until Element Is Visible                   ${SIVulnerabilityCategorizationDD}              10 seconds
@@ -752,7 +752,7 @@ Capture Vulnerability_AS2
     Click Element                                   ${SISaveBtn}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
     Sleep       1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability - Yes Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability - Yes Saved.png
     #Vulnerability confirmed
     Log to Console      Vulnerability Confirmed
     #Stakeholder doesn't live within a vulnerable area
@@ -772,7 +772,7 @@ Capture Vulnerability_AS2
     Click Element                                   ${SISaveBtn}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
     Sleep       1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Confirmed - No-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Vulnerability Confirmed - No.png
 
 
 #*********************************************** FR6 01: View Related Assessment_MS *******************************************
@@ -780,7 +780,7 @@ View Related Assessment_MS
 #    #View Filter Button
 #    Log to Console      View Filter Button
 #    Click Element                                   ${SIViewFilterBtn}
-#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual View Filter Button-{index}.png
+#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual View Filter Button.png
     #Full Name Search
     Log to Console      Full Name Search
     Wait Until Element Is Visible                   ${SIFullNameSearch}                 30 seconds
@@ -789,7 +789,7 @@ View Related Assessment_MS
     Log to Console      Search Button
     Click Element                                   ${SISearchButton}
     Wait Until Element Is Visible                   ${SIRecords}                        40 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Records Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Records Visible.png
     #Open David Abel Record
     Log to Console      Open David Abel Record
     Wait Until Element Is Visible                   ${SIRecordDavidAbel}                30 seconds
@@ -798,11 +798,11 @@ View Related Assessment_MS
     Wait Until Element Is Visible                   ${SIProcessFlowBtn}                 30 seconds
     Click Element                                   ${SIProcessFlowBtn}
     Page Should Contain Element                     ${SIPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual David Abel Record Opened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual David Abel Record Opened.png
     #Related Assessment Tab
     Log to Console      Related Assessment Tab
     Click Element                                   ${SIRelatedAssessmentTab}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Related Assessment Tab-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Related Assessment Tab.png
     #Open Related Inspections Record
     Scroll Element Into View                        ${SITopicInLineEditText}
     Sleep   1
@@ -816,7 +816,7 @@ View Related Assessment_MS
     Wait Until Element Is Visible                   ${SIInspectionsRecordNo}            60 seconds
     Click Element                                   ${SIInspectionsProcessFlow}
     Page Should Contain Element                     ${SIInspectionsPFInProgress}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Inspections Process Flow - In Progress-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Inspections Process Flow - In Progress.png
 
 
 

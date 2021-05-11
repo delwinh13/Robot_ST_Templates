@@ -20,7 +20,7 @@ View Overdue - MainScenario
     Wait Until Element Is Visible       ${AuditsSearchButton}       40 seconds
     Click Element                       ${AuditsSearchButton}
     Wait Until Element Is Visible       ${AuditSearchRecordOverdue}            40 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditOverdueRecordVisible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditOverdueRecordVisible.png
     #Open Overdue Record
     Log to Console      Open Overdue Record
     Click Element                           ${AuditSearchRecordOverdue}
@@ -31,7 +31,7 @@ View Overdue - MainScenario
     Click Element                           ${AuditsPFButton}
     Wait Until Element Is Visible           ${AuditPFInProgress_Overdue}            40 seconds
     Wait Until Page Contains Element        ${AuditPFInProgress_Overdue}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditOverdueRecordOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditOverdueRecordOpened.png
 
 #*********************************************** FR7_01_AuditOverdue_AS ************************************************
 Audits_Overdue Notification
@@ -49,12 +49,12 @@ Audits_Overdue Notification
     Input Text                          ${EmailPasswordField}       ${outlookpassword}
     Wait Until Element Is Visible       ${EmailSignInBtn}           20 seconds
     Click Element                       ${EmailSignInBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails.png
     #Outlook Folder
     Log to Console      Outlook Folder
     Wait Until Element Is Visible       ${Outlook}                  20 seconds
     Click Element                       ${Outlook}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder.png
     sleep       15 seconds
     #Switch to Tab
     Switch Window    Mail - Delwin Horsthemke - Outlook
@@ -63,13 +63,13 @@ Audits_Overdue Notification
     Wait Until Element Is Visible       ${SystemMailFolder}         20 seconds
     sleep       5 seconds
     Click Element                       ${SystemMailFolder}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder.png
     #Audits - Overdue Notification
     Log to Console      Overdue Notification
     sleep       3 seconds
     Wait Until Element Is Visible       ${AuditOverdueSubject}       60 seconds
     Click Element                       ${AuditOverdueSubject}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditOverdueEmailSelection-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditOverdueEmailSelection.png
     #Link Back to Record
     Log to Console      Link Back to Record
     Click Element                       ${AuditEmailLinkBacktoRecord}
@@ -78,7 +78,7 @@ Audits_Overdue Notification
     Switch Window    IsoMetrix
     #Login to Isometrix Site
     Log to Console      Login to Isometrix Site
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened.png
     Wait Until Element Is Visible       ${Usernameid}
     Input Text                          ${Usernameid}    ${Username Value}
     Input Text                          ${Passwordid}    ${Password Value}
@@ -91,7 +91,7 @@ Audits_Overdue Notification
     Wait Until Element Is Visible       ${AuditsPFButton}           60 seconds
     Click Element                       ${AuditsPFButton}
     Wait Until Page Contains Element    ${AuditPFInProgress_Overdue}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordOpened.png
 
 #*********************************************** FR8_01_CaptureAuditActions_MS ************************************************
 Capture Audit Actions
@@ -99,19 +99,19 @@ Capture Audit Actions
     Log to Console      Audits Actions Tab
     Click Element                       ${AuditActionsTab}
     Wait Until Element Is Visible       ${AuditTeamNoResults}       20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Actions Sub-Module-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Actions Sub-Module.png
     #Actions Add Button
     Log to Console      Actions Add Button
     Wait Until Element Is Visible       ${AuditActionsAddBtn}       20 seconds
     Click Element                       ${AuditActionsAddBtn}
     Wait Until Element Is Visible       ${AuditActionsBreadcrumb}       60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Actions Record-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Actions Record.png
     #Process Flow
     Log to Console      Actions Process Flow
     Wait Until Element Is Visible       ${AuditActionsPF}           20 seconds
     Click Element                       ${AuditActionsPF}
     Wait Until Page Contains Element    ${AuditActionsPFAddActions}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Actions Process Flow Add Action-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Actions Process Flow Add Action.png
     #Description
     Log to Console      Actions Description
     ${CurrentDate}      Get Current Date        result_format=%d/%m/%Y
@@ -126,7 +126,7 @@ Capture Audit Actions
     Click Element                       ${AuditsActionsBUSouthAfricaExpand}
     Wait Until Element Is Visible       ${AuditsActionsBUVictorySite}              10 seconds
     Click Element                       ${AuditsActionsBUVictorySite}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Department Responsible Selected-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Department Responsible Selected.png
     #Responsible Person
     Log to Console      Responsible Person
     Click Element                       ${AuditActionsRespPersonDD}
@@ -141,13 +141,13 @@ Capture Audit Actions
     Click Element                       ${AuditActionsSaveBtn}
     Wait Until Element Is Visible       ${AuditTeamRecordSaved}             60 seconds
     Wait Until Element Is Visible       ${AuditActionsRecordNo}             20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Actions Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Actions Saved.png
     #Close Button
     Log to Console      Audit Actions Close Button
     Click Element                       ${AuditActionsCloseBtn}
     Wait Until Element Is Visible       ${AuditActionsRecordModule}         20 seconds
     sleep       2 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Actions Record Closed-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Actions Record Closed.png
 
 Audit Actions Notification
     Open Browser    ${Officeurl}  ${BROWSER}
@@ -164,12 +164,12 @@ Audit Actions Notification
     Input Text                          ${EmailPasswordField}       ${outlookpassword}
     Wait Until Element Is Visible       ${EmailSignInBtn}           20 seconds
     Click Element                       ${EmailSignInBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails.png
     #Outlook Folder
     Log to Console      Outlook Folder
     Wait Until Element Is Visible       ${Outlook}                  20 seconds
     Click Element                       ${Outlook}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder.png
     sleep       15 seconds
     #Switch to Tab
     Switch Window    Mail - Delwin Horsthemke - Outlook
@@ -178,13 +178,13 @@ Audit Actions Notification
     Wait Until Element Is Visible       ${SystemMailFolder}         20 seconds
     sleep       5 seconds
     Click Element                       ${SystemMailFolder}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder.png
     #Audits - Actions Notification
     Log to Console      Overdue Notification
     sleep       3 seconds
     Wait Until Element Is Visible       ${AuditActionsSubject}       60 seconds
     Click Element                       ${AuditActionsSubject}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditActionsEmailSelection-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditActionsEmailSelection.png
     #Link Back to Record
     Log to Console      Link Back to Record
     Click Element                       ${AuditEmailLinkBacktoRecord}
@@ -193,7 +193,7 @@ Audit Actions Notification
     Switch Window    IsoMetrix
     #Login to Isometrix Site
     Log to Console      Login to Isometrix Site
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened.png
     Wait Until Element Is Visible       ${Usernameid}
     Input Text                          ${Usernameid}    ${Username Value}
     Input Text                          ${Passwordid}    ${Password Value}
@@ -206,7 +206,7 @@ Audit Actions Notification
 #    Wait Until Element Is Visible       ${AuditsPFButton}           60 seconds
 #    Click Element                       ${AuditsPFButton}
 #    Wait Until Page Contains Element    ${AuditPFInProgress_Overdue}
-#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordOpened-{index}.png
+#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordOpened.png
 
 #*********************************************** FR9_01_AuditAwaitingSignOff_MS ************************************************
 Audit Awaiting Sign Off
@@ -214,13 +214,13 @@ Audit Awaiting Sign Off
     Log to Console      Audit Findings Tab
     Click Element                           ${AuditFindingsTab}
     Wait Until Element Is Visible           ${AuditFindingsNoResults}               60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Findings Sub-Module-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Findings Sub-Module.png
     #Submit for Sign Off
     Log to Console      Submit for Sign Off
     Wait Until Element Is Visible           ${AuditSubmitSignOffBtn}                60 seconds
     Click Element                           ${AuditSubmitSignOffBtn}
     Wait Until Element Is Visible           ${RecordSaved}                          60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Submit for Sign Off_Record Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Submit for Sign Off_Record Saved.png
     #Awaiting Sign Off Phase
     Log to Console      Awaiting Sign Off Phase
     Wait Until Page Contains Element        ${AuditPFAwaitingSignOff}
@@ -230,7 +230,7 @@ Audit Awaiting Sign Off
     #Sign Off Tab
     Log to Console      Sign Off Tab
     Wait Until Page Contains Element        ${AuditSignOffTab}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Awaiting Sign Off and Tab visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Awaiting Sign Off and Tab visible.png
 
 FR9_01_AuditAwaitingSignOff_Notification
     Open Browser    ${Officeurl}  ${BROWSER}
@@ -247,12 +247,12 @@ FR9_01_AuditAwaitingSignOff_Notification
     Input Text                          ${EmailPasswordField}       ${outlookpassword}
     Wait Until Element Is Visible       ${EmailSignInBtn}           20 seconds
     Click Element                       ${EmailSignInBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails.png
     #Outlook Folder
     Log to Console      Outlook Folder
     Wait Until Element Is Visible       ${Outlook}                  20 seconds
     Click Element                       ${Outlook}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder.png
     sleep       15 seconds
     #Switch to Tab
     Switch Window    Mail - Delwin Horsthemke - Outlook
@@ -261,13 +261,13 @@ FR9_01_AuditAwaitingSignOff_Notification
     Wait Until Element Is Visible       ${SystemMailFolder}         20 seconds
     sleep       5 seconds
     Click Element                       ${SystemMailFolder}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder.png
     #Audits - AwaitingSignOff Notification
     Log to Console      AwaitingSignOff Notification
     sleep       8 seconds
     Wait Until Element Is Visible       ${AuditAwaitingSignOffSubject}       60 seconds
     Click Element                       ${AuditAwaitingSignOffSubject}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditNewDatesProposedEmailSelection-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditNewDatesProposedEmailSelection.png
     #Link Back to Record
     Log to Console      Link Back to Record
     Click Element                       ${AuditEmailLinkBacktoRecord}
@@ -276,8 +276,8 @@ FR9_01_AuditAwaitingSignOff_Notification
     Switch Window    IsoMetrix
     #Login to Isometrix Site
     Log to Console      Login to Isometrix Site
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened-{index}.png
-    Wait Until Element Is Visible       ${Usernameid}                  60 seconds
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened.png
+    Wait Until Element Is Visible       ${Usernameid}                         60 seconds
     Input Text                          ${Usernameid}    ${Username Value}
     Input Text                          ${Passwordid}    ${Password Value}
     Click Element                       ${SubmitButtonid}
@@ -286,9 +286,10 @@ FR9_01_AuditAwaitingSignOff_Notification
     set selenium implicit wait    50 seconds
     sleep       30 seconds
     Select Frame                        ${iFrame}
-    Wait Until Element Is Visible       ${AuditFindingsProcessFlow}           60 seconds
-    Click Element                       ${AuditFindingsProcessFlow}
-    Wait Until Page Contains Element    ${AuditStatusAwaitingSignOff}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordOpened-{index}.png
+    Wait Until Element Is Visible       ${AuditsPFButton}                     60 seconds
+    Click Element                       ${AuditsPFButton}
+    Wait Until Page Contains Element        ${AuditPFAwaitingSignOff}
+    Wait Until Page Contains Element        ${AuditStatusAwaitingSignOff}
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordOpened.png
 
 

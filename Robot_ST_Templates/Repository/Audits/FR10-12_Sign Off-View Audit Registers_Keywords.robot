@@ -9,7 +9,7 @@ Sign Off Approval - Yes
     #Navigate to Sign Off Tab
     Log to Console      Navigate to Sign Off Tab
     Click Element                                   ${AuditSignOffTab}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Tab-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Tab.png
     #Audit Rating
     Log to Console      Audit Rating
     Wait Until Element Is Visible                   ${AuditRatingDD}                    10 seconds
@@ -25,13 +25,13 @@ Sign Off Approval - Yes
     Log to Console      Sign Off Add Button
     Click Element                                   ${AuditSignOffAddBtn}
     Wait Until Element Is Visible                   ${AuditSignOffBreadcrumb}           60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Opened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Opened.png
     #Process Flow
     Log to Console      Process Flow
     Wait Until Element Is Visible                   ${AuditSignOffPF}                   40 seconds
     Click Element                                   ${AuditSignOffPF}
     Wait Until Page Contains Element                ${AuditSignOffPFAddPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Add Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Add Phase.png
     #Auditor Type
     Log to Console      Auditor Type
     Click Element                                   ${AuditsSignOffAuditorTypeDD}
@@ -49,7 +49,7 @@ Sign Off Approval - Yes
     Click Element                                   ${AuditSignOffDDYes}
     #Date
     Page Should Contain Element                      ${AuditSignOffDate}                ${CurrentDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Date Autopopulated-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Date Autopopulated.png
     #Comments
     Log to Console      Comments
     Input Text                                      ${AuditSignOffComments}                     FR10_01_SignOffApproval_MS ${CurrentDate}
@@ -62,12 +62,12 @@ Sign Off Approval - Yes
     Wait Until Element Is Visible                   ${AuditSignOffRecordNo}             20 seconds
     #Process Flow Edit Phase
     Wait Until Element Is Visible                   ${AuditSignOffPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Saved - Edit Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Saved - Edit Phase.png
     #Close Audit Sign Off
     Log to Console      Close Audit Sign Off
     Click Element                                   ${AuditSignOffCloseBtn}
     Wait Until Element Is Visible                   ${AuditSignOffYesRecord}            20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Closed-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Closed.png
     #Close Audit Record
     Log to Console      Close Audit Record
     Click Element                                   ${AuditRecordCloseBtn}
@@ -87,7 +87,7 @@ Sign Off Approval - Yes
     Click Element                                   ${AuditsPFButton}
     Page Should Contain Element                     ${AuditPFCompleted}
     Page Should Contain Element                     ${AuditStatusCompleted}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Completed Status & Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Completed Status & Phase.png
 
 SignOffApproval_Yes_Notification
     Open Browser    ${Officeurl}  ${BROWSER}
@@ -104,12 +104,12 @@ SignOffApproval_Yes_Notification
     Input Text                          ${EmailPasswordField}       ${outlookpassword}
     Wait Until Element Is Visible       ${EmailSignInBtn}           20 seconds
     Click Element                       ${EmailSignInBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails.png
     #Outlook Folder
     Log to Console      Outlook Folder
     Wait Until Element Is Visible       ${Outlook}                  20 seconds
     Click Element                       ${Outlook}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder.png
     sleep       15 seconds
     #Switch to Tab
     Switch Window    Mail - Delwin Horsthemke - Outlook
@@ -118,13 +118,13 @@ SignOffApproval_Yes_Notification
     Wait Until Element Is Visible       ${SystemMailFolder}                 20 seconds
     sleep       5 seconds
     Click Element                       ${SystemMailFolder}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder.png
     #Audits - Signed Off Notification
     Log to Console      Signed Off Notification
     sleep       8 seconds
     Wait Until Element Is Visible       ${AuditSignedOffSubject}            60 seconds
     Click Element                       ${AuditSignedOffSubject}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Signed Off Email Selection-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Signed Off Email Selection.png
     #Link Back to Record
     Log to Console      Link Back to Record
     Click Element                       ${AuditEmailLinkBacktoRecord}
@@ -133,7 +133,7 @@ SignOffApproval_Yes_Notification
     Switch Window    IsoMetrix
     #Login to Isometrix Site
     Log to Console      Login to Isometrix Site
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened.png
     Wait Until Element Is Visible       ${Usernameid}                  60 seconds
     Input Text                          ${Usernameid}    ${Username Value}
     Input Text                          ${Passwordid}    ${Password Value}
@@ -146,14 +146,14 @@ SignOffApproval_Yes_Notification
     Wait Until Element Is Visible       ${AuditSignOffPF}                      90 seconds
     Click Element                       ${AuditSignOffPF}
     Wait Until Page Contains Element    ${AuditSignOffPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Sign Off RecordOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Sign Off RecordOpened.png
 
 #*********************************************** FR10_01_SignOffApproval_AS ************************************************
 Sign Off Approval - No
     #Navigate to Sign Off Tab
     Log to Console      Navigate to Sign Off Tab
     Click Element                                   ${AuditSignOffTab}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Tab-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Tab.png
     #Audit Rating
     Log to Console      Audit Rating
     Wait Until Element Is Visible                   ${AuditRatingDD}                    10 seconds
@@ -169,13 +169,13 @@ Sign Off Approval - No
     Log to Console      Sign Off Add Button
     Click Element                                   ${AuditSignOffAddBtn}
     Wait Until Element Is Visible                   ${AuditSignOffBreadcrumb}           60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Opened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Opened.png
     #Process Flow
     Log to Console      Process Flow
     Wait Until Element Is Visible                   ${AuditSignOffPF}                   40 seconds
     Click Element                                   ${AuditSignOffPF}
     Wait Until Page Contains Element                ${AuditSignOffPFAddPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Add Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Add Phase.png
     #Auditor Type
     Log to Console      Auditor Type
     Click Element                                   ${AuditsSignOffAuditorTypeDD}
@@ -193,7 +193,7 @@ Sign Off Approval - No
     Click Element                                   ${AuditSignOffDDNo}
     #Date
     Page Should Contain Element                      ${AuditSignOffDate}                ${CurrentDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Date Autopopulated-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Date Autopopulated.png
     #Comments
     Log to Console      Comments
     Input Text                                      ${AuditSignOffComments}                     FR10_01_SignOffApproval_AS ${CurrentDate}
@@ -206,12 +206,12 @@ Sign Off Approval - No
     Wait Until Element Is Visible                   ${AuditSignOffRecordNo}             20 seconds
     #Process Flow Edit Phase
     Wait Until Element Is Visible                   ${AuditSignOffPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Saved - Edit Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Saved - Edit Phase.png
     #Close Audit Sign Off
     Log to Console      Close Audit Sign Off
     Click Element                                   ${AuditSignOffCloseBtn}
     Wait Until Element Is Visible                   ${AuditSignOffNoRecord}             20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Closed-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Sign Off Record Closed.png
     #Close Audit Record
     Log to Console      Close Audit Record
     Click Element                                   ${AuditRecordCloseBtn}
@@ -231,7 +231,7 @@ Sign Off Approval - No
     Click Element                                   ${AuditsPFButton}
     Page Should Contain Element                     ${AuditPFInProgress_Overdue}
     Page Should Contain Element                     ${AuditStatusInProgress}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit In Progress Status & Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit In Progress Status & Phase.png
 
 SignOffApproval_No_Notification
     Open Browser    ${Officeurl}  ${BROWSER}
@@ -248,12 +248,12 @@ SignOffApproval_No_Notification
     Input Text                          ${EmailPasswordField}       ${outlookpassword}
     Wait Until Element Is Visible       ${EmailSignInBtn}           20 seconds
     Click Element                       ${EmailSignInBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails.png
     #Outlook Folder
     Log to Console      Outlook Folder
     Wait Until Element Is Visible       ${Outlook}                  20 seconds
     Click Element                       ${Outlook}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder.png
     sleep       15 seconds
     #Switch to Tab
     Switch Window    Mail - Delwin Horsthemke - Outlook
@@ -262,13 +262,13 @@ SignOffApproval_No_Notification
     Wait Until Element Is Visible       ${SystemMailFolder}                 20 seconds
     sleep       5 seconds
     Click Element                       ${SystemMailFolder}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder.png
     #Audits - Sign Off Rejected Notification
     Log to Console      Sign Off Rejected Notification
     sleep       8 seconds
     Wait Until Element Is Visible       ${AuditSignOffRejectedSubject}            60 seconds
     Click Element                       ${AuditSignOffRejectedSubject}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Signed Off Email Selection-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Signed Off Email Selection.png
     #Link Back to Record
     Log to Console      Link Back to Record
     Click Element                       ${AuditEmailLinkBacktoRecord}
@@ -277,7 +277,7 @@ SignOffApproval_No_Notification
     Switch Window    IsoMetrix
     #Login to Isometrix Site
     Log to Console      Login to Isometrix Site
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened.png
     Wait Until Element Is Visible       ${Usernameid}                  60 seconds
     Input Text                          ${Usernameid}    ${Username Value}
     Input Text                          ${Passwordid}    ${Password Value}
@@ -290,7 +290,7 @@ SignOffApproval_No_Notification
     Wait Until Element Is Visible       ${AuditSignOffPF}                      40 seconds
     Click Element                       ${AuditSignOffPF}
     Wait Until Page Contains Element    ${AuditSignOffPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Sign Off Record Opened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Sign Off Record Opened.png
 
 #*********************************************** FR11_01_ViewPrintAuditReport_MS ************************************************
 View_Print Audit Report
@@ -299,7 +299,7 @@ View_Print Audit Report
     Wait Until Element Is Visible       ${AuditsSearchButton}    40 seconds
     click element                       ${AuditsSearchButton}
     Wait Until Element Is Visible       ${AuditsRecords}         40 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordsVisible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordsVisible.png
     #Open Audits Complete Record
     Log to Console     Open Audits Complete Record
     Wait Until Element Is Visible       ${AuditSearchResultsComplete}       20 seconds
@@ -310,7 +310,7 @@ View_Print Audit Report
     Click Element                       ${AuditsPFButton}
     Page Should Contain Element         ${AuditPFCompleted}
     Page Should Contain Element         ${AuditStatusCompleted}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Completed Status & Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Completed Status & Phase.png
     #Audits Record Report Button
     Log to Console      Audits Record Report Button
     Click Element                       ${AuditsRecordReportBtn}
@@ -323,7 +323,7 @@ View_Print Audit Report
     Click Element                       ${AuditsReportsPopUpConfirm}
     sleep    25 seconds
 #    Switch Window           reportviewer.aspx
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits View Reports Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits View Reports Visible.png
     Switch Window           IsoMetrix
 
 #*********************************************** FR12_01_ViewAuditRegisters_MS ************************************************
@@ -333,7 +333,7 @@ View_Print Audit Register
     Wait Until Element Is Visible       ${AuditsSearchButton}           40 seconds
     Click Element                       ${AuditsSearchButton}
     Wait Until Element Is Visible       ${AuditsRecords}                40 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Records Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Records Visible.png
     #Audit Reports Button
     Log to Console     Audit Reports Button
     Click Element                       ${AuditsReportsBtn}
@@ -345,7 +345,7 @@ View_Print Audit Register
     Wait Until Element Is Visible       ${AuditsReportsPopUpConfirm}        20 seconds
     Click Element                       ${AuditsReportsPopUpConfirm}
     sleep    25 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits View Reports Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits View Reports Visible.png
     #Switch to Tab
 #    Log to Console      Switch to Tab
 #    Switch Window
@@ -374,7 +374,7 @@ Full_Print Audit Register
     Wait Until Element Is Visible       ${AuditsReportsPopUpConfirm}        20 seconds
     Click Element                       ${AuditsReportsPopUpConfirm}
     sleep    25 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Full Reports Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Full Reports Visible.png
     Close Window
 
 

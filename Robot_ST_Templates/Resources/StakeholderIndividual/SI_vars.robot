@@ -8,6 +8,7 @@ ${SISearchButton}               xpath://div[@id='btnActApplyFilter']/div[text()=
 ${SIRecords}                    xpath://div[@id='divContainer']/div/div/div[3]/div[2]/div/div[3]/table/tbody/tr[1]/td[4]/span
 ${SIRecordHeader}               xpath:/html/body/div[1]/div[3]/div/div[2]/div[2]/div[1]/div[1]/div
 ${SIProfileTab}                 xpath://li[@id='tab_9C6F9F80-56C2-4E63-A85B-95A506EDF8C4']/div[text()='Profile']
+${iFrame}                       xpath://iframe[@id='ifrMain']
 
 #*********************************************** FR1 01-01: Capture Stakeholder Individual *********************************************************
 ${SIProcessFlowBtn}             xpath://div[@id='btnProcessFlow_form_E686D312-3E2F-4E66-9EAD-AC71C09267DD']
@@ -182,7 +183,7 @@ ${SIRecordStake_AS1}                  xpath://div[@id='divContainer']/div/div/di
 ${SIRelatedStakeDavid}                xpath:(.//li[text()='David Abel (DA)'] | .//li[text()='Parent'])[2]
 ${SIRelationsStakeNameFR3AS}          xpath://div[contains(@class, 'transition visible')]//a[text()='Stake_FR3AS First (1) Last Name (1) - FR3AS (Test FR3AS)']
 
-#*********************************************** FR3 01: Capture Related Entities *********************************************************
+#*********************************************** FR4 01: Capture Related Entities *********************************************************
 ${SIEntitiesCreateNewEntityBtn}       xpath://div[text()='Create a new entity']
 ${SIEntityAddBtn}                     xpath://div[@id='control_EE0F548B-BD30-4478-B62D-05A394FE49A3']//div[text()='Add']
 ${SIEntityStakeNameDD}                xpath://div[@id='control_9CC0D6E7-9FCE-48E5-B28D-C1BCDB97281D']//li
@@ -410,8 +411,95 @@ ${SICommitmentsRecordNo}                    xpath:(//div[@id='form_8541B36E-740A
 ${SICommitmentsVGRefresh}                   xpath://div[@id='control_6E618AE2-27CC-4038-9A21-7EB7F68D9F0C']//div[@id="grid"]/div[4]/a[5]
 ${SICommitmentsRecordNew}                   xpath:(//div[@id='control_6E618AE2-27CC-4038-9A21-7EB7F68D9F0C']/div/div[2]/div[2]/div/div[3]/table/tbody/tr/td/div[contains(text(),'FR11_01_Add Commitment_AlternateScenario')])[1]
 
+#*********************************************** FR12 01: View Associated Resettlement_MS *****************************************************
+${SIResettlementInLineEditText}             xpath://div[@id='control_24AAA983-0C6C-48A6-B2E4-C9618B44A376']//div[@id="grid"]/div[4]/div/div[1]
+${SIResettlementItems}                      xpath://div[@id='control_24AAA983-0C6C-48A6-B2E4-C9618B44A376']//div[@id="grid"]/div[4]/span[2][contains(text(),'items')]
+${SIResettlementRecord}                     xpath://div[@id='control_24AAA983-0C6C-48A6-B2E4-C9618B44A376']/div/div[2]/div[2]/div/div[3]/table/tbody/tr[1]
+${SIResettlementLinkBtn}                    xpath://div[@id="form_EF9A36DA-D4DF-4476-9ED9-93F87B7F798E"]/div[1]/i[1]
+${SIResettlementRecordNo}                   xpath:(//div[@id='form_EF9A36DA-D4DF-4476-9ED9-93F87B7F798E']//div[contains(text(),'- Record #')])[1]
+${SIResettlementProcessFlow}                xpath://div[@id='btnProcessFlow_form_EF9A36DA-D4DF-4476-9ED9-93F87B7F798E']
+${SIResettlementPFEdit}                     xpath:(//div[@id='divProcess_EF9A36DA-D4DF-4476-9ED9-93F87B7F798E'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Edit phase']
 
+#*********************************************** FR13 01: View Associated Land Contracts_MS *****************************************************
+${SILandAccessInLineEditText}               xpath://div[@id='control_E363277C-112F-4470-9D17-394665FEE2D5']//div[@id="grid"]/div[4]/div/div[1]
+${SILandAccessItems}                        xpath://div[@id='control_E363277C-112F-4470-9D17-394665FEE2D5']//div[@id="grid"]/div[4]/span[2][contains(text(),'items')]
+${SILandAccessRecord}                       xpath://div[@id='control_E363277C-112F-4470-9D17-394665FEE2D5']/div/div[2]/div[2]/div/div[3]/table/tbody/tr[1]
+${SILandAccessLinkBtn}                      xpath://div[@id="form_FAEB34B8-7229-49F5-93D3-14CAAEE33E8A"]/div[1]/i[1]
+${SILandAccessRecordNo}                     xpath:(//div[@id='form_FAEB34B8-7229-49F5-93D3-14CAAEE33E8A']//div[contains(text(),'- Record #')])[1]
+${SILandAccessProcessFlow}                  xpath://div[@id='btnProcessFlow_form_FAEB34B8-7229-49F5-93D3-14CAAEE33E8A']
+${SILandAccessPFEdit}                       xpath:(//div[@id='divProcess_FAEB34B8-7229-49F5-93D3-14CAAEE33E8A'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Edit phase']
 
+#*********************************************** FR14 01: View Training Management_MS **************************************************************
+${SITrainingManInLineEditText}              xpath://div[@id='control_C4F320E6-B864-4583-8884-78DE9F0A237F']//div[@id="grid"]/div[4]/div/div[1]
+${SITrainingManItems}                       xpath://div[@id='control_C4F320E6-B864-4583-8884-78DE9F0A237F']//div[@id="grid"]/div[4]/span[2][contains(text(),'items')]
+${SITrainingManRecord}                      xpath://div[@id='control_C4F320E6-B864-4583-8884-78DE9F0A237F']/div/div[2]/div[2]/div/div[3]/table/tbody/tr[1]
+${SITrainingManLinkBtn}                     xpath://div[@id="form_BCB495DA-2EB4-4068-B70C-C0BC3E47BF2C"]/div[1]/i[1]
+${SITrainingManRecordNo}                    xpath:(//div[@id='form_BCB495DA-2EB4-4068-B70C-C0BC3E47BF2C']//div[contains(text(),'- Record #')])[1]
+${SITrainingManProcessFlow}                 xpath://div[@id='btnProcessFlow_form_BCB495DA-2EB4-4068-B70C-C0BC3E47BF2C']
+${SITrainingManPFEdit}                      xpath:(//div[@id='divProcess_BCB495DA-2EB4-4068-B70C-C0BC3E47BF2C'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Edit phase']
+
+#*********************************************** FR15 01: View Hygiene Monitoring_MS **************************************************************
+${SIHygieneMonInLineEditText}               xpath://div[@id='control_11C9D3BC-24DE-47DB-92E6-D24DF3F2010F']//div[@id="grid"]/div[4]/div/div[1]
+${SIHygieneMonItems}                        xpath://div[@id='control_11C9D3BC-24DE-47DB-92E6-D24DF3F2010F']//div[@id="grid"]/div[4]/span[2][contains(text(),'items')]
+${SIHygieneMonRecord}                       xpath://div[@id='control_11C9D3BC-24DE-47DB-92E6-D24DF3F2010F']/div/div[2]/div[2]/div/div[3]/table/tbody/tr[1]
+${SIHygieneMonLinkBtn}                      xpath://div[@id="form_A9AAF0EB-FDEE-4CD9-BA9C-7C16D3C48E1C"]/div[1]/i[1]
+${SIHygieneMonRecordNo}                     xpath:(//div[@id='form_A9AAF0EB-FDEE-4CD9-BA9C-7C16D3C48E1C']//div[contains(text(),'- Record #')])[1]
+${SIHygieneMonProcessFlow}                  xpath://div[@id='btnProcessFlow_form_A9AAF0EB-FDEE-4CD9-BA9C-7C16D3C48E1C']
+${SIHygieneMonPFInProgressPreSample}        xpath:(//div[@id='divProcess_A9AAF0EB-FDEE-4CD9-BA9C-7C16D3C48E1C'])[2]/div/div[2]/div/div[@class='step active']//div[text()='In Progress - Pre-Sample']
+
+#*********************************************** FR16 01: Capture Work History_MS **************************************************************
+${SIWorkHistoryExistRecord}                 xpath://div[@id='control_4CC82A9F-308E-4CE2-AC57-E0B26DF8F468']/div/div[2]/div[2]/div/div[3]/table/tbody/tr[1]
+${SIWorkHistoryRecordNo}                    xpath:(//div[@id='form_9AABEE75-5E60-48CD-AFD3-E42F607DC50D']//div[contains(text(),'- Record #')])[1]
+${SIWorkHistoryAddBtn}                      xpath://div[@id='control_4CC82A9F-308E-4CE2-AC57-E0B26DF8F468']/div/div/div/div[@id='btnAddNew']
+${SIWorkHistoryRecordHeader}                xpath:(//div[@id='form_9AABEE75-5E60-48CD-AFD3-E42F607DC50D']/div/div/div[text()='Work History'])[1]
+${SIWorkHistoryPF}                          xpath://div[@id='btnProcessFlow_form_9AABEE75-5E60-48CD-AFD3-E42F607DC50D']
+${SIWorkHistoryPFEdit}                      xpath:(//div[@id='divProcess_9AABEE75-5E60-48CD-AFD3-E42F607DC50D'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Edit phase']
+${SIWorkHistoryPFAdd}                       xpath:(//div[@id='divProcess_9AABEE75-5E60-48CD-AFD3-E42F607DC50D'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Add phase']
+${SIWorkHistoryCloseBtn}                    xpath://*[@id="form_9AABEE75-5E60-48CD-AFD3-E42F607DC50D"]/div[1]/i[2]
+${SIWorkHistoryItems}                       xpath://div[@id='control_4CC82A9F-308E-4CE2-AC57-E0B26DF8F468']//div[@id="grid"]/div[4]/span[2][contains(text(),'items')]
+${SIWorkHistoryJobProfileDD}                xpath://div[@id='control_98786101-EED5-435E-80FE-79C026BF43C6']//li
+${SIWorkHistoryJobProfileMainGate}          xpath:(//div[contains(@class, 'transition visible')]//a[contains(text(),'Maingate Drive Operator')][1])[1]
+${SIWorkHistorySEGDD}                       xpath://div[@id='control_90A502E8-1540-4CCC-AD8B-A85F27F39444']/div/a/span[2]/b[1]
+${SIWorkHistorySEGSelect}                   xpath:(//div[contains(@class, 'transition visible')]//a[contains(text(),'SEG 4')]/i[1])[1]
+${SIWorkHistoryStartDate}                   xpath://div[@id='control_53CAA00D-89E4-48DC-8D51-7651B7B78CB6']//input
+${SIWorkHistorySaveBtn}                     xpath://div[@id='btnSave_form_9AABEE75-5E60-48CD-AFD3-E42F607DC50D']
+${SIWorkHistoryNewAddRecord}                xpath:(//div[@id='control_4CC82A9F-308E-4CE2-AC57-E0B26DF8F468']/div/div[2]/div[2]/div/div[3]/table/tbody/tr/td[6]/div[contains(text(),'Maingate Drive Operator')])[1]
+${SIWorkHistorySavedRecordPop}              xpath:(//*[@id="txtHeader"])[2]
+${SIWorkHistoryOpenRecordLoading}           xpath://div[@id='divWait']/div[text()='Loading permissions']
+
+#*********************************************** FR17 01: Capture Actions_MS **************************************************************
+${SIActionsAddBtn}                          xpath://div[@id='control_9C28A74C-46A0-4CA4-9378-F196C193BD8A']//div[text()='Add']
+${SIActionsRecordHeader}                    xpath:(//div[@id='form_3FA76381-27A7-4E29-B2EF-9BE41116F069']/div/div/div[text()='Stakeholder Individual Actions'])[1]
+${SIActionsPF}                              xpath://div[@id='btnProcessFlow_form_3FA76381-27A7-4E29-B2EF-9BE41116F069']
+${SIActionsPFAdd}                           xpath://div[@class='step active']//div[text()='Add action']
+${SIActionsDescription}                     xpath://div[@id='control_1255F613-A69C-476A-8B05-4B87E5CA009F']//textarea
+${SIActionsDepartmentDD}                    xpath://div[@id='control_34D02E21-7837-484C-844E-BCC8CC077837']//li
+${SIActionsGlobalExpand}                    xpath:(//ul[@class='jstree-container-ul jstree-children']//a[text()='Global Company']/../i)[2]
+${SIActionsSAExpand}                        xpath:(//ul[@class='jstree-container-ul jstree-children']//a[text()='South Africa']/../i)[3]
+${SIActionsVictorySite}                     xpath:(//ul[@class='jstree-container-ul jstree-children']//a[contains(text(),'Victory Site')])[1]
+${SIActionsResposnsibleDD}                  xpath://div[@id='control_7854D003-23E6-4A2E-AF2E-357C965FA684']//li
+${SIActionsResposnsible2Manager}            xpath:(//a[text()='2 Manager'])[2]
+${SIActionsDueDate}                         xpath://div[@id='control_A1A7A250-4916-472D-A6A5-CDA980F5DA52']//input
+${SIActionsSaveBtn}                         xpath://div[@id='btnSave_form_3FA76381-27A7-4E29-B2EF-9BE41116F069']
+${SIActionsRecordNo}                        xpath:(//div[@id='form_3FA76381-27A7-4E29-B2EF-9BE41116F069']//div[contains(text(),'- Record #')])[1]
+${SIActionsPFToBeInitiated}                 xpath://div[@class='step active']//div[text()='To be initiated']
+${SIActionsCloseBtn}                        xpath://div[@id='form_3FA76381-27A7-4E29-B2EF-9BE41116F069']//i[@class='close icon cross']
+${SIActionsRecordSMC}                       xpath:((//div[@id='control_9C28A74C-46A0-4CA4-9378-F196C193BD8A']//div//table)[3]//tr)[1]
+
+#*********************************************** FR18 01: View Stakeholder Individual Report_MS **************************************************************
+#${SIReportsBtn}                             xpath://div[@id='btnReports_form_E686D312-3E2F-4E66-9EAD-AC71C09267DD']
+${SIRecordReportSITitle}                    xpath:/html/body/div[1]/div[3]/div/div[2]/div[2]/div/div/div[1]/div[2]/div[1]
+${SIRecordReportOpen}                       xpath:(//div[@id="report_304CB37E-9C26-480A-BDAB-853E9B71750B"]/span[2])[2]
+${SIReportsPopUpConfirm}                    xpath://div[@id='btnConfirmYes']
+${SIReportPDFViewerScreen}                  xpath:/html/body/pdf-viewer
+${SIReportsBtn}                             xpath://div[@id='btnReports']
+${SIViewReportsBtn}                         xpath:(//div[@id='divSearchReports_E686D312-3E2F-4E66-9EAD-AC71C09267DD']/div/div[2]/div[2]/span[3])[2]
+${SIReportsPopUpConfirm}                    xpath://div[@id='btnConfirmYes']
+${SIFullReportsBtn}                         xpath://span[@title='Full report ']
+${SIViewReportRightArrow}                   xpath://span[@id='viewer_ctl09_ctl00_Next_ctl00_ctl00']
+${SIViewReportExportArrow}                  xpath://span[@id='viewer_ctl09_ctl04_ctl00_ButtonImgDown']
+${SIViewReportsLoading}                     xpath://*[@id="viewer_AsyncWait_Wait"]/table/tbody/tr/td[2]
+${SIViewReportsWord}                        xpath://div[@id="viewer_ctl09_ctl04_ctl00_Menu"]/div[3]/a
 
 
 #*********************************************** Stakeholder Individual Notifications *********************************************************

@@ -16,7 +16,7 @@ Stakeholder Individual Enter Details_MS
     #Add Phase
     Log to Console      Stakeholder Individual in Add Phase
     Wait Until Page Contains Element                ${SIPFAddPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Add Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Add Phase.png
     #First Name
     Log to Console      First Name
     Input Text                                      ${SIFirstName}              Stake_MS First (1)
@@ -26,7 +26,7 @@ Stakeholder Individual Enter Details_MS
     #Known As
     Log to Console      Known As
     Input Text                                      ${SIKnownAs}                Test1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Full Name Autopopulated-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Full Name Autopopulated.png
     #Title
     Log to Console      Title
     Click Element                                   ${SITitleDD}
@@ -36,7 +36,7 @@ Stakeholder Individual Enter Details_MS
     #Status
     Log to Console      Status
     Wait Until Page Contains Element                ${SIStatusActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Title_Status - Active-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Title_Status - Active.png
     #Relationship Owner
     Log to Console      Relationship Owner
     Click Element                                   ${SIRelationshipOwnerDD}
@@ -54,7 +54,7 @@ Stakeholder Individual Enter Details_MS
     Log to Console      Category - Contractor
     Wait Until Element Is Visible                   ${SICategoryContractor}                60 seconds
     Click Element                                   ${SICategoryContractor}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual RelationOwner_Categories-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual RelationOwner_Categories.png
     #Business Unit
     Log to Console      Business Unit
     Scroll Element Into View                        ${SISaveandContinueBtn}
@@ -67,7 +67,7 @@ Stakeholder Individual Enter Details_MS
     Log to Console      Impact Types
     Wait Until Element Is Visible                   ${SIImpactTypeBusRisk}                  60 seconds
     Click Element                                   ${SIImpactTypeSelectAll}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Impact Types-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Impact Types.png
     #Save and Continue
     Log to Console      Save and Continue
     Click Element                                   ${SISaveandContinueBtn}
@@ -90,7 +90,7 @@ Stakeholder Individual Enter Details_MS
     Wait Until Page Contains Element                ${SIWorkHistoryTab}
     Wait Until Page Contains Element                ${SIActionsTab}
     Wait Until Page Contains Element                ${SISupportDocsTab}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Saved and Tabs Triggered-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Saved and Tabs Triggered.png
 
 FR1_StakeIndividual_LoggedNotification
     Open Browser                        ${Officeurl}  ${BROWSER}
@@ -107,12 +107,12 @@ FR1_StakeIndividual_LoggedNotification
     Input Text                          ${EmailPasswordField}       ${outlookpassword}
     Wait Until Element Is Visible       ${EmailSignInBtn}           20 seconds
     Click Element                       ${EmailSignInBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails.png
     #Outlook Folder
     Log to Console      Outlook Folder
     Wait Until Element Is Visible       ${Outlook}                  20 seconds
     Click Element                       ${Outlook}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder.png
     sleep       15 seconds
     #Switch to Tab
     Switch Window    Mail - Delwin Horsthemke - Outlook
@@ -121,13 +121,13 @@ FR1_StakeIndividual_LoggedNotification
     Wait Until Element Is Visible       ${SystemMailFolder}         20 seconds
     sleep       5 seconds
     Click Element                       ${SystemMailFolder}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder.png
     #StakeIndividual - Logged Notification
     Log to Console      StakeIndividual Logged Notification
     sleep       3 seconds
     Wait Until Element Is Visible       ${SILoggedSubject}          60 seconds
     Click Element                       ${SILoggedSubject}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividualLoggedEmailSelection-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividualLoggedEmailSelection.png
     #Link Back to Record
     Log to Console      Link Back to Record
     Click Element                       ${AuditEmailLinkBacktoRecord}
@@ -136,7 +136,7 @@ FR1_StakeIndividual_LoggedNotification
     Switch Window    IsoMetrix
     #Login to Isometrix Site
     Log to Console      Login to Isometrix Site
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened.png
     Wait Until Element Is Visible       ${Usernameid}
     Input Text                          ${Usernameid}    ${Username Value}
     Input Text                          ${Passwordid}    ${Password Value}
@@ -149,7 +149,7 @@ FR1_StakeIndividual_LoggedNotification
     Wait Until Element Is Visible       ${SIProcessFlowBtn}           60 seconds
     Click Element                       ${SIProcessFlowBtn}
     Wait Until Page Contains Element    ${SIPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividualRecordOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividualRecordOpened.png
 
 #*********************************************** FR1 01-01: Capture Stakeholder Individual_AS1 *******************************************
 Stakeholder Individual Enter Details_AS1
@@ -160,7 +160,7 @@ Stakeholder Individual Enter Details_AS1
     #Add Phase
     Log to Console      Stakeholder Individual in Add Phase
     Wait Until Page Contains Element                ${SIPFAddPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Add Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Add Phase.png
     #First Name
     Log to Console      First Name
     Input Text                                      ${SIFirstName}              Stake_AS1 First (1)
@@ -170,7 +170,7 @@ Stakeholder Individual Enter Details_AS1
     #Known As
     Log to Console      Known As
     Input Text                                      ${SIKnownAs}                Test1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Full Name Autopopulated-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Full Name Autopopulated.png
     #Title
     Log to Console      Title
     Click Element                                   ${SITitleDD}
@@ -179,7 +179,7 @@ Stakeholder Individual Enter Details_AS1
     #Status
     Log to Console      Status
     Wait Until Page Contains Element                ${SIStatusActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Title_Status - Active-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Title_Status - Active.png
     #Relationship Owner
     Log to Console      Relationship Owner
     Click Element                                   ${SIRelationshipOwnerDD}
@@ -197,7 +197,7 @@ Stakeholder Individual Enter Details_AS1
     Log to Console      Category - Regulatory Authority
     Wait Until Element Is Visible                   ${SICategoryRegAuth}                    60 seconds
     Click Element                                   ${SICategoryRegAuth}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual RelationOwner_Categories-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual RelationOwner_Categories.png
     #Business Unit
     Log to Console      Business Unit
     Scroll Element Into View                        ${SISaveandContinueBtn}
@@ -210,7 +210,7 @@ Stakeholder Individual Enter Details_AS1
     Log to Console      Impact Types
     Wait Until Element Is Visible                   ${SIImpactTypeBusRisk}                  60 seconds
     Click Element                                   ${SIImpactTypeSelectAll}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Impact Types-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Impact Types.png
     #Save and Continue
     Log to Console      Save and Continue
     Click Element                                   ${SISaveandContinueBtn}
@@ -233,7 +233,7 @@ Stakeholder Individual Enter Details_AS1
 #    Wait Until Page Contains Element                ${SIWorkHistoryTab}
     Wait Until Page Contains Element                ${SIActionsTab}
     Wait Until Page Contains Element                ${SISupportDocsTab}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Saved and Tabs Triggered-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Saved and Tabs Triggered.png
 
 #*********************************************** FR1 01-01: Capture Stakeholder Individual_AS2 *******************************************
 Stakeholder Individual Enter Details_AS2
@@ -244,7 +244,7 @@ Stakeholder Individual Enter Details_AS2
     #Add Phase
     Log to Console      Stakeholder Individual in Add Phase
     Wait Until Page Contains Element                ${SIPFAddPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Add Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Add Phase.png
     #First Name
     Log to Console      First Name
     Input Text                                      ${SIFirstName}              Stake_AS2 First (1)
@@ -254,7 +254,7 @@ Stakeholder Individual Enter Details_AS2
     #Known As
     Log to Console      Known As
     Input Text                                      ${SIKnownAs}                Test1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Full Name Autopopulated-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Full Name Autopopulated.png
     #Title
     Log to Console      Title
     Click Element                                   ${SITitleDD}
@@ -263,7 +263,7 @@ Stakeholder Individual Enter Details_AS2
     #Status
     Log to Console      Status
     Wait Until Page Contains Element                ${SIStatusActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Title_Status - Active-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Title_Status - Active.png
     #Relationship Owner
     Log to Console      Relationship Owner
     Click Element                                   ${SIRelationshipOwnerDD}
@@ -277,7 +277,7 @@ Stakeholder Individual Enter Details_AS2
     Log to Console      Category - Community
     Wait Until Element Is Visible                   ${SICategoryCommunity}                      60 seconds
     Click Element                                   ${SICategoryCommunity}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual RelationOwner_Categories-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual RelationOwner_Categories.png
     #Business Unit
     Log to Console      Business Unit
     Scroll Element Into View                        ${SISaveandContinueBtn}
@@ -290,7 +290,7 @@ Stakeholder Individual Enter Details_AS2
     Log to Console      Impact Types
     Wait Until Element Is Visible                   ${SIImpactTypeBusRisk}                  60 seconds
     Click Element                                   ${SIImpactTypeSelectAll}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Impact Types-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Impact Types.png
     #Save and Continue
     Log to Console      Save and Continue
     Click Element                                   ${SISaveandContinueBtn}
@@ -319,7 +319,7 @@ Stakeholder Individual Enter Details_AS2
     Wait Until Page Contains Element                ${SISupportDocsTab}
     Click Element                                   ${SISocialStatusPanel}
     sleep       1
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Saved and Tabs Triggered-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/StakeIndividual Saved and Tabs Triggered.png
 
 #*********************************************** FR1 01-01: Capture Stakeholder Individual_OS *******************************************
 
@@ -347,7 +347,7 @@ Update Stakeholder Details_MS
 #    Set Global Variable                             ${DoBDate}
     Click Element                                   ${SIDoB}
     Input Text                                      ${SIDoB}                        01/05/1985
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Designation - Date of Birth - Age-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Designation - Date of Birth - Age.png
     #Gender
     Log to Console      Gender
     Click Element                                   ${SIGenderDD}
@@ -366,7 +366,7 @@ Update Stakeholder Details_MS
     Click Element                                   ${SIWorkTeamDD}
     Wait Until Element Is Visible                   ${SIWorkTeamB}                      20 seconds
     Click Element                                   ${SIWorkTeamB}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Gender_ID_Nation_WorkTeam-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Gender_ID_Nation_WorkTeam.png
     #Contact Information:
     #Primary Contact Number
     Log to Console      Primary Contact Number
@@ -382,7 +382,7 @@ Update Stakeholder Details_MS
     Wait Until Page Contains Element                ${SISocialStatusContactYes}
     Click Element                                   ${SIDoNotContact}
     Wait Until Page Contains Element                ${SISocialStatusContactNo}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Do Not Contact - Red-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Do Not Contact - Red.png
     #Alternate contact
     Log to Console      Alternate contact
     Click Element                                   ${SIAlternateContactDD}
@@ -399,7 +399,7 @@ Update Stakeholder Details_MS
     #Alternate Email address
     Log to Console      Alternate Email address
     Input Text                                      ${SIAlternateEmailAddress}              testAlternate@email.com
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Alternate Contact Details-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Alternate Contact Details.png
     #Permanent Address
     Scroll Element Into View                        ${SIPermanentAddressPanel}
     Click Element                                   ${SIPermanentAddressPanel}
@@ -429,7 +429,7 @@ Update Stakeholder Details_MS
     #Longitude
     Log to Console      Longitude
     Input Text                                      ${SIPermanentLongitude}                 28.05532
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Permanent Address-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Permanent Address.png
     #Correspondence Address
     Log to Console      Correspondence Address
     Scroll Element Into View                        ${SICorrespondenceAddressPanel}
@@ -450,7 +450,7 @@ Update Stakeholder Details_MS
     Log to Console      Correspondence Location
     Click Element                                   ${SICorrespondenceLocationDD}
     Click Element                                   ${SICorrespondenceLocationSelect}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Correspondence Address-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Correspondence Address.png
     Click Element                                   ${SICorrespondenceAddressPanel}
     #Comments
     Log to Console      Comments
@@ -461,7 +461,7 @@ Update Stakeholder Details_MS
     Log to Console      Save Button
     Click Element                                   ${SISaveBtn}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Details Tab completed-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Details Tab completed.png
     #Map Panel
     Log to Console      Map Panel
     Click Element                                   ${SIMapPanel}
@@ -469,7 +469,7 @@ Update Stakeholder Details_MS
     Scroll Element Into View                        ${SIFirstName}
     Sleep       2
     Log to Console      Tab Right Arrow
-    FOR  ${i}     IN RANGE  1  8
+    FOR  ${i}     IN RANGE  1  9
     Click Element                                   ${SITabRightArrow}
     END
     #Supporting Documents
@@ -485,7 +485,7 @@ Update Stakeholder Details_MS
     Input Text                                      ${AuditSupportDocUrl}                           www.isomertix.com
     Input Text                                      ${AuditSupportDocURLTitle}                      Isometrix
     Click Element                                   ${AuditSupportDocURLAdd}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Supporting Documents Link Added-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Supporting Documents Link Added.png
     sleep    1 second
     Select Frame                        ${iFrame}
     #Save supporting documents
@@ -493,7 +493,7 @@ Update Stakeholder Details_MS
     Click Element                                   ${SISavesupportingdocuments}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
     Wait Until Page Contains Element                ${SISupportDocsLinkAdded}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Supporting Documents Added-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Supporting Documents Added.png
 
 #*********************************************** FR1 01-02: Update Stakeholder Details_AS1 ***********************************************
 Update Stakeholder Details_AS1
@@ -517,7 +517,7 @@ Update Stakeholder Details_AS1
 #    Set Global Variable                             ${DoBDate}
     Click Element                                   ${SIDoB}
     Input Text                                      ${SIDoB}                        01/05/1980
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Designation - Date of Birth - Age-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Designation - Date of Birth - Age.png
     #Gender
     Log to Console      Gender
     Click Element                                   ${SIGenderDD}
@@ -535,7 +535,7 @@ Update Stakeholder Details_AS1
     Click Element                                   ${SIWorkTeamDD}
     Wait Until Element Is Visible                   ${SIWorkTeamB}                      20 seconds
     Click Element                                   ${SIWorkTeamB}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Gender_ID_Nation_WorkTeam-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Gender_ID_Nation_WorkTeam.png
     #Contact Information:
     #Primary Contact Number
     Log to Console      Primary Contact Number
@@ -576,7 +576,7 @@ Update Stakeholder Details_AS1
     #Longitude
     Log to Console      Longitude
     Input Text                                      ${SIPermanentLongitude}                 28.05532
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Permanent Address-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Permanent Address.png
     #Correspondence Address
     Log to Console      Correspondence Address
     Scroll Element Into View                        ${SICorrespondenceAddressPanel}
@@ -597,7 +597,7 @@ Update Stakeholder Details_AS1
     Log to Console      Correspondence Location
     Click Element                                   ${SICorrespondenceLocationDD}
     Click Element                                   ${SICorrespondenceLocationSelect}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Correspondence Address-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Correspondence Address.png
     Click Element                                   ${SICorrespondenceAddressPanel}
     #Comments
     Log to Console      Comments
@@ -608,7 +608,7 @@ Update Stakeholder Details_AS1
     Log to Console      Save Button
     Click Element                                   ${SISaveBtn}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Details Tab completed-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Details Tab completed.png
     #Map Panel
     Log to Console      Map Panel
     Click Element                                   ${SIMapPanel}
@@ -631,7 +631,7 @@ Update Stakeholder Details_AS1
     Input Text                                      ${AuditSupportDocUrl}                           www.isomertix.com
     Input Text                                      ${AuditSupportDocURLTitle}                      Isometrix
     Click Element                                   ${AuditSupportDocURLAdd}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Supporting Documents Link Added-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Supporting Documents Link Added.png
     sleep    1 second
     Select Frame                        ${iFrame}
     #Save supporting documents
@@ -639,7 +639,7 @@ Update Stakeholder Details_AS1
     Click Element                                   ${SISavesupportingdocuments}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
     Wait Until Page Contains Element                ${SISupportDocsLinkAdded}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Supporting Documents Added-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Supporting Documents Added.png
 
 #*********************************************** FR1 01-03: Update Stakeholder Analysis_MS ***********************************************
 Update Stakeholder Analysis
@@ -650,7 +650,7 @@ Update Stakeholder Analysis
     #Stakeholder Analysis Tab
     Log to Console      Stakeholder Analysis Tab
     Click Element                                   ${SIAnalysisTab}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Stakeholder Analysis Tab-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Stakeholder Analysis Tab.png
     #Stakeholder interest
     Log to Console      Stakeholder interest
     Click Element                                   ${SIStakeholderInterestDD}
@@ -663,14 +663,14 @@ Update Stakeholder Analysis
     Click Element                                   ${SIStakeholderinfluenceHigh}
     Page Should Contain Element                     ${SIAnalysisGuidelines}
     Page Should Contain Element                     ${SIAnalysisEngageStakeholderImage}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Analysis interest_influence - Guidelines_Engage Image-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Analysis interest_influence - Guidelines_Engage Image.png
     #Stakeholder support
     Log to Console      Stakeholder support
     Click Element                                   ${SIAnalysisStakeholderSupportDD}
     Wait Until Element Is Visible                   ${SIAnalysisStakeholderSupportUnknown}           10 seconds
     Click Element                                   ${SIAnalysisStakeholderSupportUnknown}
     Page Should Contain Element                     ${SIAnalysisSupportUnknownImage}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Analysis support - Unknown Image-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Analysis support - Unknown Image.png
     #Comments
     Log to Console      Comments
     Input Text                                      ${SIAnalysisComments}                       Test SI Analysis 1
@@ -685,4 +685,4 @@ Update Stakeholder Analysis
     Log to Console      Save Button
     Click Element                                   ${SISaveBtn}
     Wait Until Element Is Visible                   ${RecordSaved}                              60 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Update Stakeholder Analysis completed-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Individual Update Stakeholder Analysis completed.png

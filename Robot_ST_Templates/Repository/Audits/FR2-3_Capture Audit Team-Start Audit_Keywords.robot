@@ -14,7 +14,7 @@ Capture Audit Team
     Wait Until Element Is Visible           ${AuditTeamNoResults}               20 seconds
     Click Element                           ${AuditTeamAddBtn}
     Wait Until Element Is Visible           ${AuditTeamInlineRecord}            10 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditTeam Inline Record Visible-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditTeam Inline Record Visible.png
     #Audit Team Enter Data
     Log to Console      Enter Data
     #Full Name
@@ -37,13 +37,13 @@ Capture Audit Team
     Set Global Variable     ${EndDate}
     Click Element                       ${AuditTeamEndDate}
     Input Text                          ${AuditTeamEndDate}                  ${EndDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Team Start - End Dates-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Team Start - End Dates.png
     #Audit Team Save Button
     Log to Console      Save Button
     Click Element                       ${AuditTeamSaveBtn}
     Wait Until Element Is Visible       ${RecordSaved}                      20 seconds
     Wait Until Element Is Visible       ${AuditTeamTab}                     20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Team Record Saved-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Team Record Saved.png
     #Open Audit Team Record
     Log to Console      Open Audit Team Record
     Wait Until Element Is Visible       ${AuditTeamOpenRecordIcon}          10 seconds
@@ -56,7 +56,7 @@ Capture Audit Team
     Click Element                       ${AuditTeamProcessFlow}
     #Edit Phase
     Wait Until Page Contains Element    ${AuditTeamPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Team Record Opened_Edit Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Team Record Opened_Edit Phase.png
     #Estimated Hours
     Log to Console      Estimated Hours
     Input Text                          ${AuditTeamEstimatedHours}          48
@@ -65,7 +65,7 @@ Capture Audit Team
     Click Element                       ${AuditTeamEditRecordSave}
     Wait Until Element Is Visible       ${AuditTeamRecordSaved}             20 seconds
     Wait Until Element Is Visible       ${AuditTeamBreadcrumb}              10 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Team Record Opened_Estimated Hours-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Team Record Opened_Estimated Hours.png
     #Close Button
     Log to Console      Audit Team Close Button
     Click Element                       ${AuditTeamCloseBtn}
@@ -73,7 +73,7 @@ Capture Audit Team
     Log to Console      Audit - Audit Team Tab
     Wait Until Element Is Visible       ${AuditTeamRecordFullName}          20 seconds
     sleep       2 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Team Record Closed-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Team Record Closed.png
 
 FR2_Audit_TeamNotification
     Open Browser    ${Officeurl}  ${BROWSER}
@@ -90,12 +90,12 @@ FR2_Audit_TeamNotification
     Input Text                          ${EmailPasswordField}       ${outlookpassword}
     Wait Until Element Is Visible       ${EmailSignInBtn}           20 seconds
     Click Element                       ${EmailSignInBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails.png
     #Outlook Folder
     Log to Console      Outlook Folder
     Wait Until Element Is Visible       ${Outlook}                  20 seconds
     Click Element                       ${Outlook}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder.png
     sleep       15 seconds
     #Switch to Tab
     Switch Window    Mail - Delwin Horsthemke - Outlook
@@ -104,13 +104,13 @@ FR2_Audit_TeamNotification
     Wait Until Element Is Visible       ${SystemMailFolder}         20 seconds
     sleep       5 seconds
     Click Element                       ${SystemMailFolder}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder.png
     #Audits - Logged Notification
     Log to Console      Logged Notification
     sleep       3 seconds
     Wait Until Element Is Visible       ${AuditTeamSubject}         60 seconds
     Click Element                       ${AuditTeamSubject}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditTeamAddedEmailSelection-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditTeamAddedEmailSelection.png
     #Link Back to Record
     Log to Console      Link Back to Record
     Click Element                       ${AuditEmailLinkBacktoRecord}
@@ -119,7 +119,7 @@ FR2_Audit_TeamNotification
     Switch Window    IsoMetrix
     #Login to Isometrix Site
     Log to Console      Login to Isometrix Site
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened.png
     Wait Until Element Is Visible       ${Usernameid}
     Input Text                          ${Usernameid}    ${Username Value}
     Input Text                          ${Passwordid}    ${Password Value}
@@ -132,7 +132,7 @@ FR2_Audit_TeamNotification
     Wait Until Element Is Visible       ${AuditTeamProcessFlow}           60 seconds
     Click Element                       ${AuditTeamProcessFlow}
     Wait Until Page Contains Element    ${AuditTeamPFEditPhase}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditTeamRecordOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditTeamRecordOpened.png
 
 #*********************************************** FR3_01_StartAudit_MS *******************************************
 Start Audit
@@ -145,4 +145,4 @@ Start Audit
     Wait Until Page Contains Element    ${AuditStatusInProgress}            60 seconds
     Wait Until Page Contains Element    ${AuditPFInProgress_Overdue}        60 seconds
     sleep   1 second
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Record Status - In Progress-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Record Status - In Progress.png

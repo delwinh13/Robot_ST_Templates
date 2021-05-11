@@ -19,7 +19,7 @@ Navigate to Stakeholder Individual
     click element                           ${StakeholderManagement}
     ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Stakeholder Management Interface-{index}.png
     #Click on Stakeholder Individual Module Button
-    log to console     Click on Audits Module Button
+    log to console     Click on Stakeholder Individual Module Button
     Wait Until Element Is Visible           ${StakeholderIndividualBtn}     60 seconds
     sleep       1 second
     click element                           ${StakeholderIndividualBtn}

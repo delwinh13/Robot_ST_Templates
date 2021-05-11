@@ -14,7 +14,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_MS
     #Logging Audit Phase
     log to console      Audit in Logging Audit Phase
     Wait Until Page Contains Element    ${AuditsPFLoggingAuditActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/LoggingAuditPhase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/LoggingAuditPhase.png
     #Business Unit
     log to console      Business Unit
     Click Element                       ${AuditsBusinessUnitDD}
@@ -24,7 +24,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_MS
     Click Element                       ${AuditsBUSouthAfricaExpand}
     Wait Until Element Is Visible       ${AuditsBUVictorySite}              20 seconds
     Click Element                       ${AuditsBUVictorySite}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Business Unit Selected-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Business Unit Selected.png
     #Project Link
     log to console      Project
     Click Element                       ${AuditsProjectCheckbox}
@@ -34,19 +34,19 @@ Audits Enter Details_FR1 01-01: Capture Audit_MS
     #Related Stakeholder Label and Dropdown
     Element Should Be Visible           ${RelatedStakeholderLabel}
     Element Should Be Visible           ${RelatedStakeholderDD}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Project and Related Stakeholder Triggered-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Project and Related Stakeholder Triggered.png
     Wait Until Element Is Visible       ${AuditsProjectDD}                  5 seconds
     Click Element                       ${AuditsProjectDD}
     Wait Until Element Is Visible       ${AuditsProjectSelect}              10 seconds
     Click Element                       ${AuditsProjectSelect}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Project Link-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Project Link.png
     #Impact Type
     log to console      Impact Type
     Click Element                       ${AuditsImpactTypeDD}
     sleep   2
     Wait Until Element Is Visible       ${AuditsImpactTypeSelectAll}        10 seconds
     Click Element                       ${AuditsImpactTypeSelectAll}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Impact Type Select All-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Impact Type Select All.png
     #Audit Title
     log to console      Audit Title
     ${CurrentDate}      Get Current Date        result_format=%d/%m/%Y
@@ -58,7 +58,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_MS
     Click Element                       ${AuditTypeDD}
     Wait Until Element Is Visible       ${AuditTypeSelectExternal}          10 seconds
     Click Element                       ${AuditTypeSelectExternal}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Title_Scope_Type Selections-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Title_Scope_Type Selections.png
     #Related Stakeholder
     Log to Console     Related Stakeholder
     Click Element                       ${RelatedStakeholderDD}
@@ -80,7 +80,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_MS
     Click Element                       ${AuditProcessActivityBusAdminExpand}
     Click Element                       ${AuditProcessActivityCommunications}
     Element Should Be Visible           ${AuditProcessActivitySelected}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Related Stakeholder_Audit Protocol_ProcessActivity-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Related Stakeholder_Audit Protocol_ProcessActivity.png
     #Audit Manager
     Log to Console      Audit Manager
     Scroll Element Into View            ${AuditIntroAuditObjectivePanel}
@@ -98,7 +98,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_MS
     Click Element                       ${PersonConductingAuditDD}
     Wait Until Element Is Visible       ${PersonConductingAudit_2Manager}      10 seconds
     Click Element                       ${PersonConductingAudit_2Manager}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Manager_Auditee_PersonConductAudit-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Manager_Auditee_PersonConductAudit.png
     #Audit Start Date
     Log to Console      Audit Start Date
     ${CurrentDate}      Get Current Date        result_format=%d/%m/%Y
@@ -111,7 +111,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_MS
     Set Global Variable     ${EndDate}
     Click Element                       ${AuditEndDate}
     Input Text                          ${AuditEndDate}                      ${EndDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Start - End Dates-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Start - End Dates.png
     #Introduction & Audit Objective Panel
     Log to Console      Introduction & Audit Objective Panel
     Click Element                       ${AuditIntroAuditObjectivePanel}
@@ -123,7 +123,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_MS
     #Audit Objective
     Log to Console      Audit Objective
     Input Text                          ${AuditObjective}                   FR1_01-01_CaptureAudit_MS ${CurrentDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Introduction_Audit Objective-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Introduction_Audit Objective.png
     #Save To Continue
     Click Element                       ${AuditSaveandContinue}
 #    Wait Until Page Does Not Contain        Saving...                       10 seconds
@@ -139,7 +139,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_MS
 #    Element Should Be Disabled          ${AuditPlanningStatus}
     ${recordnumber}=    SeleniumLibrary.Get Text        ${AuditsSavedRecordNo}
     log    ${recordnumber}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditPlannedPhase_TabsVisible_StatusPlanning-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditPlannedPhase_TabsVisible_StatusPlanning.png
 
 FR1_Audits_LoggedNotification
     Open Browser    ${Officeurl}  ${BROWSER}
@@ -156,12 +156,12 @@ FR1_Audits_LoggedNotification
     Input Text                          ${EmailPasswordField}       ${outlookpassword}
     Wait Until Element Is Visible       ${EmailSignInBtn}           20 seconds
     Click Element                       ${EmailSignInBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails.png
     #Outlook Folder
     Log to Console      Outlook Folder
     Wait Until Element Is Visible       ${Outlook}                  20 seconds
     Click Element                       ${Outlook}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder.png
     sleep       15 seconds
     #Switch to Tab
     Switch Window    Mail - Delwin Horsthemke - Outlook
@@ -170,13 +170,13 @@ FR1_Audits_LoggedNotification
     Wait Until Element Is Visible       ${SystemMailFolder}         20 seconds
     sleep       5 seconds
     Click Element                       ${SystemMailFolder}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder.png
     #Audits - Logged Notification
     Log to Console      Logged Notification
     sleep       3 seconds
     Wait Until Element Is Visible       ${AuditLoggedSubject}       60 seconds
     Click Element                       ${AuditLoggedSubject}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditLoggedEmailSelection-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditLoggedEmailSelection.png
     #Link Back to Record
     Log to Console      Link Back to Record
     Click Element                       ${AuditEmailLinkBacktoRecord}
@@ -185,7 +185,7 @@ FR1_Audits_LoggedNotification
     Switch Window    IsoMetrix
     #Login to Isometrix Site
     Log to Console      Login to Isometrix Site
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened.png
     Wait Until Element Is Visible       ${Usernameid}
     Input Text                          ${Usernameid}    ${Username Value}
     Input Text                          ${Passwordid}    ${Password Value}
@@ -198,7 +198,7 @@ FR1_Audits_LoggedNotification
     Wait Until Element Is Visible       ${AuditsPFButton}           60 seconds
     Click Element                       ${AuditsPFButton}
     Wait Until Page Contains Element    ${AuditsPFPlannedActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordOpened.png
 
 #*********************************************** FR1 01-01: Capture Audit_AS1 *******************************************
 Audits Enter Details_FR1 01-01: Capture Audit_AS1
@@ -208,7 +208,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS1
     #Logging Audit Phase
     log to console      Audit in Logging Audit Phase
     Wait Until Page Contains Element    ${AuditsPFLoggingAuditActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/LoggingAuditPhase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/LoggingAuditPhase.png
     #Business Unit
     log to console      Business Unit
     Click Element                       ${AuditsBusinessUnitDD}
@@ -218,7 +218,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS1
     Click Element                       ${AuditsBUSouthAfricaExpand}
     Wait Until Element Is Visible       ${AuditsBUVictorySite}              10 seconds
     Click Element                       ${AuditsBUVictorySite}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Business Unit Selected-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Business Unit Selected.png
 #    #Project Link
 #    log to console      Project
 #    Click Element                       ${AuditsProjectCheckbox}
@@ -229,14 +229,14 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS1
 #    Click Element                       ${AuditsProjectDD}
 #    Wait Until Element Is Visible       ${AuditsProjectSelect}              10 seconds
 #    Click Element                       ${AuditsProjectSelect}
-#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Project Link-{index}.png
+#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Project Link.png
     #Impact Type
     log to console      Impact Type
     Click Element                       ${AuditsImpactTypeDD}
     sleep   2
     Wait Until Element Is Visible       ${AuditsImpactTypeSelectAll}        10 seconds
     Click Element                       ${AuditsImpactTypeSelectAll}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Impact Type Select All-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Impact Type Select All.png
     #Audit Title
     log to console      Audit Title
     ${CurrentDate}      Get Current Date        result_format=%d/%m/%Y
@@ -251,7 +251,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS1
     #Related Stakeholder Label and Dropdown
     Element Should Be Visible           ${RelatedStakeholderLabel}
     Element Should Be Visible           ${RelatedStakeholderDD}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Title_Scope_Type Selections-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Title_Scope_Type Selections.png
     #Related Stakeholder
     Log to Console     Related Stakeholder
     Click Element                       ${RelatedStakeholderDD}
@@ -272,7 +272,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS1
     Click Element                       ${AuditProcessActivityBusAdminExpand}
     Click Element                       ${AuditProcessActivityCommunications}
     Element Should Be Visible           ${AuditProcessActivitySelected}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Related Stakeholder_Audit Protocol_ProcessActivity-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Related Stakeholder_Audit Protocol_ProcessActivity.png
     #Audit Manager
     Log to Console      Audit Manager
     Scroll Element Into View            ${AuditIntroAuditObjectivePanel}
@@ -290,7 +290,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS1
     Click Element                       ${PersonConductingAuditDD}
     Wait Until Element Is Visible       ${PersonConductingAudit_2Manager}      10 seconds
     Click Element                       ${PersonConductingAudit_2Manager}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Manager_Auditee_PersonConductAudit-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Manager_Auditee_PersonConductAudit.png
     #Audit Start Date
     Log to Console      Audit Start Date
     ${CurrentDate}      Get Current Date        result_format=%d/%m/%Y
@@ -303,7 +303,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS1
     Set Global Variable     ${EndDate}
     Click Element                       ${AuditEndDate}
     Input Text                          ${AuditEndDate}                      ${EndDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Start - End Dates-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Start - End Dates.png
     #Introduction & Audit Objective Panel
     Log to Console      Introduction & Audit Objective Panel
     Click Element                       ${AuditIntroAuditObjectivePanel}
@@ -315,7 +315,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS1
     #Audit Objective
     Log to Console      Audit Objective
     Input Text                          ${AuditObjective}                   FR1_01-01_CaptureAudit_AS1 ${CurrentDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Introduction_Audit Objective-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Introduction_Audit Objective.png
     #Save To Continue
     Click Element                       ${AuditSaveandContinue}
 #    Wait Until Page Does Not Contain        Saving...                       10 seconds
@@ -331,7 +331,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS1
 #    Element Should Be Disabled          ${AuditPlanningStatus}
     ${recordnumber}=    SeleniumLibrary.Get Text        ${AuditsSavedRecordNo}
     log    ${recordnumber}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditPlannedPhase_TabsVisible_StatusPlanning-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditPlannedPhase_TabsVisible_StatusPlanning.png
 
 #*********************************************** FR1 01-01: Capture Audit_AS2 *******************************************
 Audits Enter Details_FR1 01-01: Capture Audit_AS2
@@ -341,7 +341,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS2
     #Logging Audit Phase
     log to console      Audit in Logging Audit Phase
     Wait Until Page Contains Element    ${AuditsPFLoggingAuditActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/LoggingAuditPhase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/LoggingAuditPhase.png
     #Business Unit
     log to console      Business Unit
     Click Element                       ${AuditsBusinessUnitDD}
@@ -351,7 +351,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS2
 #    Click Element                       ${AuditsBUSouthAfricaExpand}
 #    Wait Until Element Is Visible       ${AuditsBUVictorySite}              10 seconds
 #    Click Element                       ${AuditsBUVictorySite}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Business Unit Selected-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Business Unit Selected.png
 #    #Project Link
 #    log to console      Project
 #    Click Element                       ${AuditsProjectCheckbox}
@@ -362,14 +362,14 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS2
 #    Click Element                       ${AuditsProjectDD}
 #    Wait Until Element Is Visible       ${AuditsProjectSelect}              10 seconds
 #    Click Element                       ${AuditsProjectSelect}
-#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Project Link-{index}.png
+#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Project Link.png
     #Impact Type
     log to console      Impact Type
     Click Element                       ${AuditsImpactTypeDD}
     sleep   2
     Wait Until Element Is Visible       ${AuditsImpactTypeSelectAll}        10 seconds
     Click Element                       ${AuditsImpactTypeSelectAll}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Impact Type Select All-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Impact Type Select All.png
     #Audit Title
     log to console      Audit Title
     ${CurrentDate}      Get Current Date        result_format=%d/%m/%Y
@@ -384,7 +384,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS2
 #    #Related Stakeholder Label and Dropdown
 #    Element Should Be Visible           ${RelatedStakeholderLabel}
 #    Element Should Be Visible           ${RelatedStakeholderDD}
-#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Title_Scope_Type Selections-{index}.png
+#    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Title_Scope_Type Selections.png
 #    #Related Stakeholder
 #    Log to Console     Related Stakeholder
 #    Click Element                       ${RelatedStakeholderDD}
@@ -405,7 +405,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS2
     Click Element                       ${AuditProcessActivitySelectAll}
 #    Click Element                       ${AuditProcessActivityCommunications}
 #    Element Should Be Visible           ${AuditProcessActivitySelected}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Related Stakeholder_Audit Protocol_ProcessActivity-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Related Stakeholder_Audit Protocol_ProcessActivity.png
     #Audit Manager
     Log to Console      Audit Manager
     Scroll Element Into View            ${AuditIntroAuditObjectivePanel}
@@ -423,7 +423,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS2
     Click Element                       ${PersonConductingAuditDD}
     Wait Until Element Is Visible       ${PersonConductingAudit_2Manager}      10 seconds
     Click Element                       ${PersonConductingAudit_2Manager}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Manager_Auditee_PersonConductAudit-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Manager_Auditee_PersonConductAudit.png
     #Audit Start Date
     Log to Console      Audit Start Date
     ${CurrentDate}      Get Current Date        result_format=%d/%m/%Y
@@ -436,7 +436,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS2
     Set Global Variable     ${EndDate}
     Click Element                       ${AuditEndDate}
     Input Text                          ${AuditEndDate}                      ${EndDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Start - End Dates-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Start - End Dates.png
     #Introduction & Audit Objective Panel
     Log to Console      Introduction & Audit Objective Panel
     Click Element                       ${AuditIntroAuditObjectivePanel}
@@ -448,7 +448,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS2
     #Audit Objective
     Log to Console      Audit Objective
     Input Text                          ${AuditObjective}                   FR1_01-01_CaptureAudit_AS2 ${CurrentDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Introduction_Audit Objective-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Introduction_Audit Objective.png
     #Save To Continue
     Click Element                       ${AuditSaveandContinue}
 #    Wait Until Page Does Not Contain        Saving...                       10 seconds
@@ -464,7 +464,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS2
 #    Element Should Be Disabled          ${AuditPlanningStatus}
     ${recordnumber}=    SeleniumLibrary.Get Text        ${AuditsSavedRecordNo}
     log    ${recordnumber}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditPlannedPhase_TabsVisible_StatusPlanning-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditPlannedPhase_TabsVisible_StatusPlanning.png
 
 #*********************************************** FR1 01-01: Capture Audit_AS3 *******************************************
 Audits Enter Details_FR1 01-01: Capture Audit_AS3
@@ -474,7 +474,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS3
     #Logging Audit Phase
     log to console      Audit in Logging Audit Phase
     Wait Until Page Contains Element    ${AuditsPFLoggingAuditActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/LoggingAuditPhase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/LoggingAuditPhase.png
     #Business Unit
     log to console      Business Unit
     Click Element                       ${AuditsBusinessUnitDD}
@@ -484,7 +484,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS3
     Click Element                       ${AuditsBUSouthAfricaExpand}
     Wait Until Element Is Visible       ${AuditsBUVictorySite}              10 seconds
     Click Element                       ${AuditsBUVictorySite}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Business Unit Selected-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Business Unit Selected.png
     #Project Link
     log to console      Project
     Click Element                       ${AuditsProjectCheckbox}
@@ -495,14 +495,14 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS3
     Click Element                       ${AuditsProjectDD}
     Wait Until Element Is Visible       ${AuditsProjectSelect}              10 seconds
     Click Element                       ${AuditsProjectSelect}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Project Link-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Project Link.png
     #Impact Type
     log to console      Impact Type
     Click Element                       ${AuditsImpactTypeDD}
     sleep   2
     Wait Until Element Is Visible       ${AuditsImpactTypeSelectAll}        10 seconds
     Click Element                       ${AuditsImpactTypeSelectAll}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Impact Type Select All-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Impact Type Select All.png
     #Audit Title
     log to console      Audit Title
     ${CurrentDate}      Get Current Date        result_format=%d/%m/%Y
@@ -517,7 +517,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS3
     #Related Stakeholder Label and Dropdown
     Element Should Be Visible           ${RelatedStakeholderLabel}
     Element Should Be Visible           ${RelatedStakeholderDD}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Title_Scope_Type Selections-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Title_Scope_Type Selections.png
     #Related Stakeholder
     Log to Console     Related Stakeholder
     Click Element                       ${RelatedStakeholderDD}
@@ -538,7 +538,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS3
     Click Element                       ${AuditProcessActivityBusAdminExpand}
     Click Element                       ${AuditProcessActivityCommunications}
     Element Should Be Visible           ${AuditProcessActivitySelected}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Related Stakeholder_Audit Protocol_ProcessActivity-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Related Stakeholder_Audit Protocol_ProcessActivity.png
     #Audit Manager
     Log to Console      Audit Manager
     Scroll Element Into View            ${AuditIntroAuditObjectivePanel}
@@ -556,7 +556,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS3
     Click Element                       ${PersonConductingAuditDD}
     Wait Until Element Is Visible       ${PersonConductingAudit_2Manager}      10 seconds
     Click Element                       ${PersonConductingAudit_2Manager}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Manager_Auditee_PersonConductAudit-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Manager_Auditee_PersonConductAudit.png
     #Audit Start Date
     Log to Console      Audit Start Date
     ${CurrentDate}      Get Current Date        result_format=%d/%m/%Y
@@ -569,7 +569,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS3
     Set Global Variable     ${EndDate}
     Click Element                       ${AuditEndDate}
     Input Text                          ${AuditEndDate}                      ${EndDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Start - End Dates-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audit Start - End Dates.png
     #Introduction & Audit Objective Panel
     Log to Console      Introduction & Audit Objective Panel
     Click Element                       ${AuditIntroAuditObjectivePanel}
@@ -581,7 +581,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS3
     #Audit Objective
     Log to Console      Audit Objective
     Input Text                          ${AuditObjective}                   FR1_01-01_CaptureAudit_AS3 ${CurrentDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Introduction_Audit Objective-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Introduction_Audit Objective.png
     #Submit Audit Button
     Click Element                       ${AuditSubmitBtn}
     sleep       5 seconds
@@ -589,7 +589,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS3
     #User Returned to Search Results Page
     Log to Console      User Returned to Search Results Page
     Wait Until Element Is Visible       ${AuditsSearchPageRecord1}          20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Record Saved after clicking Submit Button-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Record Saved after clicking Submit Button.png
     #Open Record
     Log to Console      Open Record
     Click Element                       ${AuditsSearchPageRecord1}
@@ -607,7 +607,7 @@ Audits Enter Details_FR1 01-01: Capture Audit_AS3
 #    Element Should Be Disabled          ${AuditPlanningStatus}
     ${recordnumber}=    SeleniumLibrary.Get Text        ${AuditsSavedRecordNo}
     log    ${recordnumber}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditPlannedPhase_TabsVisible_StatusPlanning-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditPlannedPhase_TabsVisible_StatusPlanning.png
 
 #*********************************************** FR1_01-02_UpdateAudit_MS ***************************************************
 Update Audit_MS_AS1_OS
@@ -619,7 +619,7 @@ Update Audit_MS_AS1_OS
     sleep   1 second
     #Dates can only be updated when suggested dates are populated
     Element Should Be Visible           ${AuditDatescanonlybeupdated}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditDatescanonlybeupdated-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditDatescanonlybeupdated.png
     Click Element                       ${AuditProposeDatesCheckbox}
     sleep   2 seconds
     Click Element                       ${AuditProposeDatesCheckbox}
@@ -640,7 +640,7 @@ Update Audit_MS_AS1_OS
     Click Element                       ${AuditNewProposedDateComments}
     #Please note that the audit manager must log in to accept the proposed date
     Element Should Be Visible           ${AuditPleasenotethatauditmanager}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Pleasenotethatauditmanager-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Pleasenotethatauditmanager.png
     #New proposed dates comments
     Log to Console      New proposed dates comments
     Input Text                          ${AuditNewProposedDateComments}                  FR1_01-02_UpdateAudit_MS ${CurrentDate}
@@ -656,7 +656,7 @@ Update Audit_MS_AS1_OS
     Input Text                          ${AuditSupportDocUrl}                           www.isomertix.com
     Input Text                          ${AuditSupportDocURLTitle}                      Isometrix
     Click Element                       ${AuditSupportDocURLAdd}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Supporting Documents Link Added-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Supporting Documents Link Added.png
     sleep    1 second
     Select Frame                        ${iFrame}
     #Audit Protocol Tab
@@ -676,7 +676,7 @@ Update Audit_MS_AS1_OS
     Wait Until Page Contains Element    ${AuditPlanningStatus}
     ${recordnumber}=    SeleniumLibrary.Get Text        ${AuditsSavedRecordNo}
     log    ${recordnumber}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditPlannedPhase_TabsVisible_StatusPlanning-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditPlannedPhase_TabsVisible_StatusPlanning.png
 
 FR1_01-02_Audits_NewDatesProposedNotification
     Open Browser    ${Officeurl}  ${BROWSER}
@@ -693,12 +693,12 @@ FR1_01-02_Audits_NewDatesProposedNotification
     Input Text                          ${EmailPasswordField}       ${outlookpassword}
     Wait Until Element Is Visible       ${EmailSignInBtn}           20 seconds
     Click Element                       ${EmailSignInBtn}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OfficeEmails.png
     #Outlook Folder
     Log to Console      Outlook Folder
     Wait Until Element Is Visible       ${Outlook}                  20 seconds
     Click Element                       ${Outlook}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookFolder.png
     sleep       15 seconds
     #Switch to Tab
     Switch Window    Mail - Delwin Horsthemke - Outlook
@@ -707,13 +707,13 @@ FR1_01-02_Audits_NewDatesProposedNotification
     Wait Until Element Is Visible       ${SystemMailFolder}         20 seconds
     sleep       5 seconds
     Click Element                       ${SystemMailFolder}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/OutlookSystemMailFolder.png
     #Audits - New Dates Proposed Notification
     Log to Console      New Dates Proposed Notification
     sleep       8 seconds
     Wait Until Element Is Visible       ${AuditNewDatesProposedSubject}       60 seconds
     Click Element                       ${AuditNewDatesProposedSubject}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditNewDatesProposedEmailSelection-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditNewDatesProposedEmailSelection.png
     #Link Back to Record
     Log to Console      Link Back to Record
     Click Element                       ${AuditEmailLinkBacktoRecord}
@@ -722,7 +722,7 @@ FR1_01-02_Audits_NewDatesProposedNotification
     Switch Window    IsoMetrix
     #Login to Isometrix Site
     Log to Console      Login to Isometrix Site
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/IsoMetrixTabOpened.png
     Wait Until Element Is Visible       ${Usernameid}
     Input Text                          ${Usernameid}    ${Username Value}
     Input Text                          ${Passwordid}    ${Password Value}
@@ -735,7 +735,7 @@ FR1_01-02_Audits_NewDatesProposedNotification
     Wait Until Element Is Visible       ${AuditsPFButton}           60 seconds
     Click Element                       ${AuditsPFButton}
     Wait Until Page Contains Element    ${AuditsPFPlannedActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordOpened-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordOpened.png
 
 Audit Manager Updates Audit_MS
     #Click on Audits Search Button
@@ -753,7 +753,7 @@ Audit Manager Updates Audit_MS
     #Planned Audit Phase
     log to console      Audit in Planned Phase
     Wait Until Page Contains Element    ${AuditsPFPlannedActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/PlannedAuditPhase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/PlannedAuditPhase.png
     #Accept Proposed Date
     Log to Console      Accept Proposed Date
     Scroll Element Into View            ${AuditIntroAuditObjectivePanel}
@@ -762,14 +762,14 @@ Audit Manager Updates Audit_MS
     Click Element                       ${AuditAcceptProposeDatesChckbx}
     Scroll Element Into View            ${AuditIntroAuditObjectivePanel}
     sleep       1 second
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Accept Proposed Date Checkbox-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Accept Proposed Date Checkbox.png
     #Schedule Approved
     Log to Console      Schedule Approved
     Wait Until Page Contains Element    ${AuditScheduleApprovedPanel}
     Wait Until Page Contains Element    ${AuditApprovedByDDAdmin}
     Wait Until Page Contains Element    ${AuditDateApproved}
 #    Element Should Contain              ${AuditDateApproved}       ${CurrentDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Schedule Approved Panel-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Schedule Approved Panel.png
     Scroll Element Into View            ${AuditsTeamTab}
     sleep       1 second
     Wait Until Page Contains Element    ${AuditStatusScheduled}
@@ -781,7 +781,7 @@ Audit Manager Updates Audit_MS
     Log to Console      Audit still in Scheduled Phase
     Wait Until Element Is Visible       ${AuditsPFScheduledActive}          20 seconds
     Wait Until Element Is Visible       ${AuditStartAuditBtn}               20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Saved Button and Scheduled Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Saved Button and Scheduled Phase.png
 
 Audit Manager Updates Audit_AS
     #Click on Audits Search Button
@@ -799,7 +799,7 @@ Audit Manager Updates Audit_AS
     #Planned Audit Phase
     log to console      Audit in Planned Phase
     Wait Until Page Contains Element    ${AuditsPFPlannedActive}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/PlannedAuditPhase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/PlannedAuditPhase.png
     #Accept Proposed Date
     Log to Console      Accept Proposed Date
     Scroll Element Into View            ${AuditIntroAuditObjectivePanel}
@@ -808,14 +808,14 @@ Audit Manager Updates Audit_AS
     Click Element                       ${AuditAcceptProposeDatesChckbx}
     Scroll Element Into View            ${AuditIntroAuditObjectivePanel}
     sleep       1 second
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Accept Proposed Date Checkbox-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Accept Proposed Date Checkbox.png
     #Schedule Approved
     Log to Console      Schedule Approved
     Wait Until Page Contains Element    ${AuditScheduleApprovedPanel}
     Wait Until Page Contains Element    ${AuditApprovedByDDAdmin}
     Wait Until Page Contains Element    ${AuditDateApproved}
 #    Element Should Contain              ${AuditDateApproved}       ${CurrentDate}
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Schedule Approved Panel-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Schedule Approved Panel.png
     Scroll Element Into View            ${AuditsTeamTab}
     sleep       1 second
     Wait Until Page Contains Element    ${AuditStatusScheduled}
@@ -826,7 +826,7 @@ Audit Manager Updates Audit_AS
     #User Returned to Search Results Page
     Log to Console      User Returned to Search Results Page
     Wait Until Element Is Visible       ${AuditsSearchPageRecord1}          20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Record Saved after clicking Submit New Dates Button-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Record Saved after clicking Submit New Dates Button.png
     #Open Record
     Log to Console      Open Record
     Click Element                       ${AuditsSearchPageRecord1}
@@ -838,5 +838,5 @@ Audit Manager Updates Audit_AS
     #Scheduled Audit Phase
     Log to Console      Audit still in Scheduled Phase
     Wait Until Element Is Visible       ${AuditsPFScheduledActive}          20 seconds
-    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Saved Button and Scheduled Phase-{index}.png
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Audits Saved Button and Scheduled Phase.png
 
