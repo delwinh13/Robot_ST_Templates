@@ -14,7 +14,7 @@ FR6_01_ViewRelatedAssessment_MainScenario
     Login with Valid Credentials
     ValidateSiteVersion
     Navigate to Stakeholder Individual
-    View Engagements
+    View Related Assessment_MS
     Close Browser
 
 *** Keywords ***

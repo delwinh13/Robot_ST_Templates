@@ -38,32 +38,32 @@ ValidateSiteVersion
     Wait Until Element Is Visible       ${Sidebarlink}              60 seconds
     click element                       ${Sidebarlink}
     SeleniumLibrary.Get Text                            ${FooterSiteVersion}
-    log to console                      ${FooterSiteVersion}
+    #Log to Console                      ${FooterSiteVersion}
     ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/SiteCorrectVersion-{index}.png
     sleep    1 seconds
     element should be visible           ${Sidebarlink}
     click element                       ${Sidebarlink}
     Select Frame                        ${iFrame}
-    log to console      Switched to iFrame
+    #Log to Console      Switched to iFrame
     Wait Until Element Is Visible       ${SolutionsInterface}       60 seconds
     SeleniumLibrary.Get Text                            ${SolutionsInterface}
-    log to console                      ${SolutionsInterface}
+    #Log to Console                      ${SolutionsInterface}
 
 #*********************************************** Audits Module *********************************************************
 Navigate to Audits
     [Documentation]     This will navigate the system to the Audits Module
     #Click on Environment, Health & Safety
-    log to console  Click on Environment, Health & Safety
+    #Log to Console  Click on Environment, Health & Safety
     Wait Until Element Is Visible       ${EHSButton}                60 seconds
     click element                       ${EHSButton}
     ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/EnvironmentHealthSafety-{index}.png
     #Click on Audits Interface Button
-    log to console     Click on Audits Interface Button
+    #Log to Console     Click on Audits Interface Button
     Wait Until Element Is Visible       ${AuditsInterfaceButton}     60 seconds
     click element                       ${AuditsInterfaceButton}
     ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsInterface-{index}.png
     #Click on Audits Module Button
-    log to console     Click on Audits Module Button
+    #Log to Console     Click on Audits Module Button
     Wait Until Element Is Visible       ${AuditsModuleButton}    60 seconds
     sleep       1 second
     click element                       ${AuditsModuleButton}
@@ -72,14 +72,14 @@ Navigate to Audits
 
 Audits Add Button
     #Click on Audits Search Button
-    log to console     Click on Audits Search Button
+    #Log to Console     Click on Audits Search Button
     Wait Until Element Is Visible       ${AuditsSearchButton}    40 seconds
     click element                       ${AuditsSearchButton}
 #    set selenium speed  10 seconds
     Wait Until Element Is Visible       ${AuditsRecords}         40 seconds
     ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/AuditsRecordsVisible-{index}.png
     #Click on Audits Add Button
-    log to console     Click on Audits Add Button
+    #Log to Console     Click on Audits Add Button
     click element                       ${AuditsAddButton}
     Wait Until Element Is Visible       ${AuditsRecordHeader}     40 seconds
     #Audit Protocol & Supporting Documents Tabs

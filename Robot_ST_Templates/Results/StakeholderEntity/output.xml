@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.6 on win32)" generated="20210510 18:15:43.352" rpa="false">
-<suite id="s1" name="FR26 02 ViewReports AS" source="C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\TestCases\StakeholderEntity\FR26_02_ViewReports_AS.robot">
-<test id="s1-t1" name="FR26_02_ViewReports_AlternateScenario">
+<robot generator="Robot 3.2.2 (Python 3.8.6 on win32)" generated="20210518 15:09:37.965" rpa="false">
+<suite id="s1" name="FR16 01 ViewRelatedAssessment MS &amp; FR17 01 AddView Engagements AS &amp; FR17 01 AddView Engagements MS &amp; FR18 01 AddView Engagement Plan AS &amp; FR18 01 AddView Engagement Plan MS">
+<suite id="s1-s1" name="FR16 01 ViewRelatedAssessment MS" source="C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\TestCases\TEMP\FR16_01_ViewRelatedAssessment_MS.robot">
+<test id="s1-s1-t1" name="FR16_01_ViewRelatedAssessment_MainScenario">
 <kw name="Launch IsoMetrix Application" library="keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -9,36 +10,36 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20210510 18:15:44.330" level="INFO">Opening browser 'chrome' to base url 'https://ch11.isometrix.net/IsoMetrix_Solutions_QASPTest/login.aspx'.</msg>
-<status status="PASS" starttime="20210510 18:15:44.330" endtime="20210510 18:15:52.277"></status>
+<msg timestamp="20210518 15:09:40.219" level="INFO">Opening browser 'chrome' to base url 'https://ch11.isometrix.net/IsoMetrix.Solutions.QASPTest.Features/default.aspx'.</msg>
+<status status="PASS" starttime="20210518 15:09:40.218" endtime="20210518 15:09:56.499"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>10 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:52.277" endtime="20210510 18:15:52.290"></status>
+<status status="PASS" starttime="20210518 15:09:56.499" endtime="20210518 15:09:56.502"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210510 18:15:52.291" endtime="20210510 18:15:52.437"></status>
+<status status="PASS" starttime="20210518 15:09:56.502" endtime="20210518 15:09:57.015"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that the current page title equals ``title``.</doc>
 <arguments>
 <arg>IsoMetrix</arg>
 </arguments>
-<msg timestamp="20210510 18:15:52.443" level="INFO">Page title is 'IsoMetrix'.</msg>
-<status status="PASS" starttime="20210510 18:15:52.437" endtime="20210510 18:15:52.443"></status>
+<msg timestamp="20210518 15:09:57.063" level="INFO">Page title is 'IsoMetrix'.</msg>
+<status status="PASS" starttime="20210518 15:09:57.015" endtime="20210518 15:09:57.063"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
 <arguments>
 <arg>${SubmitButtonid}</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:52.444" endtime="20210510 18:15:52.461"></status>
+<status status="PASS" starttime="20210518 15:09:57.064" endtime="20210518 15:09:57.099"></status>
 </kw>
-<status status="PASS" starttime="20210510 18:15:44.329" endtime="20210510 18:15:52.461"></status>
+<status status="PASS" starttime="20210518 15:09:40.217" endtime="20210518 15:09:57.100"></status>
 </kw>
 <kw name="Login with Valid Credentials" library="keywords">
 <doc>Login with Valid Credentials</doc>
@@ -48,8 +49,8 @@
 <arg>${Usernameid}</arg>
 <arg>${Username Value}</arg>
 </arguments>
-<msg timestamp="20210510 18:15:52.463" level="INFO">Typing text '2Manager' into text field 'id:txtUsername'.</msg>
-<status status="PASS" starttime="20210510 18:15:52.462" endtime="20210510 18:15:52.592"></status>
+<msg timestamp="20210518 15:09:57.102" level="INFO">Typing text '2Manager' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20210518 15:09:57.101" endtime="20210518 15:09:57.426"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -57,8 +58,8 @@
 <arg>${Passwordid}</arg>
 <arg>${Password Value}</arg>
 </arguments>
-<msg timestamp="20210510 18:15:52.593" level="INFO">Typing text 'Manager@202?' into text field 'id:txtPassword'.</msg>
-<status status="PASS" starttime="20210510 18:15:52.592" endtime="20210510 18:15:52.719"></status>
+<msg timestamp="20210518 15:09:57.427" level="INFO">Typing text 'Manager@202?' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20210518 15:09:57.426" endtime="20210518 15:09:57.784"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
@@ -68,24 +69,24 @@
 <assign>
 <var>${file1}</var>
 </assign>
-<msg timestamp="20210510 18:15:52.841" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Login-16.png"&gt;&lt;img src="Results/Login-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20210510 18:15:52.841" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Login-16.png</msg>
-<status status="PASS" starttime="20210510 18:15:52.719" endtime="20210510 18:15:52.841"></status>
+<msg timestamp="20210518 15:09:57.986" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Login-6.png"&gt;&lt;img src="Results/Login-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:09:57.986" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Login-6.png</msg>
+<status status="PASS" starttime="20210518 15:09:57.784" endtime="20210518 15:09:57.986"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${SubmitButtonid}</arg>
 </arguments>
-<msg timestamp="20210510 18:15:52.842" level="INFO">Clicking element 'id:btnLoginSubmit'.</msg>
-<status status="PASS" starttime="20210510 18:15:52.842" endtime="20210510 18:15:52.904"></status>
+<msg timestamp="20210518 15:09:57.990" level="INFO">Clicking element 'id:btnLoginSubmit'.</msg>
+<status status="PASS" starttime="20210518 15:09:57.987" endtime="20210518 15:09:58.132"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
 <arguments>
 <arg>${SiteName}</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:52.904" endtime="20210510 18:15:55.949"></status>
+<status status="PASS" starttime="20210518 15:09:58.132" endtime="20210518 15:10:02.708"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
@@ -95,11 +96,11 @@
 <assign>
 <var>${file1}</var>
 </assign>
-<msg timestamp="20210510 18:15:56.119" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Succesful_Login-16.png"&gt;&lt;img src="Results/Succesful_Login-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20210510 18:15:56.120" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Succesful_Login-16.png</msg>
-<status status="PASS" starttime="20210510 18:15:55.949" endtime="20210510 18:15:56.120"></status>
+<msg timestamp="20210518 15:10:02.882" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Succesful_Login-6.png"&gt;&lt;img src="Results/Succesful_Login-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:10:02.883" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Succesful_Login-6.png</msg>
+<status status="PASS" starttime="20210518 15:10:02.709" endtime="20210518 15:10:02.883"></status>
 </kw>
-<status status="PASS" starttime="20210510 18:15:52.462" endtime="20210510 18:15:56.120"></status>
+<status status="PASS" starttime="20210518 15:09:57.100" endtime="20210518 15:10:02.883"></status>
 </kw>
 <kw name="ValidateSiteVersion" library="keywords">
 <doc>This is to validate that the Site is on the correct version</doc>
@@ -109,29 +110,22 @@
 <arg>${Sidebarlink}</arg>
 <arg>60 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:56.121" endtime="20210510 18:15:56.160"></status>
+<status status="PASS" starttime="20210518 15:10:02.885" endtime="20210518 15:10:02.934"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Sidebarlink}</arg>
 </arguments>
-<msg timestamp="20210510 18:15:56.161" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
-<status status="PASS" starttime="20210510 18:15:56.160" endtime="20210510 18:15:56.250"></status>
+<msg timestamp="20210518 15:10:02.935" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
+<status status="PASS" starttime="20210518 15:10:02.935" endtime="20210518 15:10:03.131"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FooterSiteVersion}</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:56.250" endtime="20210510 18:15:56.571"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${FooterSiteVersion}</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:15:56.571" endtime="20210510 18:15:56.572"></status>
+<status status="PASS" starttime="20210518 15:10:03.131" endtime="20210518 15:10:03.196"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
@@ -141,48 +135,41 @@
 <assign>
 <var>${file1}</var>
 </assign>
-<msg timestamp="20210510 18:15:57.097" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/SiteCorrectVersion-16.png"&gt;&lt;img src="Results/SiteCorrectVersion-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20210510 18:15:57.098" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\SiteCorrectVersion-16.png</msg>
-<status status="PASS" starttime="20210510 18:15:56.572" endtime="20210510 18:15:57.098"></status>
+<msg timestamp="20210518 15:10:03.440" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/SiteCorrectVersion-6.png"&gt;&lt;img src="Results/SiteCorrectVersion-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:10:03.440" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\SiteCorrectVersion-6.png</msg>
+<status status="PASS" starttime="20210518 15:10:03.197" endtime="20210518 15:10:03.440"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1 seconds</arg>
 </arguments>
-<msg timestamp="20210510 18:15:58.101" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210510 18:15:57.098" endtime="20210510 18:15:58.101"></status>
+<msg timestamp="20210518 15:10:04.450" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:10:03.441" endtime="20210518 15:10:04.450"></status>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
 <arguments>
 <arg>${Sidebarlink}</arg>
 </arguments>
-<msg timestamp="20210510 18:15:58.133" level="INFO">Element 'xpath://*[@id='default-page']/body/div/div[1]/a/i' is displayed.</msg>
-<status status="PASS" starttime="20210510 18:15:58.102" endtime="20210510 18:15:58.133"></status>
+<msg timestamp="20210518 15:10:04.501" level="INFO">Element 'xpath://*[@id='default-page']/body/div/div[1]/a/i' is displayed.</msg>
+<status status="PASS" starttime="20210518 15:10:04.450" endtime="20210518 15:10:04.501"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Sidebarlink}</arg>
 </arguments>
-<msg timestamp="20210510 18:15:58.134" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
-<status status="PASS" starttime="20210510 18:15:58.134" endtime="20210510 18:15:58.201"></status>
+<msg timestamp="20210518 15:10:04.502" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
+<status status="PASS" starttime="20210518 15:10:04.501" endtime="20210518 15:10:04.590"></status>
 </kw>
 <kw name="Select Frame" library="SeleniumLibrary">
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
 <arguments>
 <arg>${iFrame}</arg>
 </arguments>
-<msg timestamp="20210510 18:15:58.201" level="INFO">Selecting frame 'xpath://iframe[@id='ifrMain']'.</msg>
-<status status="PASS" starttime="20210510 18:15:58.201" endtime="20210510 18:15:58.260"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Switched to iFrame</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:15:58.261" endtime="20210510 18:15:58.262"></status>
+<msg timestamp="20210518 15:10:04.595" level="INFO">Selecting frame 'xpath://iframe[@id='ifrMain']'.</msg>
+<status status="PASS" starttime="20210518 15:10:04.593" endtime="20210518 15:10:04.934"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -190,23 +177,16 @@
 <arg>${SolutionsInterface}</arg>
 <arg>60 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:58.263" endtime="20210510 18:15:58.296"></status>
+<status status="PASS" starttime="20210518 15:10:04.934" endtime="20210518 15:10:05.120"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
 <arguments>
 <arg>${SolutionsInterface}</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:58.296" endtime="20210510 18:15:58.325"></status>
+<status status="PASS" starttime="20210518 15:10:05.120" endtime="20210518 15:10:05.257"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${SolutionsInterface}</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:15:58.326" endtime="20210510 18:15:58.326"></status>
-</kw>
-<status status="PASS" starttime="20210510 18:15:56.121" endtime="20210510 18:15:58.327"></status>
+<status status="PASS" starttime="20210518 15:10:02.884" endtime="20210518 15:10:05.258"></status>
 </kw>
 <kw name="Navigate to Stakeholder Entity" library="SE_Keywords">
 <doc>This will navigate the system to the Stakeholder Entity Module</doc>
@@ -215,7 +195,7 @@
 <arguments>
 <arg>Click on Environment, Health &amp; Safety</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:58.327" endtime="20210510 18:15:58.329"></status>
+<status status="PASS" starttime="20210518 15:10:05.262" endtime="20210518 15:10:05.263"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -223,15 +203,15 @@
 <arg>${EHSButton}</arg>
 <arg>60 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:58.330" endtime="20210510 18:15:58.422"></status>
+<status status="PASS" starttime="20210518 15:10:05.264" endtime="20210518 15:10:05.301"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${EHSButton}</arg>
 </arguments>
-<msg timestamp="20210510 18:15:58.423" level="INFO">Clicking element 'xpath://label[text()='Environment, Health &amp; Safety']'.</msg>
-<status status="PASS" starttime="20210510 18:15:58.422" endtime="20210510 18:15:58.639"></status>
+<msg timestamp="20210518 15:10:05.301" level="INFO">Clicking element 'xpath://label[text()='Environment, Health &amp; Safety']'.</msg>
+<status status="PASS" starttime="20210518 15:10:05.301" endtime="20210518 15:10:05.719"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
@@ -241,16 +221,16 @@
 <assign>
 <var>${file1}</var>
 </assign>
-<msg timestamp="20210510 18:15:58.799" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Environment%20Health%20Safety-16.png"&gt;&lt;img src="Results/Environment%20Health%20Safety-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20210510 18:15:58.799" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Environment Health Safety-16.png</msg>
-<status status="PASS" starttime="20210510 18:15:58.639" endtime="20210510 18:15:58.799"></status>
+<msg timestamp="20210518 15:10:06.023" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Environment%20Health%20Safety-6.png"&gt;&lt;img src="Results/Environment%20Health%20Safety-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:10:06.023" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Environment Health Safety-6.png</msg>
+<status status="PASS" starttime="20210518 15:10:05.719" endtime="20210518 15:10:06.023"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Click on Stakeholder Management Interface Button</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:58.799" endtime="20210510 18:15:58.803"></status>
+<status status="PASS" starttime="20210518 15:10:06.024" endtime="20210518 15:10:06.031"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -258,15 +238,15 @@
 <arg>${StakeholderManagement}</arg>
 <arg>60 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:15:58.803" endtime="20210510 18:15:59.385"></status>
+<status status="PASS" starttime="20210518 15:10:06.031" endtime="20210518 15:10:07.511"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${StakeholderManagement}</arg>
 </arguments>
-<msg timestamp="20210510 18:15:59.386" level="INFO">Clicking element 'xpath://label[text()='Stakeholder Management']'.</msg>
-<status status="PASS" starttime="20210510 18:15:59.386" endtime="20210510 18:15:59.770"></status>
+<msg timestamp="20210518 15:10:07.512" level="INFO">Clicking element 'xpath://label[text()='Stakeholder Management']'.</msg>
+<status status="PASS" starttime="20210518 15:10:07.511" endtime="20210518 15:10:07.701"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
@@ -276,16 +256,16 @@
 <assign>
 <var>${file1}</var>
 </assign>
-<msg timestamp="20210510 18:16:00.055" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Management%20Interface-16.png"&gt;&lt;img src="Results/Stakeholder%20Management%20Interface-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20210510 18:16:00.055" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Management Interface-16.png</msg>
-<status status="PASS" starttime="20210510 18:15:59.770" endtime="20210510 18:16:00.055"></status>
+<msg timestamp="20210518 15:10:07.886" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Management%20Interface-6.png"&gt;&lt;img src="Results/Stakeholder%20Management%20Interface-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:10:07.886" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Management Interface-6.png</msg>
+<status status="PASS" starttime="20210518 15:10:07.702" endtime="20210518 15:10:07.886"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Click on Stakeholder Entity Module Button</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:00.055" endtime="20210510 18:16:00.056"></status>
+<status status="PASS" starttime="20210518 15:10:07.887" endtime="20210518 15:10:07.896"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -293,23 +273,23 @@
 <arg>${StakeholderEntityBtn}</arg>
 <arg>60 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:00.057" endtime="20210510 18:16:00.442"></status>
+<status status="PASS" starttime="20210518 15:10:07.896" endtime="20210518 15:10:09.290"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1 second</arg>
 </arguments>
-<msg timestamp="20210510 18:16:01.456" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210510 18:16:00.442" endtime="20210510 18:16:01.457"></status>
+<msg timestamp="20210518 15:10:10.293" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:10:09.290" endtime="20210518 15:10:10.294"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${StakeholderEntityBtn}</arg>
 </arguments>
-<msg timestamp="20210510 18:16:01.457" level="INFO">Clicking element 'xpath://label[contains(text(),'Stakeholder Entity')]'.</msg>
-<status status="PASS" starttime="20210510 18:16:01.457" endtime="20210510 18:16:04.439"></status>
+<msg timestamp="20210518 15:10:10.295" level="INFO">Clicking element 'xpath://label[contains(text(),'Stakeholder Entity')]'.</msg>
+<status status="PASS" starttime="20210518 15:10:10.295" endtime="20210518 15:10:13.741"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -317,7 +297,7 @@
 <arg>${SEAddBtn}</arg>
 <arg>60 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:04.439" endtime="20210510 18:16:12.065"></status>
+<status status="PASS" starttime="20210518 15:10:13.741" endtime="20210518 15:10:19.435"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
@@ -327,35 +307,45 @@
 <assign>
 <var>${file1}</var>
 </assign>
-<msg timestamp="20210510 18:16:12.228" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Module-16.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Module-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20210510 18:16:12.228" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Module-16.png</msg>
-<status status="PASS" starttime="20210510 18:16:12.066" endtime="20210510 18:16:12.229"></status>
+<msg timestamp="20210518 15:10:19.537" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Module-6.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Module-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:10:19.538" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Module-6.png</msg>
+<status status="PASS" starttime="20210518 15:10:19.436" endtime="20210518 15:10:19.538"></status>
 </kw>
-<status status="PASS" starttime="20210510 18:15:58.327" endtime="20210510 18:16:12.229"></status>
+<status status="PASS" starttime="20210518 15:10:05.260" endtime="20210518 15:10:19.539"></status>
 </kw>
-<kw name="View Stakeholder Entity Report_AS" library="FR16-FR26_ViewRelatedAssessment-ViewReports_Keywords">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<kw name="View Related Assessment_MS" library="FR16-FR26_ViewRelatedAssessment-ViewReports_Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>Search Button</arg>
+<arg>${SEOrdersFullNameSearch}</arg>
+<arg>30 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:12.234" endtime="20210510 18:16:12.235"></status>
+<status status="PASS" starttime="20210518 15:10:19.541" endtime="20210518 15:10:19.581"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SEOrdersFullNameSearch}</arg>
+<arg>Coltness Iron Company Ltd</arg>
+</arguments>
+<msg timestamp="20210518 15:10:19.582" level="INFO">Typing text 'Coltness Iron Company Ltd' into text field 'xpath://div[@class='optionsPanel firstPanel primary']/table/tbody/tr[3]/td[5]/input'.</msg>
+<status status="PASS" starttime="20210518 15:10:19.581" endtime="20210518 15:10:19.835"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${SESearchButton}</arg>
+<arg>${SEOrdersSearchButton}</arg>
 </arguments>
-<msg timestamp="20210510 18:16:12.236" level="INFO">Clicking element 'xpath://div[@id='btnActApplyFilter']/div[text()='Search']'.</msg>
-<status status="PASS" starttime="20210510 18:16:12.235" endtime="20210510 18:16:12.409"></status>
+<msg timestamp="20210518 15:10:19.835" level="INFO">Clicking element 'xpath://div[@id='btnActApplyFilter']/div[text()='Search']'.</msg>
+<status status="PASS" starttime="20210518 15:10:19.835" endtime="20210518 15:10:20.027"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${SERecords}</arg>
+<arg>${SEOrdersSearchResultsSingleRecord}</arg>
 <arg>40 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:12.409" endtime="20210510 18:16:13.286"></status>
+<status status="PASS" starttime="20210518 15:10:20.027" endtime="20210518 15:10:23.081"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
@@ -365,446 +355,2330 @@
 <assign>
 <var>${file1}</var>
 </assign>
-<msg timestamp="20210510 18:16:13.405" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Records%20Visible.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Records%20Visible.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20210510 18:16:13.405" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Records Visible.png</msg>
-<status status="PASS" starttime="20210510 18:16:13.286" endtime="20210510 18:16:13.405"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Stakeholder Entity Reports Button</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:13.406" endtime="20210510 18:16:13.406"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${SIReportsBtn}</arg>
-</arguments>
-<msg timestamp="20210510 18:16:13.407" level="INFO">Clicking element 'xpath://div[@id='btnReports']'.</msg>
-<status status="PASS" starttime="20210510 18:16:13.407" endtime="20210510 18:16:13.518"></status>
+<msg timestamp="20210518 15:10:23.211" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Records%20Visible.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Records%20Visible.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:10:23.212" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Records Visible.png</msg>
+<status status="PASS" starttime="20210518 15:10:23.081" endtime="20210518 15:10:23.212"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${SEReportSITitle}</arg>
-<arg>40 seconds</arg>
+<arg>${SERecordColtness}</arg>
+<arg>30 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:13.519" endtime="20210510 18:16:13.555"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>View Reports</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:13.555" endtime="20210510 18:16:13.555"></status>
+<status status="PASS" starttime="20210518 15:10:23.212" endtime="20210518 15:10:23.242"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${SEViewReportsBtn}</arg>
+<arg>${SERecordColtness}</arg>
 </arguments>
-<msg timestamp="20210510 18:16:13.556" level="INFO">Clicking element 'xpath:(//div[@id='divSearchReports_2D4B7042-3E2E-495C-A77F-1642D10D5F1E']/div/div[2]/div[2]/span[3])[2]'.</msg>
-<status status="PASS" starttime="20210510 18:16:13.556" endtime="20210510 18:16:13.686"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Switch Window</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:13.686" endtime="20210510 18:16:13.686"></status>
-</kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210510 18:16:13.687" endtime="20210510 18:16:13.695"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${SIReportsPopUpConfirm}</arg>
-<arg>20 seconds</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:13.696" endtime="20210510 18:16:13.971"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${SIReportsPopUpConfirm}</arg>
-</arguments>
-<msg timestamp="20210510 18:16:13.972" level="INFO">Clicking element 'xpath://div[@id='btnConfirmYes']'.</msg>
-<status status="PASS" starttime="20210510 18:16:13.971" endtime="20210510 18:16:14.111"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5</arg>
-</arguments>
-<msg timestamp="20210510 18:16:19.121" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210510 18:16:14.111" endtime="20210510 18:16:19.121"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Select Window - NEW</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:19.121" endtime="20210510 18:16:19.122"></status>
-</kw>
-<kw name="Select Window" library="SeleniumLibrary">
-<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
-<arguments>
-<arg>NEW</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:19.122" endtime="20210510 18:16:19.132"></status>
+<msg timestamp="20210518 15:10:23.244" level="INFO">Clicking element 'xpath://div[@id='divContainer']/div/div/div[3]/div[2]/div/div[3]/table/tbody/tr[2]/td[6]/div[text()='Coltness Iron Company Ltd']'.</msg>
+<status status="PASS" starttime="20210518 15:10:23.243" endtime="20210518 15:10:23.761"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20210510 18:16:21.136" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210510 18:16:19.132" endtime="20210510 18:16:21.136"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Report Right Arrow</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:21.137" endtime="20210510 18:16:21.137"></status>
+<msg timestamp="20210518 15:10:25.767" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210518 15:10:23.761" endtime="20210518 15:10:25.767"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${SIViewReportRightArrow}</arg>
-<arg>60 seconds</arg>
+<arg>${SEColtnessRecordNo}</arg>
+<arg>30 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:21.138" endtime="20210510 18:16:26.240"></status>
+<status status="PASS" starttime="20210518 15:10:25.768" endtime="20210518 15:10:31.033"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEProcessFlowBtn}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:10:31.034" endtime="20210518 15:10:31.176"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEProcessFlowBtn}</arg>
+</arguments>
+<msg timestamp="20210518 15:10:31.177" level="INFO">Clicking element 'xpath://div[@id='btnProcessFlow_form_2D4B7042-3E2E-495C-A77F-1642D10D5F1E']'.</msg>
+<status status="PASS" starttime="20210518 15:10:31.177" endtime="20210518 15:10:31.514"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${SEPFEditPhase}</arg>
+</arguments>
+<msg timestamp="20210518 15:10:31.537" level="INFO">Current page contains element 'xpath:(//div[@id='divProcess_2D4B7042-3E2E-495C-A77F-1642D10D5F1E'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Edit phase']'.</msg>
+<status status="PASS" starttime="20210518 15:10:31.514" endtime="20210518 15:10:31.539"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
-<arg>${OUTPUTDIR}/Results/Stakeholder Individual View Reports Visible.png</arg>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Record Opened.png</arg>
 </arguments>
 <assign>
 <var>${file1}</var>
 </assign>
-<msg timestamp="20210510 18:16:26.364" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Individual%20View%20Reports%20Visible.png"&gt;&lt;img src="Results/Stakeholder%20Individual%20View%20Reports%20Visible.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20210510 18:16:26.364" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Individual View Reports Visible.png</msg>
-<status status="PASS" starttime="20210510 18:16:26.240" endtime="20210510 18:16:26.364"></status>
+<msg timestamp="20210518 15:10:31.747" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Coltness%20Iron%20Company%20Ltd%20Record%20Opened.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Coltness%20Iron%20Company%20Ltd%20Record%20Opened.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:10:31.747" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Coltness Iron Company Ltd Record Opened.png</msg>
+<status status="PASS" starttime="20210518 15:10:31.541" endtime="20210518 15:10:31.747"></status>
 </kw>
+<kw name="${i} IN RANGE [ 1 | 5 ]" type="for">
+<kw name="${i} = 1" type="foritem">
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${SIViewReportRightArrow}</arg>
+<arg>${SETabRightArrow}</arg>
 </arguments>
-<msg timestamp="20210510 18:16:26.365" level="INFO">Clicking element 'xpath://span[@id='viewer_ctl09_ctl00_Next_ctl00_ctl00']'.</msg>
-<status status="PASS" starttime="20210510 18:16:26.364" endtime="20210510 18:16:26.456"></status>
+<msg timestamp="20210518 15:10:31.749" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:10:31.749" endtime="20210518 15:10:31.929"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:10:31.748" endtime="20210518 15:10:31.930"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:10:31.932" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:10:31.931" endtime="20210518 15:10:32.053"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:10:31.930" endtime="20210518 15:10:32.053"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:10:32.054" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:10:32.053" endtime="20210518 15:10:32.202"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:10:32.053" endtime="20210518 15:10:32.202"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:10:32.203" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:10:32.203" endtime="20210518 15:10:32.317"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:10:32.202" endtime="20210518 15:10:32.317"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:10:31.748" endtime="20210518 15:10:32.318"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20210510 18:16:27.458" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210510 18:16:26.456" endtime="20210510 18:16:27.458"></status>
+<msg timestamp="20210518 15:10:33.325" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:10:32.318" endtime="20210518 15:10:33.325"></status>
 </kw>
-<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is not visible.</doc>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${SIViewReportsLoading}</arg>
+<arg>${SERelatedAssessmentTab}</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:27.459" endtime="20210510 18:16:30.360"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Report Export Button</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:30.360" endtime="20210510 18:16:30.361"></status>
+<msg timestamp="20210518 15:10:33.347" level="INFO">Current page contains element 'xpath://li[@id='tab_2A58D822-5DDA-4DE1-BA6C-32F361BF2B1C']/div[text()='Related Assessment']'.</msg>
+<status status="PASS" starttime="20210518 15:10:33.326" endtime="20210518 15:10:33.347"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${SIViewReportExportArrow}</arg>
+<arg>${SERelatedAssessmentTab}</arg>
 </arguments>
-<msg timestamp="20210510 18:16:30.362" level="INFO">Clicking element 'xpath://span[@id='viewer_ctl09_ctl04_ctl00_ButtonImgDown']'.</msg>
-<status status="PASS" starttime="20210510 18:16:30.361" endtime="20210510 18:16:30.431"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1</arg>
-</arguments>
-<msg timestamp="20210510 18:16:31.434" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210510 18:16:30.432" endtime="20210510 18:16:31.434"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${SIViewReportsWord}</arg>
-</arguments>
-<msg timestamp="20210510 18:16:31.435" level="INFO">Clicking element 'xpath://div[@id="viewer_ctl09_ctl04_ctl00_Menu"]/div[3]/a'.</msg>
-<status status="PASS" starttime="20210510 18:16:31.435" endtime="20210510 18:16:31.577"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>10</arg>
-</arguments>
-<msg timestamp="20210510 18:16:41.586" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20210510 18:16:31.578" endtime="20210510 18:16:41.586"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Close Window - MAIN</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:41.586" endtime="20210510 18:16:41.587"></status>
-</kw>
-<kw name="Close Window" library="SeleniumLibrary">
-<doc>Closes currently opened and selected browser window/tab.</doc>
-<status status="PASS" starttime="20210510 18:16:41.588" endtime="20210510 18:16:41.659"></status>
+<msg timestamp="20210518 15:10:33.349" level="INFO">Clicking element 'xpath://li[@id='tab_2A58D822-5DDA-4DE1-BA6C-32F361BF2B1C']/div[text()='Related Assessment']'.</msg>
+<status status="PASS" starttime="20210518 15:10:33.347" endtime="20210518 15:10:33.552"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20210510 18:16:43.674" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210510 18:16:41.660" endtime="20210510 18:16:43.674"></status>
+<msg timestamp="20210518 15:10:35.558" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210518 15:10:33.552" endtime="20210518 15:10:35.559"></status>
 </kw>
-<kw name="Select Window" library="SeleniumLibrary">
-<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>MAIN</arg>
+<arg>${SERelatedRiskAssessmentVGRecord}</arg>
+<arg>30 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:43.675" endtime="20210510 18:16:43.695"></status>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210518 15:11:06.410" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210518 15:11:06.289" endtime="20210518 15:11:06.410"></status>
 </kw>
-<status status="PASS" starttime="20210510 18:16:12.233" endtime="20210510 18:16:43.695"></status>
+<msg timestamp="20210518 15:11:06.477" level="FAIL">Element 'xpath:(//div[@id='control_65FF0BD7-91A2-46FB-9FA0-E0A4C7A0CE4D']/div/div[2]/div[2]/div/div[3]/table/tbody/tr/td[4])[1]' not visible after 30 seconds.</msg>
+<status status="FAIL" starttime="20210518 15:10:35.559" endtime="20210518 15:11:06.478"></status>
 </kw>
-<kw name="Full Stakeholder Entity Reports_AS" library="FR16-FR26_ViewRelatedAssessment-ViewReports_Keywords">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<status status="FAIL" starttime="20210518 15:10:19.540" endtime="20210518 15:11:06.478"></status>
+</kw>
+<tags>
+<tag>behavior-driven</tag>
+</tags>
+<status status="FAIL" starttime="20210518 15:09:40.215" endtime="20210518 15:11:06.479" critical="yes">Element 'xpath:(//div[@id='control_65FF0BD7-91A2-46FB-9FA0-E0A4C7A0CE4D']/div/div[2]/div[2]/div/div[3]/table/tbody/tr/td[4])[1]' not visible after 30 seconds.</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210518 15:11:06.483" endtime="20210518 15:11:09.492"></status>
+</kw>
+<doc>FR16_01_ViewRelatedAssessment_MainScenario</doc>
+<status status="FAIL" starttime="20210518 15:09:38.032" endtime="20210518 15:11:09.492"></status>
+</suite>
+<suite id="s1-s2" name="FR17 01 AddView Engagements AS" source="C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\TestCases\TEMP\FR17_01_AddView_Engagements_AS.robot">
+<test id="s1-s2-t1" name="FR17_01_AddView_Engagements_AlternateScenario">
+<kw name="Launch IsoMetrix Application" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>Full Reports</arg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:43.699" endtime="20210510 18:16:43.704"></status>
+<msg timestamp="20210518 15:11:10.018" level="INFO">Opening browser 'chrome' to base url 'https://ch11.isometrix.net/IsoMetrix.Solutions.QASPTest.Features/default.aspx'.</msg>
+<status status="PASS" starttime="20210518 15:11:10.017" endtime="20210518 15:11:18.972"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:18.972" endtime="20210518 15:11:18.983"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210518 15:11:18.983" endtime="20210518 15:11:19.194"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>IsoMetrix</arg>
+</arguments>
+<msg timestamp="20210518 15:11:19.202" level="INFO">Page title is 'IsoMetrix'.</msg>
+<status status="PASS" starttime="20210518 15:11:19.195" endtime="20210518 15:11:19.202"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SubmitButtonid}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:19.203" endtime="20210518 15:11:19.235"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:11:10.017" endtime="20210518 15:11:19.236"></status>
+</kw>
+<kw name="Login with Valid Credentials" library="keywords">
+<doc>Login with Valid Credentials</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Usernameid}</arg>
+<arg>${Username Value}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:19.239" level="INFO">Typing text '2Manager' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20210518 15:11:19.238" endtime="20210518 15:11:19.455"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Passwordid}</arg>
+<arg>${Password Value}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:19.456" level="INFO">Typing text 'Manager@202?' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20210518 15:11:19.456" endtime="20210518 15:11:19.654"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Login-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:11:19.810" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Login-7.png"&gt;&lt;img src="Results/Login-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:11:19.810" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Login-7.png</msg>
+<status status="PASS" starttime="20210518 15:11:19.655" endtime="20210518 15:11:19.810"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SubmitButtonid}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:19.811" level="INFO">Clicking element 'id:btnLoginSubmit'.</msg>
+<status status="PASS" starttime="20210518 15:11:19.811" endtime="20210518 15:11:19.897"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SiteName}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:19.898" endtime="20210518 15:11:23.269"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Succesful_Login-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:11:23.401" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Succesful_Login-7.png"&gt;&lt;img src="Results/Succesful_Login-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:11:23.401" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Succesful_Login-7.png</msg>
+<status status="PASS" starttime="20210518 15:11:23.269" endtime="20210518 15:11:23.401"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:11:19.237" endtime="20210518 15:11:23.401"></status>
+</kw>
+<kw name="ValidateSiteVersion" library="keywords">
+<doc>This is to validate that the Site is on the correct version</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:23.403" endtime="20210518 15:11:23.451"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:23.451" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
+<status status="PASS" starttime="20210518 15:11:23.451" endtime="20210518 15:11:23.553"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${FooterSiteVersion}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:23.553" endtime="20210518 15:11:23.962"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/SiteCorrectVersion-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:11:24.567" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/SiteCorrectVersion-7.png"&gt;&lt;img src="Results/SiteCorrectVersion-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:11:24.568" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\SiteCorrectVersion-7.png</msg>
+<status status="PASS" starttime="20210518 15:11:23.963" endtime="20210518 15:11:24.568"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1 seconds</arg>
+</arguments>
+<msg timestamp="20210518 15:11:25.576" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:11:24.568" endtime="20210518 15:11:25.576"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:25.599" level="INFO">Element 'xpath://*[@id='default-page']/body/div/div[1]/a/i' is displayed.</msg>
+<status status="PASS" starttime="20210518 15:11:25.577" endtime="20210518 15:11:25.599"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:25.600" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
+<status status="PASS" starttime="20210518 15:11:25.600" endtime="20210518 15:11:25.666"></status>
 </kw>
 <kw name="Select Frame" library="SeleniumLibrary">
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
 <arguments>
 <arg>${iFrame}</arg>
 </arguments>
-<msg timestamp="20210510 18:16:43.705" level="INFO">Selecting frame 'xpath://iframe[@id='ifrMain']'.</msg>
-<status status="PASS" starttime="20210510 18:16:43.704" endtime="20210510 18:16:43.766"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${SIFullReportsBtn}</arg>
-</arguments>
-<msg timestamp="20210510 18:16:43.767" level="INFO">Clicking element 'xpath://span[@title='Full report ']'.</msg>
-<status status="PASS" starttime="20210510 18:16:43.766" endtime="20210510 18:16:43.871"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Switch Window</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:43.871" endtime="20210510 18:16:43.871"></status>
-</kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210510 18:16:43.871" endtime="20210510 18:16:43.878"></status>
+<msg timestamp="20210518 15:11:25.667" level="INFO">Selecting frame 'xpath://iframe[@id='ifrMain']'.</msg>
+<status status="PASS" starttime="20210518 15:11:25.667" endtime="20210518 15:11:25.758"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${SIReportsPopUpConfirm}</arg>
-<arg>20 seconds</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:43.878" endtime="20210510 18:16:44.137"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${SIReportsPopUpConfirm}</arg>
-</arguments>
-<msg timestamp="20210510 18:16:44.137" level="INFO">Clicking element 'xpath://div[@id='btnConfirmYes']'.</msg>
-<status status="PASS" starttime="20210510 18:16:44.137" endtime="20210510 18:16:44.262"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5</arg>
-</arguments>
-<msg timestamp="20210510 18:16:49.273" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210510 18:16:44.263" endtime="20210510 18:16:49.273"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Select Window - NEW</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:49.274" endtime="20210510 18:16:49.276"></status>
-</kw>
-<kw name="Select Window" library="SeleniumLibrary">
-<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
-<arguments>
-<arg>NEW</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:49.276" endtime="20210510 18:16:49.294"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20210510 18:16:51.302" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210510 18:16:49.294" endtime="20210510 18:16:51.302"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Report Right Arrow</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:16:51.303" endtime="20210510 18:16:51.303"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${SIViewReportRightArrow}</arg>
+<arg>${SolutionsInterface}</arg>
 <arg>60 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:16:51.304" endtime="20210510 18:17:18.280"></status>
+<status status="PASS" starttime="20210518 15:11:25.759" endtime="20210518 15:11:25.817"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SolutionsInterface}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:25.817" endtime="20210518 15:11:25.855"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:11:23.402" endtime="20210518 15:11:25.855"></status>
+</kw>
+<kw name="Navigate to Stakeholder Entity" library="SE_Keywords">
+<doc>This will navigate the system to the Stakeholder Entity Module</doc>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Click on Environment, Health &amp; Safety</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:25.858" endtime="20210518 15:11:25.860"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${EHSButton}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:25.860" endtime="20210518 15:11:25.903"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${EHSButton}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:25.904" level="INFO">Clicking element 'xpath://label[text()='Environment, Health &amp; Safety']'.</msg>
+<status status="PASS" starttime="20210518 15:11:25.903" endtime="20210518 15:11:26.089"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
-<arg>${OUTPUTDIR}/Results/Stakeholder Entity Full Reports Visible.png</arg>
+<arg>${OUTPUTDIR}/Results/Environment Health Safety-{index}.png</arg>
 </arguments>
 <assign>
 <var>${file1}</var>
 </assign>
-<msg timestamp="20210510 18:17:18.390" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Full%20Reports%20Visible.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Full%20Reports%20Visible.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20210510 18:17:18.390" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Full Reports Visible.png</msg>
-<status status="PASS" starttime="20210510 18:17:18.280" endtime="20210510 18:17:18.390"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${SIViewReportRightArrow}</arg>
-</arguments>
-<msg timestamp="20210510 18:17:18.391" level="INFO">Clicking element 'xpath://span[@id='viewer_ctl09_ctl00_Next_ctl00_ctl00']'.</msg>
-<status status="PASS" starttime="20210510 18:17:18.391" endtime="20210510 18:17:18.455"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1</arg>
-</arguments>
-<msg timestamp="20210510 18:17:19.462" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210510 18:17:18.455" endtime="20210510 18:17:19.462"></status>
-</kw>
-<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is not visible.</doc>
-<arguments>
-<arg>${SIViewReportsLoading}</arg>
-</arguments>
-<status status="PASS" starttime="20210510 18:17:19.463" endtime="20210510 18:17:22.118"></status>
+<msg timestamp="20210518 15:11:26.287" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Environment%20Health%20Safety-7.png"&gt;&lt;img src="Results/Environment%20Health%20Safety-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:11:26.287" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Environment Health Safety-7.png</msg>
+<status status="PASS" starttime="20210518 15:11:26.090" endtime="20210518 15:11:26.287"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>Report Export Button</arg>
+<arg>Click on Stakeholder Management Interface Button</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:17:22.118" endtime="20210510 18:17:22.119"></status>
+<status status="PASS" starttime="20210518 15:11:26.288" endtime="20210518 15:11:26.293"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${StakeholderManagement}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:26.294" endtime="20210518 15:11:27.002"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${SIViewReportExportArrow}</arg>
+<arg>${StakeholderManagement}</arg>
 </arguments>
-<msg timestamp="20210510 18:17:22.120" level="INFO">Clicking element 'xpath://span[@id='viewer_ctl09_ctl04_ctl00_ButtonImgDown']'.</msg>
-<status status="PASS" starttime="20210510 18:17:22.119" endtime="20210510 18:17:22.193"></status>
+<msg timestamp="20210518 15:11:27.003" level="INFO">Clicking element 'xpath://label[text()='Stakeholder Management']'.</msg>
+<status status="PASS" starttime="20210518 15:11:27.002" endtime="20210518 15:11:27.555"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
-<arg>1</arg>
+<arg>${OUTPUTDIR}/Results/Stakeholder Management Interface-{index}.png</arg>
 </arguments>
-<msg timestamp="20210510 18:17:23.199" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210510 18:17:22.193" endtime="20210510 18:17:23.199"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${SIViewReportsWord}</arg>
-</arguments>
-<msg timestamp="20210510 18:17:23.200" level="INFO">Clicking element 'xpath://div[@id="viewer_ctl09_ctl04_ctl00_Menu"]/div[3]/a'.</msg>
-<status status="PASS" starttime="20210510 18:17:23.199" endtime="20210510 18:17:23.325"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>10</arg>
-</arguments>
-<msg timestamp="20210510 18:17:33.339" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20210510 18:17:23.326" endtime="20210510 18:17:33.340"></status>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:11:27.802" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Management%20Interface-7.png"&gt;&lt;img src="Results/Stakeholder%20Management%20Interface-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:11:27.802" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Management Interface-7.png</msg>
+<status status="PASS" starttime="20210518 15:11:27.555" endtime="20210518 15:11:27.802"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>Close Window - MAIN</arg>
+<arg>Click on Stakeholder Entity Module Button</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:17:33.340" endtime="20210510 18:17:33.340"></status>
+<status status="PASS" starttime="20210518 15:11:27.803" endtime="20210518 15:11:27.803"></status>
 </kw>
-<kw name="Close Window" library="SeleniumLibrary">
-<doc>Closes currently opened and selected browser window/tab.</doc>
-<status status="PASS" starttime="20210510 18:17:33.341" endtime="20210510 18:17:33.410"></status>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${StakeholderEntityBtn}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:27.804" endtime="20210518 15:11:28.453"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1 second</arg>
+</arguments>
+<msg timestamp="20210518 15:11:29.457" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:11:28.453" endtime="20210518 15:11:29.457"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${StakeholderEntityBtn}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:29.458" level="INFO">Clicking element 'xpath://label[contains(text(),'Stakeholder Entity')]'.</msg>
+<status status="PASS" starttime="20210518 15:11:29.457" endtime="20210518 15:11:31.762"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEAddBtn}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:31.763" endtime="20210518 15:11:36.321"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Module-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:11:36.485" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Module-7.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Module-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:11:36.485" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Module-7.png</msg>
+<status status="PASS" starttime="20210518 15:11:36.321" endtime="20210518 15:11:36.485"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:11:25.856" endtime="20210518 15:11:36.485"></status>
+</kw>
+<kw name="Add_View Engagements_AS" library="FR16-FR26_ViewRelatedAssessment-ViewReports_Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEOrdersFullNameSearch}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:36.489" endtime="20210518 15:11:36.519"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SEOrdersFullNameSearch}</arg>
+<arg>Coltness Iron Company Ltd</arg>
+</arguments>
+<msg timestamp="20210518 15:11:36.519" level="INFO">Typing text 'Coltness Iron Company Ltd' into text field 'xpath://div[@class='optionsPanel firstPanel primary']/table/tbody/tr[3]/td[5]/input'.</msg>
+<status status="PASS" starttime="20210518 15:11:36.519" endtime="20210518 15:11:36.731"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEOrdersSearchButton}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:36.732" level="INFO">Clicking element 'xpath://div[@id='btnActApplyFilter']/div[text()='Search']'.</msg>
+<status status="PASS" starttime="20210518 15:11:36.731" endtime="20210518 15:11:36.838"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEOrdersSearchResultsSingleRecord}</arg>
+<arg>40 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:36.838" endtime="20210518 15:11:37.623"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Records Visible.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:11:37.749" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Records%20Visible.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Records%20Visible.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:11:37.749" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Records Visible.png</msg>
+<status status="PASS" starttime="20210518 15:11:37.623" endtime="20210518 15:11:37.749"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SERecordColtness}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:37.750" endtime="20210518 15:11:37.780"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SERecordColtness}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:37.780" level="INFO">Clicking element 'xpath://div[@id='divContainer']/div/div/div[3]/div[2]/div/div[3]/table/tbody/tr[2]/td[6]/div[text()='Coltness Iron Company Ltd']'.</msg>
+<status status="PASS" starttime="20210518 15:11:37.780" endtime="20210518 15:11:38.093"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20210510 18:17:35.419" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210510 18:17:33.410" endtime="20210510 18:17:35.419"></status>
+<msg timestamp="20210518 15:11:40.098" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210518 15:11:38.093" endtime="20210518 15:11:40.099"></status>
 </kw>
-<kw name="Select Window" library="SeleniumLibrary">
-<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>MAIN</arg>
+<arg>${SEColtnessRecordNo}</arg>
+<arg>30 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20210510 18:17:35.419" endtime="20210510 18:17:35.463"></status>
+<status status="PASS" starttime="20210518 15:11:40.099" endtime="20210518 15:11:43.906"></status>
 </kw>
-<status status="PASS" starttime="20210510 18:16:43.696" endtime="20210510 18:17:35.464"></status>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEProcessFlowBtn}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:11:43.906" endtime="20210518 15:11:44.259"></status>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210510 18:17:35.468" endtime="20210510 18:17:38.188"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEProcessFlowBtn}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:44.263" level="INFO">Clicking element 'xpath://div[@id='btnProcessFlow_form_2D4B7042-3E2E-495C-A77F-1642D10D5F1E']'.</msg>
+<status status="PASS" starttime="20210518 15:11:44.260" endtime="20210518 15:11:44.484"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${SEPFEditPhase}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:44.521" level="INFO">Current page contains element 'xpath:(//div[@id='divProcess_2D4B7042-3E2E-495C-A77F-1642D10D5F1E'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Edit phase']'.</msg>
+<status status="PASS" starttime="20210518 15:11:44.485" endtime="20210518 15:11:44.522"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Record Opened.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:11:44.707" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Coltness%20Iron%20Company%20Ltd%20Record%20Opened.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Coltness%20Iron%20Company%20Ltd%20Record%20Opened.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:11:44.708" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Coltness Iron Company Ltd Record Opened.png</msg>
+<status status="PASS" starttime="20210518 15:11:44.522" endtime="20210518 15:11:44.709"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | 6 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:44.713" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:11:44.712" endtime="20210518 15:11:44.894"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:11:44.712" endtime="20210518 15:11:44.894"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:44.898" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:11:44.896" endtime="20210518 15:11:45.039"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:11:44.895" endtime="20210518 15:11:45.039"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:45.040" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:11:45.040" endtime="20210518 15:11:45.155"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:11:45.039" endtime="20210518 15:11:45.155"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:45.156" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:11:45.155" endtime="20210518 15:11:45.290"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:11:45.155" endtime="20210518 15:11:45.290"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:45.292" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:11:45.290" endtime="20210518 15:11:45.476"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:11:45.290" endtime="20210518 15:11:45.477"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:11:44.711" endtime="20210518 15:11:45.478"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20210518 15:11:46.492" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:11:45.478" endtime="20210518 15:11:46.492"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${SEEngagementsTab}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:46.526" level="INFO">Current page contains element 'xpath://li[@id='tab_3942DBC8-B12A-4A79-97F6-4ED66D494909']/div[text()='Engagements']'.</msg>
+<status status="PASS" starttime="20210518 15:11:46.493" endtime="20210518 15:11:46.526"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEEngagementsTab}</arg>
+</arguments>
+<msg timestamp="20210518 15:11:46.527" level="INFO">Clicking element 'xpath://li[@id='tab_3942DBC8-B12A-4A79-97F6-4ED66D494909']/div[text()='Engagements']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210518 15:11:56.684" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210518 15:11:56.563" endtime="20210518 15:11:56.684"></status>
+</kw>
+<msg timestamp="20210518 15:11:56.793" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=90.0.4430.212)
+</msg>
+<status status="FAIL" starttime="20210518 15:11:46.527" endtime="20210518 15:11:56.793"></status>
+</kw>
+<status status="FAIL" starttime="20210518 15:11:36.488" endtime="20210518 15:11:56.794"></status>
 </kw>
 <tags>
 <tag>behavior-driven</tag>
 </tags>
-<status status="PASS" starttime="20210510 18:15:44.327" endtime="20210510 18:17:38.190" critical="yes"></status>
+<status status="FAIL" starttime="20210518 15:11:10.016" endtime="20210518 15:11:56.796" critical="yes">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=90.0.4430.212)
+</status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210510 18:17:38.195" endtime="20210510 18:17:38.196"></status>
+<status status="PASS" starttime="20210518 15:11:56.799" endtime="20210518 15:11:59.653"></status>
 </kw>
-<doc>FR26_02_ViewReports_AlternateScenario</doc>
-<status status="PASS" starttime="20210510 18:15:43.356" endtime="20210510 18:17:38.196"></status>
+<doc>FR17_01_AddView_Engagements_AlternateScenario</doc>
+<status status="FAIL" starttime="20210518 15:11:09.504" endtime="20210518 15:11:59.653"></status>
+</suite>
+<suite id="s1-s3" name="FR17 01 AddView Engagements MS" source="C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\TestCases\TEMP\FR17_01_AddView_Engagements_MS.robot">
+<test id="s1-s3-t1" name="FR17_01_AddView_Engagements_MainScenario">
+<kw name="Launch IsoMetrix Application" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:00.304" level="INFO">Opening browser 'chrome' to base url 'https://ch11.isometrix.net/IsoMetrix.Solutions.QASPTest.Features/default.aspx'.</msg>
+<status status="PASS" starttime="20210518 15:12:00.303" endtime="20210518 15:12:08.554"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:08.554" endtime="20210518 15:12:08.565"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210518 15:12:08.566" endtime="20210518 15:12:08.753"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>IsoMetrix</arg>
+</arguments>
+<msg timestamp="20210518 15:12:08.775" level="INFO">Page title is 'IsoMetrix'.</msg>
+<status status="PASS" starttime="20210518 15:12:08.753" endtime="20210518 15:12:08.777"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SubmitButtonid}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:08.777" endtime="20210518 15:12:08.801"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:00.302" endtime="20210518 15:12:08.802"></status>
+</kw>
+<kw name="Login with Valid Credentials" library="keywords">
+<doc>Login with Valid Credentials</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Usernameid}</arg>
+<arg>${Username Value}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:08.804" level="INFO">Typing text '2Manager' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20210518 15:12:08.803" endtime="20210518 15:12:08.956"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Passwordid}</arg>
+<arg>${Password Value}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:08.957" level="INFO">Typing text 'Manager@202?' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20210518 15:12:08.956" endtime="20210518 15:12:09.195"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Login-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:12:09.559" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Login-8.png"&gt;&lt;img src="Results/Login-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:12:09.560" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Login-8.png</msg>
+<status status="PASS" starttime="20210518 15:12:09.197" endtime="20210518 15:12:09.560"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SubmitButtonid}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:09.561" level="INFO">Clicking element 'id:btnLoginSubmit'.</msg>
+<status status="PASS" starttime="20210518 15:12:09.560" endtime="20210518 15:12:09.686"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SiteName}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:09.686" endtime="20210518 15:12:13.798"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Succesful_Login-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:12:13.974" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Succesful_Login-8.png"&gt;&lt;img src="Results/Succesful_Login-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:12:13.975" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Succesful_Login-8.png</msg>
+<status status="PASS" starttime="20210518 15:12:13.798" endtime="20210518 15:12:13.975"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:08.802" endtime="20210518 15:12:13.975"></status>
+</kw>
+<kw name="ValidateSiteVersion" library="keywords">
+<doc>This is to validate that the Site is on the correct version</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:13.979" endtime="20210518 15:12:14.024"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:14.026" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
+<status status="PASS" starttime="20210518 15:12:14.024" endtime="20210518 15:12:14.422"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${FooterSiteVersion}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:14.422" endtime="20210518 15:12:14.574"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/SiteCorrectVersion-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:12:15.014" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/SiteCorrectVersion-8.png"&gt;&lt;img src="Results/SiteCorrectVersion-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:12:15.015" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\SiteCorrectVersion-8.png</msg>
+<status status="PASS" starttime="20210518 15:12:14.574" endtime="20210518 15:12:15.016"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1 seconds</arg>
+</arguments>
+<msg timestamp="20210518 15:12:16.029" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:12:15.018" endtime="20210518 15:12:16.029"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:16.058" level="INFO">Element 'xpath://*[@id='default-page']/body/div/div[1]/a/i' is displayed.</msg>
+<status status="PASS" starttime="20210518 15:12:16.030" endtime="20210518 15:12:16.058"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:16.059" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
+<status status="PASS" starttime="20210518 15:12:16.058" endtime="20210518 15:12:16.139"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${iFrame}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:16.140" level="INFO">Selecting frame 'xpath://iframe[@id='ifrMain']'.</msg>
+<status status="PASS" starttime="20210518 15:12:16.140" endtime="20210518 15:12:16.284"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SolutionsInterface}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:16.284" endtime="20210518 15:12:16.377"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SolutionsInterface}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:16.378" endtime="20210518 15:12:16.472"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:13.978" endtime="20210518 15:12:16.472"></status>
+</kw>
+<kw name="Navigate to Stakeholder Entity" library="SE_Keywords">
+<doc>This will navigate the system to the Stakeholder Entity Module</doc>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Click on Environment, Health &amp; Safety</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:16.474" endtime="20210518 15:12:16.475"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${EHSButton}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:16.476" endtime="20210518 15:12:16.602"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${EHSButton}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:16.603" level="INFO">Clicking element 'xpath://label[text()='Environment, Health &amp; Safety']'.</msg>
+<status status="PASS" starttime="20210518 15:12:16.603" endtime="20210518 15:12:16.801"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Environment Health Safety-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:12:17.011" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Environment%20Health%20Safety-8.png"&gt;&lt;img src="Results/Environment%20Health%20Safety-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:12:17.012" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Environment Health Safety-8.png</msg>
+<status status="PASS" starttime="20210518 15:12:16.802" endtime="20210518 15:12:17.012"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Click on Stakeholder Management Interface Button</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:17.016" endtime="20210518 15:12:17.018"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${StakeholderManagement}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:17.018" endtime="20210518 15:12:17.683"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${StakeholderManagement}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:17.684" level="INFO">Clicking element 'xpath://label[text()='Stakeholder Management']'.</msg>
+<status status="PASS" starttime="20210518 15:12:17.683" endtime="20210518 15:12:18.215"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Management Interface-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:12:18.416" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Management%20Interface-8.png"&gt;&lt;img src="Results/Stakeholder%20Management%20Interface-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:12:18.418" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Management Interface-8.png</msg>
+<status status="PASS" starttime="20210518 15:12:18.215" endtime="20210518 15:12:18.418"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Click on Stakeholder Entity Module Button</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:18.418" endtime="20210518 15:12:18.419"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${StakeholderEntityBtn}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:18.419" endtime="20210518 15:12:19.290"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1 second</arg>
+</arguments>
+<msg timestamp="20210518 15:12:20.304" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:12:19.290" endtime="20210518 15:12:20.305"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${StakeholderEntityBtn}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:20.306" level="INFO">Clicking element 'xpath://label[contains(text(),'Stakeholder Entity')]'.</msg>
+<status status="PASS" starttime="20210518 15:12:20.305" endtime="20210518 15:12:22.742"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEAddBtn}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:22.745" endtime="20210518 15:12:29.370"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Module-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:12:29.533" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Module-8.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Module-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:12:29.533" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Module-8.png</msg>
+<status status="PASS" starttime="20210518 15:12:29.370" endtime="20210518 15:12:29.533"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:16.473" endtime="20210518 15:12:29.534"></status>
+</kw>
+<kw name="View Engagements_MS" library="FR16-FR26_ViewRelatedAssessment-ViewReports_Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEOrdersFullNameSearch}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:29.535" endtime="20210518 15:12:29.574"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SEOrdersFullNameSearch}</arg>
+<arg>Coltness Iron Company Ltd</arg>
+</arguments>
+<msg timestamp="20210518 15:12:29.574" level="INFO">Typing text 'Coltness Iron Company Ltd' into text field 'xpath://div[@class='optionsPanel firstPanel primary']/table/tbody/tr[3]/td[5]/input'.</msg>
+<status status="PASS" starttime="20210518 15:12:29.574" endtime="20210518 15:12:29.765"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEOrdersSearchButton}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:29.765" level="INFO">Clicking element 'xpath://div[@id='btnActApplyFilter']/div[text()='Search']'.</msg>
+<status status="PASS" starttime="20210518 15:12:29.765" endtime="20210518 15:12:29.887"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEOrdersSearchResultsSingleRecord}</arg>
+<arg>40 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:29.887" endtime="20210518 15:12:30.661"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Records Visible.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:12:30.785" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Records%20Visible.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Records%20Visible.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:12:30.785" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Records Visible.png</msg>
+<status status="PASS" starttime="20210518 15:12:30.661" endtime="20210518 15:12:30.785"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SERecordColtness}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:30.785" endtime="20210518 15:12:30.817"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SERecordColtness}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:30.817" level="INFO">Clicking element 'xpath://div[@id='divContainer']/div/div/div[3]/div[2]/div/div[3]/table/tbody/tr[2]/td[6]/div[text()='Coltness Iron Company Ltd']'.</msg>
+<status status="PASS" starttime="20210518 15:12:30.817" endtime="20210518 15:12:31.116"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210518 15:12:33.125" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210518 15:12:31.116" endtime="20210518 15:12:33.126"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEColtnessRecordNo}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:33.126" endtime="20210518 15:12:35.904"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEProcessFlowBtn}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:35.905" endtime="20210518 15:12:36.086"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEProcessFlowBtn}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:36.087" level="INFO">Clicking element 'xpath://div[@id='btnProcessFlow_form_2D4B7042-3E2E-495C-A77F-1642D10D5F1E']'.</msg>
+<status status="PASS" starttime="20210518 15:12:36.087" endtime="20210518 15:12:36.465"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${SEPFEditPhase}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:36.505" level="INFO">Current page contains element 'xpath:(//div[@id='divProcess_2D4B7042-3E2E-495C-A77F-1642D10D5F1E'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Edit phase']'.</msg>
+<status status="PASS" starttime="20210518 15:12:36.466" endtime="20210518 15:12:36.506"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Record Opened.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:12:36.714" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Coltness%20Iron%20Company%20Ltd%20Record%20Opened.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Coltness%20Iron%20Company%20Ltd%20Record%20Opened.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:12:36.714" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Coltness Iron Company Ltd Record Opened.png</msg>
+<status status="PASS" starttime="20210518 15:12:36.506" endtime="20210518 15:12:36.714"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | 6 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:36.717" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:12:36.716" endtime="20210518 15:12:36.893"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:36.716" endtime="20210518 15:12:36.893"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:36.897" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:12:36.894" endtime="20210518 15:12:37.084"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:36.894" endtime="20210518 15:12:37.084"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:37.087" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:12:37.085" endtime="20210518 15:12:37.259"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:37.085" endtime="20210518 15:12:37.259"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:37.262" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:12:37.261" endtime="20210518 15:12:37.421"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:37.260" endtime="20210518 15:12:37.421"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:37.422" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:12:37.422" endtime="20210518 15:12:37.520"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:37.421" endtime="20210518 15:12:37.520"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:36.714" endtime="20210518 15:12:37.520"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20210518 15:12:38.523" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:12:37.521" endtime="20210518 15:12:38.523"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${SEEngagementsTab}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:38.545" level="INFO">Current page contains element 'xpath://li[@id='tab_3942DBC8-B12A-4A79-97F6-4ED66D494909']/div[text()='Engagements']'.</msg>
+<status status="PASS" starttime="20210518 15:12:38.524" endtime="20210518 15:12:38.545"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEEngagementsTab}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:38.545" level="INFO">Clicking element 'xpath://li[@id='tab_3942DBC8-B12A-4A79-97F6-4ED66D494909']/div[text()='Engagements']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210518 15:12:48.736" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210518 15:12:48.602" endtime="20210518 15:12:48.736"></status>
+</kw>
+<msg timestamp="20210518 15:12:48.737" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=90.0.4430.212)
+</msg>
+<status status="FAIL" starttime="20210518 15:12:38.545" endtime="20210518 15:12:48.738"></status>
+</kw>
+<status status="FAIL" starttime="20210518 15:12:29.534" endtime="20210518 15:12:48.738"></status>
+</kw>
+<tags>
+<tag>behavior-driven</tag>
+</tags>
+<status status="FAIL" starttime="20210518 15:12:00.298" endtime="20210518 15:12:48.739" critical="yes">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=90.0.4430.212)
+</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210518 15:12:48.741" endtime="20210518 15:12:51.461"></status>
+</kw>
+<doc>FR17_01_AddView_Engagements_MainScenario</doc>
+<status status="FAIL" starttime="20210518 15:11:59.664" endtime="20210518 15:12:51.462"></status>
+</suite>
+<suite id="s1-s4" name="FR18 01 AddView Engagement Plan AS" source="C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\TestCases\TEMP\FR18_01_AddView_Engagement_Plan_AS.robot">
+<test id="s1-s4-t1" name="FR18_01_AddView_Engagement_Plan_AlternateScenario">
+<kw name="Launch IsoMetrix Application" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210518 15:12:51.598" level="INFO">Opening browser 'chrome' to base url 'https://ch11.isometrix.net/IsoMetrix.Solutions.QASPTest.Features/default.aspx'.</msg>
+<status status="PASS" starttime="20210518 15:12:51.598" endtime="20210518 15:12:59.857"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:12:59.857" endtime="20210518 15:12:59.861"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210518 15:12:59.862" endtime="20210518 15:13:00.275"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>IsoMetrix</arg>
+</arguments>
+<msg timestamp="20210518 15:13:00.301" level="INFO">Page title is 'IsoMetrix'.</msg>
+<status status="PASS" starttime="20210518 15:13:00.275" endtime="20210518 15:13:00.301"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SubmitButtonid}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:00.302" endtime="20210518 15:13:00.324"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:12:51.598" endtime="20210518 15:13:00.324"></status>
+</kw>
+<kw name="Login with Valid Credentials" library="keywords">
+<doc>Login with Valid Credentials</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Usernameid}</arg>
+<arg>${Username Value}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:00.326" level="INFO">Typing text '2Manager' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20210518 15:13:00.325" endtime="20210518 15:13:00.772"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Passwordid}</arg>
+<arg>${Password Value}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:00.774" level="INFO">Typing text 'Manager@202?' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20210518 15:13:00.773" endtime="20210518 15:13:01.084"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Login-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:01.228" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Login-9.png"&gt;&lt;img src="Results/Login-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:01.228" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Login-9.png</msg>
+<status status="PASS" starttime="20210518 15:13:01.084" endtime="20210518 15:13:01.229"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SubmitButtonid}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:01.231" level="INFO">Clicking element 'id:btnLoginSubmit'.</msg>
+<status status="PASS" starttime="20210518 15:13:01.230" endtime="20210518 15:13:01.322"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SiteName}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:01.323" endtime="20210518 15:13:04.307"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Succesful_Login-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:04.480" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Succesful_Login-9.png"&gt;&lt;img src="Results/Succesful_Login-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:04.481" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Succesful_Login-9.png</msg>
+<status status="PASS" starttime="20210518 15:13:04.307" endtime="20210518 15:13:04.481"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:00.324" endtime="20210518 15:13:04.481"></status>
+</kw>
+<kw name="ValidateSiteVersion" library="keywords">
+<doc>This is to validate that the Site is on the correct version</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:04.483" endtime="20210518 15:13:04.522"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:04.523" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
+<status status="PASS" starttime="20210518 15:13:04.523" endtime="20210518 15:13:04.658"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${FooterSiteVersion}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:04.658" endtime="20210518 15:13:04.988"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/SiteCorrectVersion-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:05.499" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/SiteCorrectVersion-9.png"&gt;&lt;img src="Results/SiteCorrectVersion-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:05.499" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\SiteCorrectVersion-9.png</msg>
+<status status="PASS" starttime="20210518 15:13:04.989" endtime="20210518 15:13:05.500"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1 seconds</arg>
+</arguments>
+<msg timestamp="20210518 15:13:06.501" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:13:05.500" endtime="20210518 15:13:06.501"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:06.532" level="INFO">Element 'xpath://*[@id='default-page']/body/div/div[1]/a/i' is displayed.</msg>
+<status status="PASS" starttime="20210518 15:13:06.501" endtime="20210518 15:13:06.533"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:06.534" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
+<status status="PASS" starttime="20210518 15:13:06.533" endtime="20210518 15:13:06.595"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${iFrame}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:06.597" level="INFO">Selecting frame 'xpath://iframe[@id='ifrMain']'.</msg>
+<status status="PASS" starttime="20210518 15:13:06.596" endtime="20210518 15:13:06.691"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SolutionsInterface}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:06.691" endtime="20210518 15:13:06.755"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SolutionsInterface}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:06.755" endtime="20210518 15:13:06.802"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:04.482" endtime="20210518 15:13:06.802"></status>
+</kw>
+<kw name="Navigate to Stakeholder Entity" library="SE_Keywords">
+<doc>This will navigate the system to the Stakeholder Entity Module</doc>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Click on Environment, Health &amp; Safety</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:06.803" endtime="20210518 15:13:06.804"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${EHSButton}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:06.804" endtime="20210518 15:13:06.875"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${EHSButton}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:06.876" level="INFO">Clicking element 'xpath://label[text()='Environment, Health &amp; Safety']'.</msg>
+<status status="PASS" starttime="20210518 15:13:06.875" endtime="20210518 15:13:07.161"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Environment Health Safety-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:07.388" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Environment%20Health%20Safety-9.png"&gt;&lt;img src="Results/Environment%20Health%20Safety-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:07.389" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Environment Health Safety-9.png</msg>
+<status status="PASS" starttime="20210518 15:13:07.162" endtime="20210518 15:13:07.389"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Click on Stakeholder Management Interface Button</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:07.389" endtime="20210518 15:13:07.390"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${StakeholderManagement}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:07.391" endtime="20210518 15:13:08.278"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${StakeholderManagement}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:08.280" level="INFO">Clicking element 'xpath://label[text()='Stakeholder Management']'.</msg>
+<status status="PASS" starttime="20210518 15:13:08.279" endtime="20210518 15:13:08.640"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Management Interface-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:08.876" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Management%20Interface-9.png"&gt;&lt;img src="Results/Stakeholder%20Management%20Interface-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:08.876" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Management Interface-9.png</msg>
+<status status="PASS" starttime="20210518 15:13:08.641" endtime="20210518 15:13:08.876"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Click on Stakeholder Entity Module Button</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:08.877" endtime="20210518 15:13:08.884"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${StakeholderEntityBtn}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:08.884" endtime="20210518 15:13:09.571"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1 second</arg>
+</arguments>
+<msg timestamp="20210518 15:13:10.584" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:13:09.571" endtime="20210518 15:13:10.584"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${StakeholderEntityBtn}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:10.586" level="INFO">Clicking element 'xpath://label[contains(text(),'Stakeholder Entity')]'.</msg>
+<status status="PASS" starttime="20210518 15:13:10.584" endtime="20210518 15:13:13.170"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEAddBtn}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:13.171" endtime="20210518 15:13:21.342"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Module-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:21.526" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Module-9.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Module-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:21.526" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Module-9.png</msg>
+<status status="PASS" starttime="20210518 15:13:21.342" endtime="20210518 15:13:21.526"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:06.803" endtime="20210518 15:13:21.526"></status>
+</kw>
+<kw name="Add_View Engagement Plan_AS" library="FR16-FR26_ViewRelatedAssessment-ViewReports_Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEOrdersFullNameSearch}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:21.528" endtime="20210518 15:13:21.567"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SEOrdersFullNameSearch}</arg>
+<arg>Coltness Iron Company Ltd</arg>
+</arguments>
+<msg timestamp="20210518 15:13:21.567" level="INFO">Typing text 'Coltness Iron Company Ltd' into text field 'xpath://div[@class='optionsPanel firstPanel primary']/table/tbody/tr[3]/td[5]/input'.</msg>
+<status status="PASS" starttime="20210518 15:13:21.567" endtime="20210518 15:13:21.771"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEOrdersSearchButton}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:21.772" level="INFO">Clicking element 'xpath://div[@id='btnActApplyFilter']/div[text()='Search']'.</msg>
+<status status="PASS" starttime="20210518 15:13:21.771" endtime="20210518 15:13:21.894"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEOrdersSearchResultsSingleRecord}</arg>
+<arg>40 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:21.895" endtime="20210518 15:13:22.486"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Records Visible.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:22.612" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Records%20Visible.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Records%20Visible.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:22.612" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Records Visible.png</msg>
+<status status="PASS" starttime="20210518 15:13:22.486" endtime="20210518 15:13:22.612"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SERecordColtness}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:22.612" endtime="20210518 15:13:22.642"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SERecordColtness}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:22.642" level="INFO">Clicking element 'xpath://div[@id='divContainer']/div/div/div[3]/div[2]/div/div[3]/table/tbody/tr[2]/td[6]/div[text()='Coltness Iron Company Ltd']'.</msg>
+<status status="PASS" starttime="20210518 15:13:22.642" endtime="20210518 15:13:22.985"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210518 15:13:24.996" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210518 15:13:22.985" endtime="20210518 15:13:24.996"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEColtnessRecordNo}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:24.997" endtime="20210518 15:13:28.275"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEProcessFlowBtn}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:28.276" endtime="20210518 15:13:28.493"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEProcessFlowBtn}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:28.494" level="INFO">Clicking element 'xpath://div[@id='btnProcessFlow_form_2D4B7042-3E2E-495C-A77F-1642D10D5F1E']'.</msg>
+<status status="PASS" starttime="20210518 15:13:28.493" endtime="20210518 15:13:28.840"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${SEPFEditPhase}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:28.871" level="INFO">Current page contains element 'xpath:(//div[@id='divProcess_2D4B7042-3E2E-495C-A77F-1642D10D5F1E'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Edit phase']'.</msg>
+<status status="PASS" starttime="20210518 15:13:28.841" endtime="20210518 15:13:28.872"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Record Opened.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:29.068" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Coltness%20Iron%20Company%20Ltd%20Record%20Opened.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Coltness%20Iron%20Company%20Ltd%20Record%20Opened.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:29.068" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Coltness Iron Company Ltd Record Opened.png</msg>
+<status status="PASS" starttime="20210518 15:13:28.872" endtime="20210518 15:13:29.068"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | 6 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:29.070" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:13:29.069" endtime="20210518 15:13:29.242"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:29.069" endtime="20210518 15:13:29.242"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:29.243" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:13:29.243" endtime="20210518 15:13:29.409"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:29.242" endtime="20210518 15:13:29.409"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:29.410" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:13:29.410" endtime="20210518 15:13:29.592"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:29.409" endtime="20210518 15:13:29.593"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:29.593" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:13:29.593" endtime="20210518 15:13:29.785"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:29.593" endtime="20210518 15:13:29.785"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:29.787" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:13:29.786" endtime="20210518 15:13:29.910"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:29.786" endtime="20210518 15:13:29.910"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:29.068" endtime="20210518 15:13:29.910"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20210518 15:13:30.919" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:13:29.910" endtime="20210518 15:13:30.919"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${SEEngagementsTab}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:30.939" level="INFO">Current page contains element 'xpath://li[@id='tab_3942DBC8-B12A-4A79-97F6-4ED66D494909']/div[text()='Engagements']'.</msg>
+<status status="PASS" starttime="20210518 15:13:30.920" endtime="20210518 15:13:30.939"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEEngagementsTab}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:30.939" level="INFO">Clicking element 'xpath://li[@id='tab_3942DBC8-B12A-4A79-97F6-4ED66D494909']/div[text()='Engagements']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210518 15:13:41.109" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210518 15:13:40.977" endtime="20210518 15:13:41.110"></status>
+</kw>
+<msg timestamp="20210518 15:13:41.112" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=90.0.4430.212)
+</msg>
+<status status="FAIL" starttime="20210518 15:13:30.939" endtime="20210518 15:13:41.113"></status>
+</kw>
+<status status="FAIL" starttime="20210518 15:13:21.527" endtime="20210518 15:13:41.113"></status>
+</kw>
+<tags>
+<tag>behavior-driven</tag>
+</tags>
+<status status="FAIL" starttime="20210518 15:12:51.597" endtime="20210518 15:13:41.115" critical="yes">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=90.0.4430.212)
+</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210518 15:13:41.117" endtime="20210518 15:13:43.756"></status>
+</kw>
+<doc>FR18_01_AddView_Engagement_Plan_AlternateScenario</doc>
+<status status="FAIL" starttime="20210518 15:12:51.467" endtime="20210518 15:13:43.757"></status>
+</suite>
+<suite id="s1-s5" name="FR18 01 AddView Engagement Plan MS" source="C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\TestCases\TEMP\FR18_01_AddView_Engagement_Plan_MS.robot">
+<test id="s1-s5-t1" name="FR18_01_AddView_Engagement_Plan_MainScenario">
+<kw name="Launch IsoMetrix Application" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:43.872" level="INFO">Opening browser 'chrome' to base url 'https://ch11.isometrix.net/IsoMetrix.Solutions.QASPTest.Features/default.aspx'.</msg>
+<status status="PASS" starttime="20210518 15:13:43.871" endtime="20210518 15:13:51.687"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:51.687" endtime="20210518 15:13:51.691"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210518 15:13:51.691" endtime="20210518 15:13:51.921"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>IsoMetrix</arg>
+</arguments>
+<msg timestamp="20210518 15:13:51.937" level="INFO">Page title is 'IsoMetrix'.</msg>
+<status status="PASS" starttime="20210518 15:13:51.921" endtime="20210518 15:13:51.937"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SubmitButtonid}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:51.937" endtime="20210518 15:13:51.959"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:43.870" endtime="20210518 15:13:51.959"></status>
+</kw>
+<kw name="Login with Valid Credentials" library="keywords">
+<doc>Login with Valid Credentials</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Usernameid}</arg>
+<arg>${Username Value}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:51.960" level="INFO">Typing text '2Manager' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20210518 15:13:51.960" endtime="20210518 15:13:52.087"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Passwordid}</arg>
+<arg>${Password Value}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:52.088" level="INFO">Typing text 'Manager@202?' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20210518 15:13:52.087" endtime="20210518 15:13:52.234"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Login-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:52.352" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Login-10.png"&gt;&lt;img src="Results/Login-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:52.352" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Login-10.png</msg>
+<status status="PASS" starttime="20210518 15:13:52.234" endtime="20210518 15:13:52.352"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SubmitButtonid}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:52.353" level="INFO">Clicking element 'id:btnLoginSubmit'.</msg>
+<status status="PASS" starttime="20210518 15:13:52.352" endtime="20210518 15:13:52.414"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SiteName}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:52.414" endtime="20210518 15:13:57.230"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Succesful_Login-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:57.398" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Succesful_Login-10.png"&gt;&lt;img src="Results/Succesful_Login-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:57.398" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Succesful_Login-10.png</msg>
+<status status="PASS" starttime="20210518 15:13:57.232" endtime="20210518 15:13:57.398"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:51.959" endtime="20210518 15:13:57.398"></status>
+</kw>
+<kw name="ValidateSiteVersion" library="keywords">
+<doc>This is to validate that the Site is on the correct version</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:57.400" endtime="20210518 15:13:57.439"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:57.440" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
+<status status="PASS" starttime="20210518 15:13:57.439" endtime="20210518 15:13:57.541"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${FooterSiteVersion}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:57.541" endtime="20210518 15:13:58.122"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/SiteCorrectVersion-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:13:58.478" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/SiteCorrectVersion-10.png"&gt;&lt;img src="Results/SiteCorrectVersion-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:13:58.478" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\SiteCorrectVersion-10.png</msg>
+<status status="PASS" starttime="20210518 15:13:58.123" endtime="20210518 15:13:58.478"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1 seconds</arg>
+</arguments>
+<msg timestamp="20210518 15:13:59.485" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:13:58.479" endtime="20210518 15:13:59.485"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:59.519" level="INFO">Element 'xpath://*[@id='default-page']/body/div/div[1]/a/i' is displayed.</msg>
+<status status="PASS" starttime="20210518 15:13:59.485" endtime="20210518 15:13:59.519"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sidebarlink}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:59.520" level="INFO">Clicking element 'xpath://*[@id='default-page']/body/div/div[1]/a/i'.</msg>
+<status status="PASS" starttime="20210518 15:13:59.519" endtime="20210518 15:13:59.613"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${iFrame}</arg>
+</arguments>
+<msg timestamp="20210518 15:13:59.615" level="INFO">Selecting frame 'xpath://iframe[@id='ifrMain']'.</msg>
+<status status="PASS" starttime="20210518 15:13:59.614" endtime="20210518 15:13:59.792"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SolutionsInterface}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:59.793" endtime="20210518 15:13:59.853"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SolutionsInterface}</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:59.854" endtime="20210518 15:13:59.937"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:57.399" endtime="20210518 15:13:59.937"></status>
+</kw>
+<kw name="Navigate to Stakeholder Entity" library="SE_Keywords">
+<doc>This will navigate the system to the Stakeholder Entity Module</doc>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Click on Environment, Health &amp; Safety</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:59.956" endtime="20210518 15:13:59.957"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${EHSButton}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:13:59.957" endtime="20210518 15:14:00.147"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${EHSButton}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:00.151" level="INFO">Clicking element 'xpath://label[text()='Environment, Health &amp; Safety']'.</msg>
+<status status="PASS" starttime="20210518 15:14:00.149" endtime="20210518 15:14:00.357"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Environment Health Safety-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:14:00.589" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Environment%20Health%20Safety-10.png"&gt;&lt;img src="Results/Environment%20Health%20Safety-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:14:00.590" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Environment Health Safety-10.png</msg>
+<status status="PASS" starttime="20210518 15:14:00.357" endtime="20210518 15:14:00.590"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Click on Stakeholder Management Interface Button</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:14:00.591" endtime="20210518 15:14:00.601"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${StakeholderManagement}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:14:00.601" endtime="20210518 15:14:01.662"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${StakeholderManagement}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:01.665" level="INFO">Clicking element 'xpath://label[text()='Stakeholder Management']'.</msg>
+<status status="PASS" starttime="20210518 15:14:01.663" endtime="20210518 15:14:01.892"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Management Interface-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:14:02.156" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Management%20Interface-10.png"&gt;&lt;img src="Results/Stakeholder%20Management%20Interface-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:14:02.156" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Management Interface-10.png</msg>
+<status status="PASS" starttime="20210518 15:14:01.892" endtime="20210518 15:14:02.157"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Click on Stakeholder Entity Module Button</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:14:02.157" endtime="20210518 15:14:02.168"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${StakeholderEntityBtn}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:14:02.169" endtime="20210518 15:14:03.003"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1 second</arg>
+</arguments>
+<msg timestamp="20210518 15:14:04.016" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:14:03.004" endtime="20210518 15:14:04.016"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${StakeholderEntityBtn}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:04.017" level="INFO">Clicking element 'xpath://label[contains(text(),'Stakeholder Entity')]'.</msg>
+<status status="PASS" starttime="20210518 15:14:04.016" endtime="20210518 15:14:07.140"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEAddBtn}</arg>
+<arg>60 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:14:07.140" endtime="20210518 15:14:13.506"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Module-{index}.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:14:13.674" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Module-10.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Module-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:14:13.674" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Module-10.png</msg>
+<status status="PASS" starttime="20210518 15:14:13.506" endtime="20210518 15:14:13.674"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:13:59.955" endtime="20210518 15:14:13.674"></status>
+</kw>
+<kw name="View Engagement Plan_MS" library="FR16-FR26_ViewRelatedAssessment-ViewReports_Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEOrdersFullNameSearch}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:14:13.676" endtime="20210518 15:14:13.719"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SEOrdersFullNameSearch}</arg>
+<arg>Coltness Iron Company Ltd</arg>
+</arguments>
+<msg timestamp="20210518 15:14:13.721" level="INFO">Typing text 'Coltness Iron Company Ltd' into text field 'xpath://div[@class='optionsPanel firstPanel primary']/table/tbody/tr[3]/td[5]/input'.</msg>
+<status status="PASS" starttime="20210518 15:14:13.720" endtime="20210518 15:14:13.912"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEOrdersSearchButton}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:13.912" level="INFO">Clicking element 'xpath://div[@id='btnActApplyFilter']/div[text()='Search']'.</msg>
+<status status="PASS" starttime="20210518 15:14:13.912" endtime="20210518 15:14:14.037"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEOrdersSearchResultsSingleRecord}</arg>
+<arg>40 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:14:14.038" endtime="20210518 15:14:14.618"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Records Visible.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:14:14.743" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Records%20Visible.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Records%20Visible.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:14:14.743" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Records Visible.png</msg>
+<status status="PASS" starttime="20210518 15:14:14.619" endtime="20210518 15:14:14.743"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SERecordColtness}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:14:14.743" endtime="20210518 15:14:14.773"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SERecordColtness}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:14.773" level="INFO">Clicking element 'xpath://div[@id='divContainer']/div/div/div[3]/div[2]/div/div[3]/table/tbody/tr[2]/td[6]/div[text()='Coltness Iron Company Ltd']'.</msg>
+<status status="PASS" starttime="20210518 15:14:14.773" endtime="20210518 15:14:15.103"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210518 15:14:17.117" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210518 15:14:15.103" endtime="20210518 15:14:17.118"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEColtnessRecordNo}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:14:17.118" endtime="20210518 15:14:19.788"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SEProcessFlowBtn}</arg>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210518 15:14:19.789" endtime="20210518 15:14:19.978"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEProcessFlowBtn}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:19.979" level="INFO">Clicking element 'xpath://div[@id='btnProcessFlow_form_2D4B7042-3E2E-495C-A77F-1642D10D5F1E']'.</msg>
+<status status="PASS" starttime="20210518 15:14:19.978" endtime="20210518 15:14:20.358"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${SEPFEditPhase}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:20.393" level="INFO">Current page contains element 'xpath:(//div[@id='divProcess_2D4B7042-3E2E-495C-A77F-1642D10D5F1E'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Edit phase']'.</msg>
+<status status="PASS" starttime="20210518 15:14:20.359" endtime="20210518 15:14:20.394"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${OUTPUTDIR}/Results/Stakeholder Entity Coltness Iron Company Ltd Record Opened.png</arg>
+</arguments>
+<assign>
+<var>${file1}</var>
+</assign>
+<msg timestamp="20210518 15:14:20.604" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Stakeholder%20Entity%20Coltness%20Iron%20Company%20Ltd%20Record%20Opened.png"&gt;&lt;img src="Results/Stakeholder%20Entity%20Coltness%20Iron%20Company%20Ltd%20Record%20Opened.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210518 15:14:20.604" level="INFO">${file1} = C:\Users\Delwin.Horsthemke\PycharmProjects\Robot_ST_Templates\results\StakeholderEntity\Results\Stakeholder Entity Coltness Iron Company Ltd Record Opened.png</msg>
+<status status="PASS" starttime="20210518 15:14:20.394" endtime="20210518 15:14:20.604"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | 6 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:20.605" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:14:20.605" endtime="20210518 15:14:20.921"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:14:20.604" endtime="20210518 15:14:20.921"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:20.923" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:14:20.922" endtime="20210518 15:14:21.095"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:14:20.921" endtime="20210518 15:14:21.095"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:21.095" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:14:21.095" endtime="20210518 15:14:21.280"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:14:21.095" endtime="20210518 15:14:21.280"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:21.283" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:14:21.281" endtime="20210518 15:14:21.425"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:14:21.280" endtime="20210518 15:14:21.425"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SETabRightArrow}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:21.425" level="INFO">Clicking element 'xpath:(//div[@class='tabpanel_tab_content']/div)[2]'.</msg>
+<status status="PASS" starttime="20210518 15:14:21.425" endtime="20210518 15:14:21.554"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:14:21.425" endtime="20210518 15:14:21.554"></status>
+</kw>
+<status status="PASS" starttime="20210518 15:14:20.604" endtime="20210518 15:14:21.554"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20210518 15:14:22.568" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210518 15:14:21.555" endtime="20210518 15:14:22.568"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${SEEngagementsTab}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:22.585" level="INFO">Current page contains element 'xpath://li[@id='tab_3942DBC8-B12A-4A79-97F6-4ED66D494909']/div[text()='Engagements']'.</msg>
+<status status="PASS" starttime="20210518 15:14:22.570" endtime="20210518 15:14:22.585"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEEngagementsTab}</arg>
+</arguments>
+<msg timestamp="20210518 15:14:22.585" level="INFO">Clicking element 'xpath://li[@id='tab_3942DBC8-B12A-4A79-97F6-4ED66D494909']/div[text()='Engagements']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210518 15:14:32.785" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210518 15:14:32.643" endtime="20210518 15:14:32.785"></status>
+</kw>
+<msg timestamp="20210518 15:14:32.786" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=90.0.4430.212)
+</msg>
+<status status="FAIL" starttime="20210518 15:14:22.585" endtime="20210518 15:14:32.786"></status>
+</kw>
+<status status="FAIL" starttime="20210518 15:14:13.675" endtime="20210518 15:14:32.786"></status>
+</kw>
+<tags>
+<tag>behavior-driven</tag>
+</tags>
+<status status="FAIL" starttime="20210518 15:13:43.869" endtime="20210518 15:14:32.787" critical="yes">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=90.0.4430.212)
+</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210518 15:14:32.790" endtime="20210518 15:14:35.522"></status>
+</kw>
+<doc>FR18_01_AddView_Engagement_Plan_MainScenario</doc>
+<status status="FAIL" starttime="20210518 15:13:43.760" endtime="20210518 15:14:35.522"></status>
+</suite>
+<status status="FAIL" starttime="20210518 15:09:37.973" endtime="20210518 15:14:35.529"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="5">Critical Tests</stat>
+<stat pass="0" fail="5">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0">behavior-driven</stat>
+<stat pass="0" fail="5">behavior-driven</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="FR26 02 ViewReports AS">FR26 02 ViewReports AS</stat>
+<stat pass="0" fail="5" id="s1" name="FR16 01 ViewRelatedAssessment MS &amp; FR17 01 AddView Engagements AS &amp; FR17 01 AddView Engagements MS &amp; FR18 01 AddView Engagement Plan AS &amp; FR18 01 AddView Engagement Plan MS">FR16 01 ViewRelatedAssessment MS &amp; FR17 01 AddView Engagements AS &amp; FR17 01 AddView Engagements MS &amp; FR18 01 AddView Engagement Plan AS &amp; FR18 01 AddView Engagement Plan MS</stat>
+<stat pass="0" fail="1" id="s1-s1" name="FR16 01 ViewRelatedAssessment MS">FR16 01 ViewRelatedAssessment MS &amp; FR17 01 AddView Engagements AS &amp; FR17 01 AddView Engagements MS &amp; FR18 01 AddView Engagement Plan AS &amp; FR18 01 AddView Engagement Plan MS.FR16 01 ViewRelatedAssessment MS</stat>
+<stat pass="0" fail="1" id="s1-s2" name="FR17 01 AddView Engagements AS">FR16 01 ViewRelatedAssessment MS &amp; FR17 01 AddView Engagements AS &amp; FR17 01 AddView Engagements MS &amp; FR18 01 AddView Engagement Plan AS &amp; FR18 01 AddView Engagement Plan MS.FR17 01 AddView Engagements AS</stat>
+<stat pass="0" fail="1" id="s1-s3" name="FR17 01 AddView Engagements MS">FR16 01 ViewRelatedAssessment MS &amp; FR17 01 AddView Engagements AS &amp; FR17 01 AddView Engagements MS &amp; FR18 01 AddView Engagement Plan AS &amp; FR18 01 AddView Engagement Plan MS.FR17 01 AddView Engagements MS</stat>
+<stat pass="0" fail="1" id="s1-s4" name="FR18 01 AddView Engagement Plan AS">FR16 01 ViewRelatedAssessment MS &amp; FR17 01 AddView Engagements AS &amp; FR17 01 AddView Engagements MS &amp; FR18 01 AddView Engagement Plan AS &amp; FR18 01 AddView Engagement Plan MS.FR18 01 AddView Engagement Plan AS</stat>
+<stat pass="0" fail="1" id="s1-s5" name="FR18 01 AddView Engagement Plan MS">FR16 01 ViewRelatedAssessment MS &amp; FR17 01 AddView Engagements AS &amp; FR17 01 AddView Engagements MS &amp; FR18 01 AddView Engagement Plan AS &amp; FR18 01 AddView Engagement Plan MS.FR18 01 AddView Engagement Plan MS</stat>
 </suite>
 </statistics>
 <errors>

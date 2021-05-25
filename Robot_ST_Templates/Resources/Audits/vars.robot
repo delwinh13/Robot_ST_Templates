@@ -1,19 +1,19 @@
 *** Variables ***
 #*********************************************** Common Variables ******************************************************
 ${BROWSER}                  chrome
-${URL}                      https://ch11.isometrix.net/IsoMetrix_Solutions_QASPTest/login.aspx
-#${URL}                      https://usazu-pr01.isometrix.net/IsoMetrix.Solutions.QA/default.aspx
+#${URL}                      https://ch11.isometrix.net/IsoMetrix_Solutions_QASPTest/login.aspx
+${URL}                      https://usazu-pr01.isometrix.net/IsoMetrix.Solutions.QA/default.aspx
 #${URL}                      https://ch11.isometrix.net/IsoMetrix.Solutions.QASPTest.Features/default.aspx
 ${Error Message Text}       Validation: Please enter value
-#${Username Value}           Manager
-#${Password Value}           Manager-2021
-${Username Value}           2Manager
-${Password Value}           Manager@202?
+${Username Value}           Manager
+${Password Value}           Manager-2021
+#${Username Value}           2Manager
+#${Password Value}           Manager@202?
 ${Username ValueAdmin}      Admin
 ${Password ValueAdmin}      Admin@202?
 ${Officeurl}                https://www.office.com
 ${outlookusername}          Delwin.Horsthemke@isometrix.com
-${outlookpassword}          DH@isometrix!
+${outlookpassword}          Metrix@May2021
 
 #*********************************************** Page Elements *********************************************************
 ${Usernameid}                   id:txtUsername

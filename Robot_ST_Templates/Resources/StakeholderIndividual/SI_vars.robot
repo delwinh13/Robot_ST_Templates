@@ -177,7 +177,7 @@ ${SIFullNameSearch}                   xpath://div[@class='optionsPanel firstPane
 ${SIRecordDavidAbel}                  xpath://div[@id='divContainer']/div/div/div[3]/div[2]/div/div[3]/table/tbody/tr[1]/td[5]/div[text()='David Abel (DA)']
 ${SIRelatedStakeTest}                 xpath://li[text()='Stake_AS1 First (1) Last Name (1) - AS1 (Test1)']
 ${SIRelatedStakeTestSpouse}           xpath:(.//li[text()='Stake_AS1 First (1) Last Name (1) - AS1 (Test1)'] | .//li[text()='Spouse'])[2]
-${SIRelationsTypeofRelationshipChild}      xpath://div[contains(@class, 'transition visible')]//a[text()='Child']
+${SIRelationsTypeofRelationshipChild}      xpath:(//div[contains(@class, 'transition visible')]//a[text()='Child'])[1]
 ${SIRelatedSaveBtn}                   xpath://div[@id='btnSaveAll']
 ${SIRecordStake_AS1}                  xpath://div[@id='divContainer']/div/div/div[3]/div[2]/div/div[3]/table/tbody/tr[1]/td[5]/div[text()='Stake_AS1 First (1) Last Name (1) - AS1 (Test1)']
 ${SIRelatedStakeDavid}                xpath:(.//li[text()='David Abel (DA)'] | .//li[text()='Parent'])[2]
@@ -205,7 +205,7 @@ ${SIOpenedEntityRecordPFEdit}         xpath:(//div[@id='divProcess_2D4B7042-3E2E
 ${SIEntityMembersTab}                 xpath://li[@id='tab_027E4E03-C1EF-434A-8CCD-24152EA912D3']/div[text()='Members']
 ${SIMembersCreateNewIndividualBtn}      xpath://div[@id='control_1F609E28-601C-41B0-A02A-C99C19AB23B1']/div/div[text()='Create a new individual']
 ${SIEntityMembersStakeTest}           xpath:(.//li[text()='Stake_AS1 First (1) Last Name (1) - AS1 (Test1)'] | .//li[text()=' Chief Operating Officer (COO)'])[2]
-${SIEntityMembersPositionCEO}         xpath://div[contains(@class, 'transition visible')]//a[text()='Chief Executive Officer (CEO)']
+${SIEntityMembersPositionCEO}         xpath:(//div[contains(@class, 'transition visible')]//a[text()='Chief Executive Officer (CEO)'])[1]
 ${SIEntityRecordCloseX}               xpath://*[@id="form_2D4B7042-3E2E-495C-A77F-1642D10D5F1E"]/div[1]/i[2]
 ${SIEntityCloseSEModule}              xpath://div[@id="divSearch"]/div[1]/i[2]
 ${SIEntityRelatedColtness}            xpath:(.//li[text()='Coltness Iron Company Ltd'] | .//li[text()=' Chief Executive Officer (CEO)'])[2]
@@ -412,7 +412,7 @@ ${SICommitmentsVGRefresh}                   xpath://div[@id='control_6E618AE2-27
 ${SICommitmentsRecordNew}                   xpath:(//div[@id='control_6E618AE2-27CC-4038-9A21-7EB7F68D9F0C']/div/div[2]/div[2]/div/div[3]/table/tbody/tr/td/div[contains(text(),'FR11_01_Add Commitment_AlternateScenario')])[1]
 
 #*********************************************** FR12 01: View Associated Resettlement_MS *****************************************************
-${SIResettlementInLineEditText}             xpath://div[@id='control_24AAA983-0C6C-48A6-B2E4-C9618B44A376']//div[@id="grid"]/div[4]/div/div[1]
+${SIResettlementInLineEditText}             xpath://div[@id='control_E363277C-112F-4470-9D17-394665FEE2D5']//div[@id="grid"]/div[4]/div/div[1]
 ${SIResettlementItems}                      xpath://div[@id='control_24AAA983-0C6C-48A6-B2E4-C9618B44A376']//div[@id="grid"]/div[4]/span[2][contains(text(),'items')]
 ${SIResettlementRecord}                     xpath://div[@id='control_24AAA983-0C6C-48A6-B2E4-C9618B44A376']/div/div[2]/div[2]/div/div[3]/table/tbody/tr[1]
 ${SIResettlementLinkBtn}                    xpath://div[@id="form_EF9A36DA-D4DF-4476-9ED9-93F87B7F798E"]/div[1]/i[1]
@@ -487,7 +487,7 @@ ${SIActionsCloseBtn}                        xpath://div[@id='form_3FA76381-27A7-
 ${SIActionsRecordSMC}                       xpath:((//div[@id='control_9C28A74C-46A0-4CA4-9378-F196C193BD8A']//div//table)[3]//tr)[1]
 
 #*********************************************** FR18 01: View Stakeholder Individual Report_MS **************************************************************
-#${SIReportsBtn}                             xpath://div[@id='btnReports_form_E686D312-3E2F-4E66-9EAD-AC71C09267DD']
+${SIRecordReportsBtn}                       xpath://div[@id='btnReports_form_E686D312-3E2F-4E66-9EAD-AC71C09267DD']
 ${SIRecordReportSITitle}                    xpath:/html/body/div[1]/div[3]/div/div[2]/div[2]/div/div/div[1]/div[2]/div[1]
 ${SIRecordReportOpen}                       xpath:(//div[@id="report_304CB37E-9C26-480A-BDAB-853E9B71750B"]/span[2])[2]
 ${SIReportsPopUpConfirm}                    xpath://div[@id='btnConfirmYes']
