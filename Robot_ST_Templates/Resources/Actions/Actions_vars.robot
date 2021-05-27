@@ -17,6 +17,7 @@ ${outlookpassword}              Metrix@May2021
 ${ActionsLoggedSubject}         xpath:(//span[contains(text(),'IsoMetrix Ad-Hoc Actions')][contains(text(),'has been logged.')])[1]
 ${ActionsPendingSubject}        xpath:(//span[contains(text(),'IsoMetrix')][contains(text(),'is now pending.')])[1]
 ${DeletecItemsFolder}           xpath:(//span[text()='Deleted Items'])[1]
+${ActionsFeedbackSubject}       xpath:(//span[contains(text(),'IsoMetrix Ad-Hoc Actions')][contains(text(),'feedback has been logged.')])[1]
 
 #*********************************************** Capture Ad_Hoc Actions *********************************************************
 ${AdHocActionsPF}               xpath://div[@id='btnProcessFlow_form_94F07C26-6A5F-40E3-959B-BF1732306DFF']
@@ -195,14 +196,26 @@ ${ActionsMonthYearOct}                  xpath://ul[@class='jstree-container-ul j
 ${ActionsMonthYearNov}                  xpath://ul[@class='jstree-container-ul jstree-children']//a[contains(text(),'November')]
 ${ActionsMonthYearDec}                  xpath://ul[@class='jstree-container-ul jstree-children']//a[contains(text(),'December')]
 
+#*********************************************** FR1-02: Capture Actions_Recurring_OS3 ******************************************************
+${ActionsIncludeWeekendsDD}             xpath://div[@id='control_0998A696-BC59-42EB-9703-4EC030002FAF']//li
+${ActionsIncludeWeekendsDDYes}          xpath:(//ul[@class='jstree-container-ul jstree-children']//a[contains(text(),'Yes')])[2]
 
-
-
-
-
-
-
-
-
-
+#*********************************************** FR2-01: Capture Action Feedback_MS ******************************************************
+${ActionsFeedbackAdd}                   xpath://div[@sourceid='DB1AFD7D-40B5-47B3-A866-45A3E2F86848']//div[@id='btnAddNew']
+${ActionsFeedbackPF}                    xpath://div[@id='btnProcessFlow_form_DB1AFD7D-40B5-47B3-A866-45A3E2F86848']
+${ActionsFeedbackSendFeed2Man}          xpath:(//div[@id='control_4854CDB6-7DB2-48B6-B92F-7F2E008CD5E2']/div/div/ul/ul/li/a[text()='2 Manager']/i)[1]
+${ActionsFeedbackSaveCloseBtn}          xpath://div[@id='control_BE9BC577-BF5C-41B3-8556-413E90BA23CE']/div/div[text()='Save and close']
+${ActionsFeedbackPFAdd}                 xpath:(//div[@id='divProcess_DB1AFD7D-40B5-47B3-A866-45A3E2F86848'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Add Phase']
+${ActionsFeedbackPFEdit}                xpath:(//div[@id='divProcess_DB1AFD7D-40B5-47B3-A866-45A3E2F86848'])[2]/div/div[2]/div/div[@class='step active']//div[text()='Edit Phase']
+${ActionsFeedbackText}                  xpath://div[@id='control_B9A4BEF3-B4D1-491D-881A-6021DDE86169']//textarea[@language='A50A7F35-56F8-451E-82D9-946BD9ADEDB4']
+${ActionsFeedbackDD}                    xpath://div[@id='control_40EFC614-1BC1-4F14-934E-928BF0980FF2']//li
+${ActionsFeedbackDDNo}                  xpath://div[contains(@class, 'transition visible')]//a[text()='No']
+${ActionsFeedbackDDYes}                 xpath://div[contains(@class, 'transition visible')]//a[text()='Yes']
+${ActionsFeedbackSendFeed3Logger}       xpath:(//a[text()='3 Logger']/i)[4]
+${ActionsFeedbackSendFeed2Manager}      xpath:(//a[text()='2 Manager']/i)[2]
+${ActionsFeedbackSaveBtn}               xpath://div[@id='btnSave_form_DB1AFD7D-40B5-47B3-A866-45A3E2F86848']
+${RecordSaved3}                         xpath:(//*[@id="txtHeader"])[3]
+${ActionsFeedbackRecordNo}              xpath:(//div[@id='form_DB1AFD7D-40B5-47B3-A866-45A3E2F86848']//div[contains(text(),'- Record #')])[1]
+${ActionsFeedbackSaveClose}             xpath://div[@id='control_BE9BC577-BF5C-41B3-8556-413E90BA23CE']/div/div[text()='Save and close']
+${ActionsFeedbackStatusInProgress}      xpath://div[@id='control_FEEDA1FF-BDED-41F2-A970-81E75BE28850']/div/a/span/ul/li[text()='In progress']
 
