@@ -4,11 +4,14 @@ ${BROWSER}                  chrome
 #${URL}                      https://ch11.isometrix.net/IsoMetrix_Solutions_QASPTest/login.aspx
 ${URL}                      https://usazu-pr01.isometrix.net/IsoMetrix.Solutions.QA/default.aspx
 #${URL}                      https://ch11.isometrix.net/IsoMetrix.Solutions.QASPTest.Features/default.aspx
+#${URL}                      https://ch11.isometrix.net/IsoMetrix.Solutions.Dev/default.aspx
 ${Error Message Text}       Validation: Please enter value
 ${Username Value}           Manager
 ${Password Value}           Manager-2021
 #${Username Value}           2Manager
 #${Password Value}           Manager@202?
+${Username ValueIan}        Ian
+${Password ValueIan}        Ian-2021
 ${Username ValueAdmin}      Admin
 ${Password ValueAdmin}      Admin@202?
 ${Officeurl}                https://www.office.com

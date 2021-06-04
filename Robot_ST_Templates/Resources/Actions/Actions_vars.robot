@@ -18,6 +18,13 @@ ${ActionsLoggedSubject}         xpath:(//span[contains(text(),'IsoMetrix Ad-Hoc 
 ${ActionsPendingSubject}        xpath:(//span[contains(text(),'IsoMetrix')][contains(text(),'is now pending.')])[1]
 ${DeletecItemsFolder}           xpath:(//span[text()='Deleted Items'])[1]
 ${ActionsFeedbackSubject}       xpath:(//span[contains(text(),'IsoMetrix Ad-Hoc Actions')][contains(text(),'feedback has been logged.')])[1]
+${ActionsFeedbackAwaitingSignOffSubject}       xpath:(//span[contains(text(),'IsoMetrix Ad-Hoc Actions')][contains(text(),'is awaiting sign off.')])[1]
+${ActionsExtensionSubject}      xpath:(//span[contains(text(),'IsoMetrix Ad-Hoc Actions')][contains(text(),'received an extension request.')])[1]
+${ActionsExtensionApprovedSubject}          xpath:(//span[contains(text(),'Ad-Hoc Actions')][contains(text(),'extension request has been approved.')])[1]
+${ActionsExtensionRejectedSubject}          xpath:(//span[contains(text(),'Ad-Hoc Actions')][contains(text(),'extension request has been rejected.')])[1]
+${ActionsSignOffAcceptedSubject}            xpath:(//span[contains(text(),'Ad-Hoc Actions')][contains(text(),'has been signed off.')])[1]
+${ActionsCompletedSubject}                  xpath:(//span[contains(text(),'Ad-Hoc Actions')][contains(text(),'has been completed.')])[1]
+${ActionsSignOffRejectedSubject}            xpath:(//span[contains(text(),'Ad-Hoc Actions')][contains(text(),'sign off has been rejected.')])[1]
 
 #*********************************************** Capture Ad_Hoc Actions *********************************************************
 ${AdHocActionsPF}               xpath://div[@id='btnProcessFlow_form_94F07C26-6A5F-40E3-959B-BF1732306DFF']
@@ -218,4 +225,64 @@ ${RecordSaved3}                         xpath:(//*[@id="txtHeader"])[3]
 ${ActionsFeedbackRecordNo}              xpath:(//div[@id='form_DB1AFD7D-40B5-47B3-A866-45A3E2F86848']//div[contains(text(),'- Record #')])[1]
 ${ActionsFeedbackSaveClose}             xpath://div[@id='control_BE9BC577-BF5C-41B3-8556-413E90BA23CE']/div/div[text()='Save and close']
 ${ActionsFeedbackStatusInProgress}      xpath://div[@id='control_FEEDA1FF-BDED-41F2-A970-81E75BE28850']/div/a/span/ul/li[text()='In progress']
+${ActionsFeedbackStatusAwaitingSignOff}      xpath://div[@id='control_FEEDA1FF-BDED-41F2-A970-81E75BE28850']/div/a/span/ul/li[text()='Awaiting sign off']
 
+#*********************************************** FR2-01: Capture Action Feedback_AS1 ******************************************************
+${ActionsFeedbackCompleteBtn}           xpath://div[@id='control_523DE899-F173-4121-9AFC-0E792D0F9F34']/div/div[text()='Action complete/feedback']
+
+#*********************************************** FR3-01: Add Action Extension Request_MS ******************************************************
+${ActionsExtensionRequestAdd}           xpath://div[@id='control_E48A89DB-3303-4A2A-9ECA-2DBF13FF4B39']/div/div/div/div[@id='btnAddNew']
+${ActionsExtensionRequestPF}            xpath://div[@id='btnProcessFlow_form_DB831363-4D19-4988-8DC6-B1885D33EF42']
+${ActionsExtensionSaveCloseBtn}         xpath://div[@id='control_8F8BFC42-33FE-4D18-9655-F7693AB2AF0F']/div/div[text()='Save and close']
+${ActionsExtensionPFAdd}                xpath:(//div[@id='divProcess_DB831363-4D19-4988-8DC6-B1885D33EF42'])[2]/div/div/div/div[@class='step active']//div[text()='Add Phase']
+${ActionsExtensionPFEdit}               xpath:(//div[@id='divProcess_DB831363-4D19-4988-8DC6-B1885D33EF42'])[2]/div/div/div/div[@class='step active']//div[text()='Edit Phase']
+${ActionsExtensionPFClosed}             xpath:(//div[@id='divProcess_DB831363-4D19-4988-8DC6-B1885D33EF42'])[2]/div/div/div/div[@class='step active']//div[text()='Closed']
+${ActionsExtensionRequestedDate}        xpath://div[@id='control_0CF9B547-BD34-4105-B6DF-35FCD1C4F352']//input
+${ActionsExtensionReasonChange}         xpath://div[@id='control_45778101-1ABF-4C83-8EF0-390B59AA0DF2']//textarea[@language='A50A7F35-56F8-451E-82D9-946BD9ADEDB4']
+${ActionsExtensionSaveBtn}              xpath://div[@id='btnSave_form_DB831363-4D19-4988-8DC6-B1885D33EF42']
+${ActionsExtensionRecordNo}             xpath:(//div[@id='form_DB831363-4D19-4988-8DC6-B1885D33EF42']//div[contains(text(),'- Record #')])[1]
+
+#*********************************************** FR3-02: Approve Action Extension Request_MS ******************************************************
+${ActionsExtensionApproveAdHocRecordSelect}            xpath:(//div[@id='grid']/div[3]/table/tbody/tr)[1]
+${ActionsExtensionApproveActionsRecordSelect}          xpath:(//div[@id='control_B22AF189-69A7-434C-852F-117C8F1CBD14']/div/div[2]/div[2]/div/div[3]/table/tbody/tr/td[4]/span[@type='recordnumber'])[1]
+${ActionsExtensionApproveChangeRecordOpen}             xpath:(//div[@id='control_E48A89DB-3303-4A2A-9ECA-2DBF13FF4B39']/div/div[2]/div[2]/div/div[3]/table/tbody/tr/td[4])[1]
+${ActionsExtensionApproveChangeRecordHeader}           xpath:(//div[@id='form_DB831363-4D19-4988-8DC6-B1885D33EF42']//div[contains(text(),'- Record #')])[1]
+${ActionsExtensionApproveApproveRejectDD}              xpath://div[@id='control_9A298684-9162-4A7F-BE76-CC200BB39B52']//li
+${ActionsExtensionApproveApproveDDApproved}            xpath://div[contains(@class, 'transition visible')]//a[text()='Approved']
+${ActionsExtensionApproveApproveDDRejected}            xpath://div[contains(@class, 'transition visible')]//a[text()='Rejected']
+${ActionsExtensionApproveNewDueDateInput}              xpath://div[@id='control_2AF71E0E-B8E9-4980-B7A2-CC48E5C5BF38']//input
+${ActionsExtensionApproveCommentsInput}                xpath://div[@id='control_18570E52-A334-4C11-A713-6B9912E8ABE2']//textarea[@language='A50A7F35-56F8-451E-82D9-946BD9ADEDB4']
+${ActionsExtensionApproveDDDeselect}                   xpath://div[@id='control_9A298684-9162-4A7F-BE76-CC200BB39B52']/div/a/span[2]/b[2]
+${ActionsExtensionApproveCloseBtn}                     xpath://div[@id='form_DB831363-4D19-4988-8DC6-B1885D33EF42']/div[1]/i[2]
+
+#*********************************************** FR4-01: Sign Off an Action_MS ******************************************************
+${ActionsSignOffActionsRecordSelect}        xpath:(//div[@id='control_B22AF189-69A7-434C-852F-117C8F1CBD14']/div/div[2]/div[2]/div/div[3]/table/tbody/tr/td[7]/div[@title='Awaiting sign off'])[1]
+${ActionsSignOffTab}                        xpath://li[@id='tab_9AC05ECF-DEDC-44FE-A265-F2D1600C2EC9']//div[contains(text(),'Sign Off')]
+${ActionsSignOffAddBtn}                     xpath://div[@id='control_76DA08C4-FD33-4D3D-B678-8CBD39CE669E']//div[contains(text(),'Add')]
+${ActionsSignOffRecordHeader}               xpath:/html/body/div[1]/div[3]/div/div[2]/div[34]/div[1]/div[1]/div[5]
+${ActionsSignOffPF}                         xpath://div[@id='btnProcessFlow_form_0D215556-02DB-4A70-A3A5-300CA7621C8B']
+${ActionsSignOffPFAdd}                      xpath:(//div[@id='divProcess_0D215556-02DB-4A70-A3A5-300CA7621C8B'])[2]/div/div/div/div[@class='step active']//div[text()='Add phase']
+${ActionsSignOffPFEdit}                     xpath:(//div[@id='divProcess_0D215556-02DB-4A70-A3A5-300CA7621C8B'])[2]/div/div/div/div[@class='step active']//div[text()='Edit phase']
+${ActionsSignOffDD}                         xpath://div[@id='control_7EB577FB-3A6B-4CAF-B5E5-1D9E6D8040F0']
+${ActionsSignOffDDYes}                      xpath://div[contains(@class, 'transition visible')]//a[text()='Yes']
+${ActionsSignOffDDNo}                       xpath://div[contains(@class, 'transition visible')]//a[text()='No']
+${ActionsSignOffComments}                   xpath://div[@id='control_55A6635D-1D32-4DB9-953C-3329A76E4F05']//textarea
+${ActionsSignOffSendFeedback2Manager}       xpath://div[@id='control_4F603D60-2FD9-460A-9F4F-61FB8074BFA8']/div/div/ul/ul/li[@title='2 Manager']/a/i[1]
+${ActionsSignOffSendFeedback3Logger}        xpath://div[@id='control_4F603D60-2FD9-460A-9F4F-61FB8074BFA8']/div/div/ul/ul/li[@title='3 Logger']/a/i[1]
+${ActionsSignOffSaveBtn}                    xpath://div[@id='btnSave_form_0D215556-02DB-4A70-A3A5-300CA7621C8B']/div[text()='Save']
+${ActionsSignOffSaveCloseBtn}               xpath://div[@id='control_90460CF0-55F0-4A99-A637-8172A5DCC0F6']/div/div[text()='Save and close']
+${ActionsSignOffStatusCompleted}            xpath://div[@id='control_FEEDA1FF-BDED-41F2-A970-81E75BE28850']/div/a/span/ul/li[text()='Completed']
+${ActionsSignOffStatusInProgress}           xpath://div[@id='control_FEEDA1FF-BDED-41F2-A970-81E75BE28850']/div/a/span/ul/li[text()='In progress']
+
+#*********************************************** FR5-01: View all actions_MS ******************************************************
+${CentralActionsModule}                     xpath://label[text()='Central Action Manager']
+${CentralActionsSearchButton}               xpath://div[@id='btnActApplyFilter']/div[text()='Search']
+${CentralActionsRecordSelect}               xpath:(//div[@id='grid']/div[3]/table/tbody/tr/td[4])[1]
+
+#*********************************************** FR6-01: Actions automatically goes overdue_MS ***************************************
+${ActionsOverdueExpandSearch}               xpath://span[@class='advanced-options icon more_horiz transition visible']
+${ActionsOverdueOwnerLabel}                 xpath://div[@id='divSearch']/div[3]/div/div[3]/table/tbody/tr[3]/td[text()='Action owner']
+${ActionsOverdueStatusDD}                   xpath://div[@id='divSearch']/div[3]/div/div[3]/table/tbody/tr[7]/td[5]/div/a/span[1]/ul
+${ActionsOverdueDDStatusOverdue}            xpath:(//a[text()='Overdue']/i[1])
+${ActionsOverdueRecordOpen}                 xpath:(//div[@id='grid']/div[3]/table/tbody/tr/td[7]/div[@title='Overdue'])[1]
+${ActionsOverdueRecordStatusOverdue}        xpath://div[@id='control_FEEDA1FF-BDED-41F2-A970-81E75BE28850']/div/a/span/ul/li[@title='Overdue']

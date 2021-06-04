@@ -25,7 +25,8 @@ Ad-Hoc Actions Add Button
     Sleep       1
     Wait Until Element Is Visible                   ${AdHocActionsSearchButton}                 40 seconds
     Click Element                                   ${AdHocActionsSearchButton}
-    Wait Until Element Is Visible                   ${AdHocActionsRecords}                      40 seconds
+    Sleep       2
+    Wait Until Element Is Enabled                   ${AdHocActionsRecords}                      40 seconds
     ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Ad-Hoc Actions Records Visible.png
     #Click on Ad-Hoc Actions Add Button
     Log to Console     Click on Ad-Hoc Actions Add Button

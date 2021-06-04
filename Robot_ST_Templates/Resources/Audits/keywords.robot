@@ -20,7 +20,7 @@ Login with Valid Credentials
 #    [Setup]    Remove Directory    ${OUTPUTDIR}/Results    recursive
     ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Login-{index}.png
     Click Element                       ${SubmitButtonid}
-    Wait Until Page Contains Element    ${SiteName}
+#    Wait Until Page Contains Element    ${SiteName}
     ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Succesful_Login-{index}.png
 
 Login with Valid Credentials_Admin
@@ -30,7 +30,17 @@ Login with Valid Credentials_Admin
 #    [Setup]    Remove Directory    ${OUTPUTDIR}/Results    recursive
     ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Login-{index}.png
     Click Element                       ${SubmitButtonid}
-    Wait Until Page Contains Element    ${SiteName}
+#    Wait Until Page Contains Element    ${SiteName}
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Succesful_Login-{index}.png
+
+Login with Valid Credentials_Ian
+    [Documentation]     Login with Valid Credentials
+    Input Text                          ${Usernameid}  ${Username ValueIan}
+    Input Text                          ${Passwordid}  ${Password ValueIan}
+#    [Setup]    Remove Directory    ${OUTPUTDIR}/Results    recursive
+    ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Login-{index}.png
+    Click Element                       ${SubmitButtonid}
+#    Wait Until Page Contains Element    ${SiteName}
     ${file1} =    Capture Page Screenshot    ${OUTPUTDIR}/Results/Succesful_Login-{index}.png
 
 ValidateSiteVersion

@@ -259,7 +259,7 @@ Capture Actions_Recurring_AS2.1
     #Create Action Button
     Log to Console      Create Action Button
     Click Element                                   ${ActionsCreateActionBtn}
-    Wait Until Element Is Visible                   ${RecordSaved2}                                  60 seconds
+    Wait Until Element Is Visible                   ${RecordSaved2}                                 90 seconds
     Element Should Be Visible                       ${ActionsPFScheduled}
     Element Should Be Visible                       ${ActionsFeedbackTab}
     Element Should Be Visible                       ${ActionsExtensionRequestLogTab}
